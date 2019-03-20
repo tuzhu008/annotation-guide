@@ -97,6 +97,9 @@ public @interface RequestMapping {
 
   // 请求必须要带上 name 参数，且值不能为 123
   @RequestMapping(value = "/getUser", params = "name!=123")
+
+  // 请求必须要带上 name 和 psw 参数，且值必须为 123 和 123456
+  @RequestMapping(value = "/getUser", params = { "name=123", "psw=123456" })
   ```
 
 * headers
