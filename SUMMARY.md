@@ -36,7 +36,7 @@
 
 * [@Service](/SpringBoot/Service.md)
 
-* [@Autowired](/SpringBoot/Autowired.md)
+* [@Autowired](/SpringBoot/autowired.md)
 
 * [@Repository](/SpringBoot/Repository.md)
 
