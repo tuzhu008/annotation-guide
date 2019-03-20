@@ -214,9 +214,9 @@ public class FooService {
 
 请注意，`@Qualifier` 注释的值与我们的 `FooFormatter` 实现的 `@Component` 注释中声明的名称匹配。
 
-### **Autowiring by Custom Qualifier**
+#### 3.4.2 **Autowiring by Custom Qualifier**
 
-Spring 允许我们创建自己的@Qualifier注解。要创建自定义限定符，请定义一个注解并在定义中提供@Qualifier注解，如下所示:
+Spring 允许我们创建自己的 `@Qualifier` 注解。要创建自定义限定符，请定义一个注解并在定义中提供 `@Qualifier` 注解，如下所示:
 
 ```java
 @Qualifier
