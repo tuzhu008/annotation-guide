@@ -214,7 +214,7 @@ public class FooService {
 
 请注意，`@Qualifier` 注释的值与我们的 `FooFormatter` 实现的 `@Component` 注释中声明的名称匹配。
 
-#### 3.4.2 **Autowiring by Custom Qualifier**
+#### 3.4.2 使用自定义** Qualifier 自动装配**
 
 Spring 允许我们创建自己的 `@Qualifier` 注解。要创建自定义限定符，请定义一个注解并在定义中提供 `@Qualifier` 注解，如下所示:
 
@@ -271,7 +271,7 @@ public class FooService {
 
 在上面的代码片段中，限定符可以用来消除 Spring 将 bean 注入字段、方法、类型和参数的歧义。
 
-### **Autowiring by Name**
+### 3.4.3 使用名称自动装配
 
 作为回退，Spring 使用bean名称作为默认限定符值。
 
