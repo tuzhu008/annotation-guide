@@ -200,7 +200,7 @@ public class FooService {
 > \| `Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException:No qualifying bean of type [com.autowire.sample.Formatter] is defined:expected single matching bean but found2: barFormatter,fooFormatter` \|  
 > \| :--- \|
 
-这可以通过使用 @Qualifier 注解缩小实现来避免:
+这可以通过使用 `@Qualifier` 注解缩小实现来避免:
 
 ```java
 public class FooService {
