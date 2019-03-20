@@ -36,6 +36,13 @@ public @interface Autowired {
 
 * Setter 注入
 
+	```java
+	```
+
+* 字段注入:
+
+	```java
+	```
 
 
 
