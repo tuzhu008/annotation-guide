@@ -124,7 +124,7 @@ public class FooService {
 
 #### 3.2.3 _**@Autowired **_**on Constructors**
 
-`@Autowired` 注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建 `FooService` 时，将`FooFormatter` 的一个实例作为参数注入构造函数: 
+`@Autowired` 注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建 `FooService` 时，将`FooFormatter` 的一个实例作为参数注入构造函数:
 
 ```java
 public class FooService {
@@ -138,9 +138,9 @@ public class FooService {
 }
 ```
 
-## @Autowired and Optional Dependencies {#dependencies}
+## 3.3 @Autowired 和可选的依赖关系 {#dependencies}
 
-Spring期望在构造依赖bean时@Autowired依赖项可用。如果框架无法解析bean进行连接，它将抛出下面引用的异常，并阻止Spring容器成功启动:
+Spring 期望在构造依赖 bean 时 `@Autowired` 依赖项可用。如果框架无法解析bean进行连接，它将抛出下面引用的异常，并阻止Spring容器成功启动:
 
 > Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:  
 > No qualifying bean of type \[com.autowire.sample.FooDAO\] found for dependency:  
