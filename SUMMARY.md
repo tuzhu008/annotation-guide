@@ -44,6 +44,8 @@
 
 * [@Autowired](/Spring/autowired.md)
 
+* [@Qualifier](/Spring/Qualifier.md)
+
 * [@Repository](/Spring/Repository.md)
 
 
