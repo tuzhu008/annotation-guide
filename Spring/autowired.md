@@ -112,12 +112,32 @@ public class FooService {
 
 ```java
 public class FooService {
+
+    private FooFormatter fooFormatter;
+
+    @Autowired
+    public void setFooFormatter(FooFormatter fooFormatter) {
+            this.fooFormatter = fooFormatter;
+    }
+}
+```
+
+### _**@Autowired**_**on Constructors**
+
+
+
+@Autowired注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建FooService时，将FooFormatter的一个实例作为参数注入构造函数:
+
+
+
+```java
+public class FooService {
  
     private FooFormatter fooFormatter;
  
     @Autowired
-    public void setFooFormatter(FooFormatter fooFormatter) {
-            this.fooFormatter = fooFormatter;
+    public FooService(FooFormatter fooFormatter) {
+        this.fooFormatter = fooFormatter;
     }
 }
 ```
