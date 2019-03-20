@@ -140,20 +140,53 @@ public class FooService {
 
 ## @Autowired and Optional Dependencies {#dependencies}
 
-> Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:   
-> No qualifying bean of type \[com.autowire.sample.FooDAO\] found for dependency:   
-> expected at least 1 bean which qualifies as autowire candidate for this dependency.   
-> Dependency annotations:   
+> Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:  
+> No qualifying bean of type \[com.autowire.sample.FooDAO\] found for dependency:  
+> expected at least 1 bean which qualifies as autowire candidate for this dependency.  
+> Dependency annotations:  
 > {@org.springframework.beans.factory.annotation.Autowired\(required=true\)}
+
+```java
+public class FooService {
+
+    @Autowired(required = false)
+    private FooDAO dataAccessor; 
+
+}
+```
+
+
+
+### **Autowiring by**_**@Qualifier**_
 
 
 
 ```java
-public class FooService {
+@Component("fooFormatter")
+public class FooFormatter implements Formatter {
  
-    @Autowired(required = false)
-    private FooDAO dataAccessor; 
+    public String format() {
+        return "foo";
+    }
+}
+```
+
+```java
+@Component("barFormatter")
+public class BarFormatter implements Formatter {
+ 
+    public String format() {
+        return "bar";
+    }
+}
+```
+
+```
+public class FooService {
      
+    @Autowired
+    private Formatter formatter;
+ 
 }
 ```
 
