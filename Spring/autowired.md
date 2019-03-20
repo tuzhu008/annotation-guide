@@ -269,7 +269,7 @@ public class FooService {
 
 `@Target` 注解中指定的值限制了限定符用于标记注入点的位置。
 
-在上面的代码片段中，限定符可以用来消除 Spring可以将bean注入字段、方法、类型和参数的歧义。
+在上面的代码片段中，限定符可以用来消除 Spring 可以将 bean 注入字段、方法、类型和参数的歧义。
 
 ### **Autowiring by Name**
 
