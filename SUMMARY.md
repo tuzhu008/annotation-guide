@@ -5,7 +5,5 @@
 
 ## Spring Boot
 
-* [@](/SpringBoot/requestmapping.md)[RequestMapping](/requestmapping.md)
-
-
+* [@RequestMapping](/SpringBoot/requestmapping.md)
 
