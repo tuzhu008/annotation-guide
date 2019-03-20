@@ -163,9 +163,11 @@ public class FooService {
 
 默认情况下，Spring根据类型\( Car、FooFormatter\)解析 @Autowired 条目。如果容器中有多个相同类型的bean可用，框架将抛出一个致命异常，表明有多个bean可用来进行自动装配。
 
-### 
+
 
 ### **Autowiring by**_**@Qualifier**_
+
+@Qualifier 注解可以用来提示和缩小所需的 bean:
 
 ```java
 @Component("fooFormatter")
@@ -194,6 +196,10 @@ public class FooService {
     private Formatter formatter;
 }
 ```
+
+因为Spring容器可以注入两种Formatter的具体实现，所以在构造FooService时，Spring 会抛出一个名 `NoUniqueBeanDefinitionException` 异常:
+
+### 
 
 ```java
 public class FooService {
