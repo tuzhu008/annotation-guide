@@ -124,7 +124,7 @@ public class FooService {
 
 #### 3.2.3 _**@Autowired **_**on Constructors**
 
-@Autowired注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建FooService时，将FooFormatter的一个实例作为参数注入构造函数:
+`@Autowired` 注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建 `FooService` 时，将`FooFormatter` 的一个实例作为参数注入构造函数: 
 
 ```java
 public class FooService {
