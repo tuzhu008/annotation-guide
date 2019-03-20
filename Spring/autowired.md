@@ -140,7 +140,7 @@ public class FooService {
 
 ## 3.3 @Autowired 和可选的依赖关系 {#dependencies}
 
-Spring 期望在构造依赖 bean 时 `@Autowired` 依赖项可用。如果框架无法解析bean进行连接，它将抛出下面引用的异常，并阻止Spring容器成功启动:
+Spring 期望在构造依赖 bean 时 `@Autowired` 依赖项可用。如果框架无法解析 bean 进行连接，它将抛出下面引用的异常，并阻止Spring容器成功启动:
 
 > Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:  
 > No qualifying bean of type \[com.autowire.sample.FooDAO\] found for dependency:  
