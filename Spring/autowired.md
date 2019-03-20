@@ -76,5 +76,5 @@ public @interface Autowired {
 public class AppConfig {}
 ```
 
-
+作为一种替代方法，在 Spring XML 中，可以通过在 Spring XML 文件中像这样声明它: `<context:annotation-config/>` 来启用它
 
