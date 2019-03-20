@@ -88,8 +88,9 @@ public @interface RequestMapping {
   指定参数的类型，当指定了这个参数，访问时必须带上此参数，并且值需要相同
 
   ```java
-      // 请求必须要带上 name 参数
-      @RequestMapping(value = "/getUser", params = "name")
+  // 请求必须要带上 name 参数
+  @RequestMapping(value = "/getUser", params = "name")
+    
   ```
 
 * headers
