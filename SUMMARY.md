@@ -12,7 +12,7 @@
   * [@DeleteMapping](/SpringBoot/requestmapping/deleteMapping.md)
   * [@PatchMapping](/SpringBoot/requestmapping/patchMapping.md)
   
-* [@Spring](/SpringBoot/Spring.md)
+* [@Spring](/SpringBoot/spring.md)
 
 * [@SpringBootApplication](/SpringBoot/SpringBootApplication.md)
 
