@@ -212,7 +212,7 @@ public class FooService {
 
 当 Spring 发现多个相同类型的 bean 时，通过使用特定实现的名称指定 `@Qualifier`\(在本例中为 `fooFormatter`\)，可以避免歧义。
 
-请注意，@Qualifier注释的值与我们的FooFormatter实现的@Component注释中声明的名称匹配。
+请注意，`@Qualifier` 注释的值与我们的 `FooFormatter` 实现的 `@Component` 注释中声明的名称匹配。
 
 ### **Autowiring by Custom Qualifier**
 
