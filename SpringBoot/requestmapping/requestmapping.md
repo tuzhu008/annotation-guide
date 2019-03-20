@@ -92,6 +92,9 @@ public @interface RequestMapping {
   @RequestMapping(value = "/getUser", params = "name")
   // 请求不能带上 name 参数
   @RequestMapping(value = "/getUser", params != "name")
+  // 请求必须要带上 name 参数，且值必须为 123
+  @RequestMapping(value = "/getUser", params = "name=123")
+
   ```
 
 * headers
