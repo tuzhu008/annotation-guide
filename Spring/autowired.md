@@ -60,13 +60,11 @@ public @interface Autowired {
 
 注意，如果我们使用构造函数注入，所有构造函数参数都是强制性的。
 
-
-
 ## 详述
 
 从 4.3 版本开始，我们不需要显式地用 `@Autowired` 注释构造函数，除非我们声明了至少两个构造函数。
 
-从 Spring 2.5 开始，该框架引入了一种由 `@Autowired` 注解驱动的新型依赖注入。这个注释允许 Spring 解析并将协作bean注入到bean中。
+从 Spring 2.5 开始，该框架引入了一种由 `@Autowired` 注解驱动的新型依赖注入。这个注释允许 Spring 解析并将协作bean注入到bean中。  
 
 在本教程中，我们将了解如何启用自动装配、连接bean的各种方法、使bean可选、使用@Qualifier注释解决bean冲突以及潜在的异常场景。
 
@@ -275,8 +273,6 @@ public class FooService {
 
 在上面的代码片段中，限定符可以用来消除Spring可以将bean注入字段、方法、类型和参数的歧义。
 
-
-
 ### **Autowiring by Name**
 
 作为回退，Spring 使用bean名称作为默认限定符值。
@@ -285,10 +281,10 @@ public class FooService {
 
 ```java
 public class FooService {
-     
+
     @Autowired
     private Formatter fooFormatter;
-     
+
 }
 ```
 
