@@ -159,6 +159,12 @@ public class FooService {
 }
 ```
 
+### Autowire Disambiguation
+
+默认情况下，Spring根据类型\( Car、FooFormatter\)解析 @Autowired 条目。如果容器中有多个相同类型的bean可用，框架将抛出一个致命异常，表明有多个bean可用来进行自动装配。
+
+### 
+
 ### **Autowiring by**_**@Qualifier**_
 
 ```java
@@ -181,8 +187,6 @@ public class BarFormatter implements Formatter {
 }
 ```
 
-
-
 ```java
 public class FooService {
 
@@ -191,25 +195,17 @@ public class FooService {
 }
 ```
 
-
-
 ```java
 public class FooService {
-     
+
     @Autowired
     @Qualifier("fooFormatter")
     private Formatter formatter;
- 
+
 }
 ```
 
-
-
-
-
 ### **Autowiring by Custom Qualifier**
-
-
 
 ```java
 @Qualifier
@@ -217,11 +213,10 @@ public class FooService {
   ElementType.FIELD, ElementType.METHOD, ElementType.TYPE, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface FormatterType {
-     
-    String value();
- 
-}
 
+    String value();
+
+}
 ```
 
 
