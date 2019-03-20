@@ -90,7 +90,8 @@ public @interface RequestMapping {
   ```java
   // 请求必须要带上 name 参数
   @RequestMapping(value = "/getUser", params = "name")
-    
+  // 请求不能带上 name 参数
+  @RequestMapping(value = "/getUser", params != "name")
   ```
 
 * headers
