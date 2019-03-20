@@ -1,6 +1,6 @@
 # @AutoWired
 
-## 定义
+## 1. 定义
 
 ```java
 @Target({ElementType.CONSTRUCTOR, ElementType.METHOD, ElementType.PARAMETER, ElementType.FIELD, ElementType.ANNOTATION_TYPE})
@@ -17,7 +17,7 @@ public @interface Autowired {
 }
 ```
 
-## 解析
+## 2. 解析
 
 我们可以使用 `@Autowired` 标记 Spring 将要解析和注入的依赖项。我们可以使用这个注解进行构造函数、setter 或字段的注入
 
@@ -60,15 +60,13 @@ public @interface Autowired {
 
 注意，如果我们使用构造函数注入，所有构造函数参数都是强制性的。
 
-## 详述
+## 3. 详述
 
 从 4.3 版本开始，我们不需要显式地用 `@Autowired` 注释构造函数，除非我们声明了至少两个构造函数。
 
 从 Spring 2.5 开始，该框架引入了一种由 `@Autowired` 注解驱动的新型依赖注入。这个注释允许 Spring 解析并将协 bean 注入到bean中。
 
-在本教程中，我们将了解如何启用自动装配、连接bean的各种方法、使bean可选、使用@Qualifier注释解决bean冲突以及潜在的异常场景。
-
-启用 _@Autowired 注解_
+### 3.1 启用 _@Autowired 注解_
 
 如果您在应用程序中使用基于 Java 的配置，您可以通过使用 AnnotationConfigApplicationContext 加载 spring 配置来启用注释驱动的注入，如下所示:
 
@@ -80,7 +78,7 @@ public class AppConfig {}
 
 作为一种替代方法，在 Spring XML 中，可以通过在 Spring XML 文件中像这样声明它: `<context:annotation-config/>` 来启用它。
 
-使用 _@Autowired_
+### 3.2 使用 _@Autowired_
 
 一旦启用了注解注入，就可以在属性、setter 和构造函数上使用自动装配。
 
