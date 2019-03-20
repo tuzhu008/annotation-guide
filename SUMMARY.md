@@ -6,4 +6,7 @@
 ## Spring Boot
 
 * [@RequestMapping](/SpringBoot/requestmapping.md)
+  * @GetMapping
+
+
 
