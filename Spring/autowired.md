@@ -163,7 +163,7 @@ public class FooService {
 
 默认情况下，Spring 根据类型\( Car、FooFormatter\)解析 `@Autowired` 条目。如果容器中有多个相同类型的 bean 可用，框架将抛出一个致命异常，表明有多个 bean 可用来进行自动装配。
 
-### **Autowiring by**_**@Qualifier**_
+#### 3.4.1 **Autowiring by**_**@Qualifier**_
 
 @Qualifier 注解可以用来提示和缩小所需的 bean:
 
