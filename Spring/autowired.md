@@ -165,7 +165,7 @@ public class FooService {
 
 #### 3.4.1 **Autowiring by **_**@Qualifier**_
 
-@Qualifier 注解可以用来提示和缩小所需的 bean:
+`@Qualifier` 注解可以用来提示和缩小所需的 bean:
 
 ```java
 @Component("fooFormatter")
@@ -195,7 +195,7 @@ public class FooService {
 }
 ```
 
-因为Spring容器可以注入两种Formatter的具体实现，所以在构造FooService时，Spring 会抛出一个名 `NoUniqueBeanDefinitionException` 异常:
+因为 Spring 容器可以注入两种 Formatter 的具体实现，所以在构造FooService时，Spring 会抛出一个名 `NoUniqueBeanDefinitionException` 异常:
 
 > \| `Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException:No qualifying bean of type [com.autowire.sample.Formatter] is defined:expected single matching bean but found2: barFormatter,fooFormatter` \|  
 > \| :--- \|
