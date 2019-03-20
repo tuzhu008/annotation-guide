@@ -87,6 +87,14 @@ public @interface RequestMapping {
 
   指定参数的类型，当指定了这个参数，访问时必须带上此参数，并且值需要相同
 
+  ```java
+    // 单个
+    @RequestMapping(value = "/getUser", consumes = "application/json")
+
+    // 多个
+    @RequestMapping(value = "/getUser", consumes = { "application/json", "application/xml")
+  ```
+
 * headers
 
   指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求
