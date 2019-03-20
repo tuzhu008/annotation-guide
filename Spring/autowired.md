@@ -106,7 +106,7 @@ public class FooService {
 
 在上面的示例中，创建 `FooService` 时，Spring 查找并注入 fooFormatter。
 
-### _**@Autowired**_**on Setters**
+### _**@Autowired **_**on Setters**
 
 @Autowired 注解可以用于 setter 方法。在下面的例子中，当在 setter 方法上使用注释时，在创建 `FooService` 时，使用`FooFormatter`实例调用 `setter` 方法:
 
@@ -122,19 +122,15 @@ public class FooService {
 }
 ```
 
-### _**@Autowired**_**on Constructors**
-
-
+### _**@Autowired **_**on Constructors**
 
 @Autowired注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建FooService时，将FooFormatter的一个实例作为参数注入构造函数:
 
-
-
 ```java
 public class FooService {
- 
+
     private FooFormatter fooFormatter;
- 
+
     @Autowired
     public FooService(FooFormatter fooFormatter) {
         this.fooFormatter = fooFormatter;
@@ -142,5 +138,9 @@ public class FooService {
 }
 ```
 
+## @Autowired and Optional Dependencies {#dependencies}
 
+
+
+>
 
