@@ -230,5 +230,20 @@ public @interface FormatterType {
 }
 ```
 
+一旦定义了FormatterType，就可以在各种实现中使用它来指定自定义值:
+
+
+
+```java
+@FormatterType("Foo")
+@Component
+public class FooFormatter implements Formatter {
+ 
+    public String format() {
+        return "foo";
+    }
+}
+```
+
 
 
