@@ -210,7 +210,7 @@ public class FooService {
     private Formatter formatter;
 ```
 
-通过使用特定实现的名称指定@Qualifier\(在本例中为fooFormatter\)，当Spring发现多个相同类型的bean时，我们可以避免歧义。
+通过使用特定实现的名称指定 `@Qualifier`\(在本例中为 `fooFormatter`\)，当Spring发现多个相同类型的bean时，我们可以避免歧义。
 
 请注意，@Qualifier注释的值与我们的FooFormatter实现的@Component注释中声明的名称匹配。
 
