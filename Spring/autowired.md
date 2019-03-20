@@ -155,16 +155,12 @@ public class FooService {
 }
 ```
 
-
-
 ### **Autowiring by**_**@Qualifier**_
-
-
 
 ```java
 @Component("fooFormatter")
 public class FooFormatter implements Formatter {
- 
+
     public String format() {
         return "foo";
     }
@@ -174,19 +170,19 @@ public class FooFormatter implements Formatter {
 ```java
 @Component("barFormatter")
 public class BarFormatter implements Formatter {
- 
+
     public String format() {
         return "bar";
     }
 }
 ```
 
-```
+```java
 public class FooService {
-     
+
     @Autowired
     private Formatter formatter;
- 
+
 }
 ```
 
