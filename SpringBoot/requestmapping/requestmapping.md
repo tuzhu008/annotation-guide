@@ -105,38 +105,21 @@ public @interface RequestMapping {
   @RequestMapping(value = "/getUser", params = { "name=123", "psw=123456" })
   ```
 
-* 
-* ```java  
-  // 请求必须要带上 name 参数  
-  @RequestMapping\(value = "/getUser", params = "name"\)
+* headers
 
-  // 请求不能带上 name 参数  
-  @RequestMapping\(value = "/getUser", params != "name"\)
+  指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求
 
-  // 请求必须要带上 name 参数，且值必须为 123  
-  @RequestMapping\(value = "/getUser", params = "name=123"\)
+* consumes
 
-// 请求必须要带上 name 参数，且值不能为 123  
-  @RequestMapping\(value = "/getUser", params = "name!=123"\)
+  指定数据请求的格式（Content-Type）
 
-// 请求必须要带上 name 和 psw 参数，且值必须为 123 和 123456  
-  @RequestMapping\(value = "/getUser", params = { "name=123", "psw=123456" }\)
+  ```java
+    // 单个
+    @RequestMapping(value = "/getUser", consumes = "application/json")
 
-    * headers
-
-      指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求
-
-    * consumes
-
-      指定数据请求的格式（Content-Type）
-
-      ```java
-        // 单个
-        @RequestMapping(value = "/getUser", consumes = "application/json")
-
-        // 多个
-        @RequestMapping(value = "/getUser", consumes = { "application/json", "application/xml")
-      ```
+    // 多个
+    @RequestMapping(value = "/getUser", consumes = { "application/json", "application/xml")
+  ```
 
 * produces
 
