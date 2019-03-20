@@ -197,8 +197,8 @@ public class FooService {
 
 因为Spring容器可以注入两种Formatter的具体实现，所以在构造FooService时，Spring 会抛出一个名 `NoUniqueBeanDefinitionException` 异常:
 
-> | `Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException:No qualifying bean of type [com.autowire.sample.Formatter] is defined:expected single matching bean but found2: barFormatter,fooFormatter` |
-> | :--- |
+> \| `Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException:No qualifying bean of type [com.autowire.sample.Formatter] is defined:expected single matching bean but found2: barFormatter,fooFormatter` \|  
+> \| :--- \|
 
 这可以通过使用 @Qualifier 注解缩小实现来避免:
 
@@ -209,10 +209,19 @@ public class FooService {
     @Qualifier("fooFormatter")
     private Formatter formatter;
 
-}
 ```
 
+通过使用特定实现的名称指定@Qualifier\(在本例中为fooFormatter\)，当Spring发现多个相同类型的bean时，我们可以避免歧义。
+
+请注意，@Qualifier注释的值与我们的FooFormatter实现的@Component注释中声明的名称匹配。
+
+
+
 ### **Autowiring by Custom Qualifier**
+
+
+
+Spring 允许我们创建自己的@Qualifier注释。要创建自定义限定符，请定义一个注解并在定义中提供@Qualifier注释，如下所示:
 
 ```java
 @Qualifier
