@@ -104,5 +104,5 @@ public class FooService {
 }
 ```
 
-
+在上面的示例中，创建 `FooService` 时，Spring 查找并注入 fooFormatter。
 
