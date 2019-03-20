@@ -64,7 +64,7 @@ public @interface Autowired {
 
 从 4.3 版本开始，我们不需要显式地用 `@Autowired` 注释构造函数，除非我们声明了至少两个构造函数。
 
-从 Spring 2.5 开始，该框架引入了一种由 `@Autowired` 注解驱动的新型依赖注入。这个注释允许 Spring 解析并将协作bean注入到bean中。  
+从 Spring 2.5 开始，该框架引入了一种由 `@Autowired` 注解驱动的新型依赖注入。这个注释允许 Spring 解析并将协 bean 注入到bean中。
 
 在本教程中，我们将了解如何启用自动装配、连接bean的各种方法、使bean可选、使用@Qualifier注释解决bean冲突以及潜在的异常场景。
 
