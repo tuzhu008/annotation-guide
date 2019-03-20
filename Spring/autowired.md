@@ -26,7 +26,7 @@ public @interface Autowired {
   ```java
   class Car {
       Engine engine;
- 
+
       @Autowired
       Car(Engine engine) {
           this.engine = engine;
@@ -36,14 +36,26 @@ public @interface Autowired {
 
 * Setter 注入
 
-	```java
-	```
+  ```java
+  class Car {
+      Engine engine;
+ 
+      @Autowired
+      void setEngine(Engine engine) {
+          this.engine = engine;
+      }
+  }
+  ```
 
 * 字段注入:
 
-	```java
-	```
+  ```java
+  class Car {
+      @Autowired
+      Engine engine;
+  }
 
+  ```
 
 
 
