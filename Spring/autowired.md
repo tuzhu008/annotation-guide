@@ -161,7 +161,7 @@ public class FooService {
 
 ### 3.4 Autowire 消除歧义
 
-默认情况下，Spring 根据类型\( Car、FooFormatter\)解析 `@Autowired` 条目。如果容器中有多个相同类型的bean可用，框架将抛出一个致命异常，表明有多个bean可用来进行自动装配。
+默认情况下，Spring 根据类型\( Car、FooFormatter\)解析 `@Autowired` 条目。如果容器中有多个相同类型的 bean 可用，框架将抛出一个致命异常，表明有多个 bean 可用来进行自动装配。
 
 ### **Autowiring by**_**@Qualifier**_
 
