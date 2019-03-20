@@ -5,39 +5,39 @@
 
 ## Spring Boot
 
-* [@RequestMapping](/SpringBoot/requestmapping/requestmapping.md)
-  * [@GetMapping](/SpringBoot/requestmapping/getmapping.md)
-  * [@PostMapping](/SpringBoot/requestmapping/postMapping.md)
-  * [@PutMapping](/SpringBoot/requestmapping/putMapping.md)
-  * [@DeleteMapping](/SpringBoot/requestmapping/deleteMapping.md)
-  * [@PatchMapping](/SpringBoot/requestmapping/patchMapping.md)
+* [@RequestMapping](/Spring/requestmapping/requestmapping.md)
+  * [@GetMapping](/Spring/requestmapping/getmapping.md)
+  * [@PostMapping](/Spring/requestmapping/postMapping.md)
+  * [@PutMapping](/Spring/requestmapping/putMapping.md)
+  * [@DeleteMapping](/Spring/requestmapping/deleteMapping.md)
+  * [@PatchMapping](/Spring/requestmapping/patchMapping.md)
   
-* [@Spring](/SpringBoot/spring.md)
+* [@Spring](/Spring/spring.md)
 
-* [@SpringBootApplication](/SpringBoot/SpringBootApplication.md)
+* [@SpringBootApplication](/Spring/SpringBootApplication.md)
 
-* [@Controller](/SpringBoot/Controller.md)
+* [@Controller](/Spring/Controller.md)
 
-* [@ResponseBody](/SpringBoot/ResponseBody.md)
+* [@ResponseBody](/Spring/ResponseBody.md)
     
-* [@RestController](/SpringBoot/RestController.md)
+* [@RestController](/Spring/RestController.md)
 
-* [@Override](/SpringBoot/Override.md)
+* [@Override](/Spring/Override.md)
 
-* [@Configuration](/SpringBoot/Configuration.md)
+* [@Configuration](/Spring/Configuration.md)
 
-* [@Bean](/SpringBoot/Bean.md)
+* [@Bean](/Spring/Bean.md)
 
-* [@Component](/SpringBoot/Component.md)
+* [@Component](/Spring/Component.md)
 
-* [@Resource](/SpringBoot/Resource.md)
+* [@Resource](/Spring/Resource.md)
 
-* [@RequestParam](/SpringBoot/RequestParam.md)
+* [@RequestParam](/Spring/RequestParam.md)
 
-* [@Service](/SpringBoot/Service.md)
+* [@Service](/Spring/Service.md)
 
-* [@Autowired](/SpringBoot/autowired.md)
+* [@Autowired](/Spring/autowired.md)
 
-* [@Repository](/SpringBoot/Repository.md)
+* [@Repository](/Spring/Repository.md)
 
 
