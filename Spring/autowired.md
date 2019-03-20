@@ -140,11 +140,15 @@ public class FooService {
 
 ## @Autowired and Optional Dependencies {#dependencies}
 
+Spring期望在构造依赖bean时@Autowired依赖项可用。如果框架无法解析bean进行连接，它将抛出下面引用的异常，并阻止Spring容器成功启动:
+
 > Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:  
 > No qualifying bean of type \[com.autowire.sample.FooDAO\] found for dependency:  
 > expected at least 1 bean which qualifies as autowire candidate for this dependency.  
 > Dependency annotations:  
 > {@org.springframework.beans.factory.annotation.Autowired\(required=true\)}
+
+为了避免这种情况发生，可以将bean指定为可选的，如下所示:
 
 ```java
 public class FooService {
@@ -177,13 +181,47 @@ public class BarFormatter implements Formatter {
 }
 ```
 
+
+
 ```java
 public class FooService {
 
-    @Autowired
+    @Autowired    
     private Formatter formatter;
-
 }
+```
+
+
+
+```java
+public class FooService {
+     
+    @Autowired
+    @Qualifier("fooFormatter")
+    private Formatter formatter;
+ 
+}
+```
+
+
+
+
+
+### **Autowiring by Custom Qualifier**
+
+
+
+```java
+@Qualifier
+@Target({
+  ElementType.FIELD, ElementType.METHOD, ElementType.TYPE, ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface FormatterType {
+     
+    String value();
+ 
+}
+
 ```
 
 
