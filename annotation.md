@@ -2,3 +2,61 @@
 
 
 
+注解由 Java 提供，可以在源文件中嵌入附加信息。
+
+```java
+@interface MyAnno {
+    String str();
+    Int val();
+}
+```
+
+\`@interface\` 关键字用来声明一个注解。
+
+注解里只包含方法的声明。
+
+所有的注解类型都自动扩展 \`Annocation\` 接口。 \`Annocation\` 是所有注解的超接口。
+
+使用：
+
+```java
+@MyAnno(str = "Annotation Example", val = 100)
+public static void myMethod() {
+    // do something
+}
+```
+
+不带形参的注解称为标记注解（marker annotation）。它的唯一作用是标记声明带有某种属性。
+
+Java 内置了一些注解，大多是专用的，有 9 个通用的：
+
+java.lang.annotation:
+
+*  @Ratention
+
+*  @Documented
+
+*  @Target
+
+* @Inherited
+
+java.lang:
+
+* @Override
+
+* @Deprecated
+
+* @SafeVarargs
+
+* @FunctionalInterface
+
+* @SuppressWarnings
+
+JDK 8 新增注解：
+
+* @Repeatable
+
+* @Native
+
+
+
