@@ -82,9 +82,9 @@ public class AppConfig {}
 
 一旦启用了注解注入，就可以在属性、setter 和构造函数上使用自动装配。
 
-@Autowired on Properties
+### 3.2.1 @Autowired on Properties
 
-注释可以直接用于属性，因此不需要 getter 和 setter:
+注解可以直接用于属性，因此不需要 getter 和 setter:
 
 ```java
 @Component("fooFormatter")
