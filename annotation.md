@@ -1,7 +1,5 @@
 # Annotation
 
-
-
 注解由 Java 提供，可以在源文件中嵌入附加信息。
 
 ```java
@@ -11,11 +9,11 @@
 }
 ```
 
-\`@interface\` 关键字用来声明一个注解。
+`@interface`关键字用来声明一个注解。
 
 注解里只包含方法的声明。
 
-所有的注解类型都自动扩展 \`Annocation\` 接口。 \`Annocation\` 是所有注解的超接口。
+所有的注解类型都自动扩展 `Annocation` 接口。 `Annocation`是所有注解的超接口。
 
 使用：
 
@@ -32,11 +30,11 @@ Java 内置了一些注解，大多是专用的，有 9 个通用的：
 
 java.lang.annotation:
 
-*  @Ratention
+* @Ratention
 
-*  @Documented
+* @Documented
 
-*  @Target
+* @Target
 
 * @Inherited
 
