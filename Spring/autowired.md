@@ -76,5 +76,11 @@ public @interface Autowired {
 public class AppConfig {}
 ```
 
-作为一种替代方法，在 Spring XML 中，可以通过在 Spring XML 文件中像这样声明它: `<context:annotation-config/>` 来启用它
+作为一种替代方法，在 Spring XML 中，可以通过在 Spring XML 文件中像这样声明它: `<context:annotation-config/>` 来启用它。
+
+
+
+使用 _@Autowired_
+
+一旦启用了注解注入，就可以在属性、setter 和构造函数上使用自动装配。
 
