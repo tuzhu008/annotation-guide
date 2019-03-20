@@ -148,7 +148,7 @@ Spring 期望在构造依赖 bean 时 `@Autowired` 依赖项可用。如果框�
 > Dependency annotations:  
 > {@org.springframework.beans.factory.annotation.Autowired\(required=true\)}
 
-为了避免这种情况发生，可以将bean指定为可选的，如下所示:
+为了避免这种情况发生，可以将 bean 指定为可选的，如下所示:
 
 ```java
 public class FooService {
