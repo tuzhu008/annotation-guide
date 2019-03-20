@@ -106,7 +106,7 @@ public @interface RequestMapping {
   ```
 
 * 
-* \`\`\`java  
+* ```java  
   // 请求必须要带上 name 参数  
   @RequestMapping\(value = "/getUser", params = "name"\)
 
@@ -136,6 +136,7 @@ public @interface RequestMapping {
 
         // 多个
         @RequestMapping(value = "/getUser", consumes = { "application/json", "application/xml")
+      ```
 
 * produces
 
