@@ -256,3 +256,16 @@ public class BarFormatter implements Formatter {
 
 一旦实现被注解，自定义限定符注解可以使用如下:
 
+```java
+@Component
+public class FooService {
+     
+    @Autowired
+    @FormatterType("Foo")
+    private Formatter formatter;
+     
+}
+```
+
+
+
