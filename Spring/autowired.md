@@ -82,7 +82,7 @@ public class AppConfig {}
 
 一旦启用了注解注入，就可以在属性、setter 和构造函数上使用自动装配。
 
-### 3.2.1 @Autowired on Properties
+#### 3.2.1 @Autowired on Properties
 
 注解可以直接用于属性，因此不需要 getter 和 setter:
 
@@ -106,9 +106,9 @@ public class FooService {
 
 在上面的示例中，创建 `FooService` 时，Spring 查找并注入 fooFormatter。
 
-### _**@Autowired **_**on Setters**
+#### 3.2.2 _**@Autowired **_**on Setters**
 
-@Autowired 注解可以用于 setter 方法。在下面的例子中，当在 setter 方法上使用注释时，在创建 `FooService` 时，使用`FooFormatter`实例调用 `setter` 方法:
+`@Autowired` 注解可以用于 setter 方法。在下面的例子中，当在 setter 方法上使用注释时，在创建 `FooService` 时，使用`FooFormatter`实例调用 `setter` 方法:
 
 ```java
 public class FooService {
@@ -122,7 +122,7 @@ public class FooService {
 }
 ```
 
-### _**@Autowired **_**on Constructors**
+#### 3.2.3 _**@Autowired **_**on Constructors**
 
 @Autowired注解也可以用在构造函数上。在下面的示例中，当在构造函数上使用注释时，在创建FooService时，将FooFormatter的一个实例作为参数注入构造函数:
 
