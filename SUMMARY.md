@@ -5,8 +5,8 @@
 
 ## Spring Boot
 
-* [@RequestMapping](/SpringBoot/requestmapping.md)
-  * @GetMapping
+* [@RequestMapping](/SpringBoot/requestmapping/requestmapping.md)
+  * [@GetMapping](SpringBoot/requestmapping/getmapping.md)
 
 
 
