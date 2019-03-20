@@ -70,3 +70,11 @@ public @interface Autowired {
 
 如果您在应用程序中使用基于 Java 的配置，您可以通过使用 AnnotationConfigApplicationContext 加载 spring 配置来启用注释驱动的注入，如下所示:
 
+```java
+@Configuration
+@ComponentScan("com.aho.autowire.sample")
+public class AppConfig {}
+```
+
+
+
