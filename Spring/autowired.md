@@ -247,12 +247,12 @@ public class FooFormatter implements Formatter {
 @FormatterType("Bar")
 @Component
 public class BarFormatter implements Formatter {
- 
+
     public String format() {
         return "bar";
     }
 }
 ```
 
-
+一旦实现被注解，自定义限定符注解可以使用如下:
 
