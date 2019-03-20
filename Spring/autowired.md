@@ -273,9 +273,9 @@ public class FooService {
 
 ### 3.4.3 使用名称自动装配
 
-作为回退，Spring 使用bean名称作为默认限定符值。
+作为回退，Spring 使用 bean 名称作为默认限定符值。
 
-因此，通过定义bean属性名\(在本例中为fooFormatter\)， Spring将其与fooFormatter实现匹配，并在构建FooService时注入特定的实现:
+因此，通过定义 bean 属性名\(在本例中为 `fooFormatter`\)， Spring 将其与 `fooFormatter` 实现匹配，并在构建 `FooService` 时注入特定的实现:
 
 ```java
 public class FooService {
@@ -286,5 +286,5 @@ public class FooService {
 }
 ```
 
-虽然@Qualifier和bean名称回退匹配都可以用于缩小到特定bean的范围，但自动装配实际上是按类型注入的，这是使用容器特性的最佳方式。
+虽然 `@Qualifier` 和 bean 名称回退匹配都可以用于缩小到特定 bean 的范围，但自动装配实际上是按类型注入的，这是使用容器特性的最佳方式。
 
