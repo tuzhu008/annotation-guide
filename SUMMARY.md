@@ -5,6 +5,11 @@
 
 ## Spring Boot
 
+* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
+
+* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
+
+
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
   * [@PostMapping](/Spring/requestmapping/postMapping.md)
@@ -18,9 +23,9 @@
 
 * [@Controller](/Spring/Controller.md)
 
-* [@ResponseBody](/Spring/ResponseBody.md)
-    
 * [@RestController](/Spring/RestController.md)
+
+* [@ResponseBody](/Spring/ResponseBody.md)
 
 * [@Override](/Spring/Override.md)
 
@@ -29,6 +34,8 @@
 * [@Bean](/Spring/Bean.md)
 
 * [@Component](/Spring/Component.md)
+
+* [@ComponentScan](/Spring/componentScan.md)
 
 * [@Resource](/Spring/Resource.md)
 
@@ -39,5 +46,6 @@
 * [@Autowired](/Spring/autowired.md)
 
 * [@Repository](/Spring/Repository.md)
+
 
 
