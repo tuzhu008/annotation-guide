@@ -78,9 +78,35 @@ public class AppConfig {}
 
 作为一种替代方法，在 Spring XML 中，可以通过在 Spring XML 文件中像这样声明它: `<context:annotation-config/>` 来启用它。
 
-
-
 使用 _@Autowired_
 
 一旦启用了注解注入，就可以在属性、setter 和构造函数上使用自动装配。
+
+
+
+@Autowired on Properties
+
+注释可以直接用于属性，因此不需要 getter 和 setter:
+
+
+
+```java
+@Component("fooFormatter")
+public class FooFormatter {
+ 
+    public String format() {
+        return "foo";
+    }
+}
+```
+
+```java
+@Component
+public class FooService {
+@Autowired
+private FooFormatter fooFormatter;
+}
+```
+
+
 
