@@ -30,12 +30,11 @@ public @interface Bean {
 
 `@Bean` 标记了一个实例化 Spring bean 的工厂方法:
 
-```
+```java
 @Bean
 Engine engine() {
     return new Engine();
 }
-
 ```
 
 
