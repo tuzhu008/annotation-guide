@@ -144,20 +144,20 @@ public class City {
 
 ```java
 public class Region {
- 
+
     @Lazy
     @Autowired
     private City city;
- 
+
     public Region() {
         System.out.println("Region bean initialized");
     }
- 
+
     public City getCityInstance() {
         return city;
     }
 }
 ```
 
-
+**注意，`@Lazy` 在这两个地方都是强制的。**
 
