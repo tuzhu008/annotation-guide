@@ -26,5 +26,5 @@ public @interface PropertySources {
 class VehicleFactoryConfig {}
 ```
 
-
+注意，从 Java 8 开始，我们可以通过上面描述的重复注解特性实现相同的功能。
 
