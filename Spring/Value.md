@@ -148,11 +148,21 @@ private String spelValue;
 private String spelSomeDefault;
 ```
 
-此外，我们还可以使用来自其他 bean 的字段值。假设我们有一个名为 `someBean` 的 bean，其字段 `somvaluue `等于 `10`。然后在这个例子中将 `10` 分配给字段:
+此外，我们还可以使用来自其他 bean 的字段值。假设我们有一个名为 `someBean` 的 bean，其字段 `somvaluue`等于 `10`。然后在这个例子中将 `10` 分配给字段:
 
 ```java
 @Value("#{someBean.someValue}")
 private Integer someBeanValue;
+```
+
+### 对映射使用 @Value
+
+我们还可以使用 `@Value` 注解注入 Map 属性。
+
+首先，我们需要在属性文件中的 `{key: ' value '} `表单中定义属性:
+
+```java
+valuesMap={key1: '1', key2: '2', key3: '3'}
 ```
 
 
