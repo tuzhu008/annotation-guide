@@ -19,5 +19,5 @@ void setColor(String color) {
 </bean>
 ```
 
-
+否则，将抛出 `BeanInitializationException`。
 
