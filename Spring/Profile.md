@@ -211,13 +211,13 @@ Spring 还提供了一种在没有其他配置文件处于活动状态时设置�
 
 ### 获取激活的配置文件
 
-一旦配置文件被激活，我们可以在运行时检索活动的配置文件，只需注入环境:
+一旦配置文件被激活，我们可以在运行时检索活动的配置文件，只需注入 \`_Environment_\`:
 
 ```java
 public class ProfileManager {
     @Autowired
     Environment environment;
- 
+
     public void getActiveProfiles() {
         for (final String profileName : environment.getActiveProfiles()) {
             System.out.println("Currently active profile - " + profileName);
