@@ -52,5 +52,13 @@ void setVehicle(Vehicle vehicle) {
 }
 ```
 
+使用字段注入:
+
+```java
+@Autowired
+@Qualifier("bike")
+Vehicle vehicle;
+```
+
 
 
