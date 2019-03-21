@@ -179,5 +179,5 @@ spring.profiles.active=@spring.profiles.active@
 </build>
 ```
 
-
+并添加一个 `-P` 参数来切换将应用哪个 Maven 配置文件:
 
