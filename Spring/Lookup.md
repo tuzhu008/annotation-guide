@@ -154,7 +154,7 @@ public abstract class StudentServices {
 @Test
 public void whenAbstractGetterMethodInjects_thenNewInstanceReturned() {
     // ... initialize context
- 
+
     StudentServices services = context.getBean(StudentServices.class);    
     assertEquals("PASS", services.appendMark("Alex", 89));
     assertEquals("FAIL", services.appendMark("Bethany", 78));
@@ -162,5 +162,5 @@ public void whenAbstractGetterMethodInjects_thenNewInstanceReturned() {
 }
 ```
 
-通过这个设置，我们可以将 Spring 依赖项以及方法依赖项添加到通知中。
+通过这个设置，我们可以将 Spring 依赖项以及方法依赖项添加到 `SchoolNotification` 中。
 
