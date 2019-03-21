@@ -6,6 +6,7 @@
 ## Spring
 
 * [@Autowired](/Spring/autowired.md)
+* [@Component](/Spring/Component.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Required](/Spring/Required.md)
@@ -25,7 +26,6 @@
 * [@Controller](/Spring/Controller.md)
 * [@RestController](/Spring/RestController.md)
 * [@ResponseBody](/Spring/ResponseBody.md)
-* [@Override](/Spring/Override.md)
 * [@Component](/Spring/Component.md)
 * [@ComponentScan](/Spring/componentScan.md)
 * [@Resource](/Spring/Resource.md)
