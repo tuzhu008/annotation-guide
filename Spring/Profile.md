@@ -159,7 +159,7 @@ export spring_profiles_active=dev
 </profiles>
 ```
 
-它的值将用于替换 _application.properties 中的 `@spring.profiles.active@`_ 中的占位符:
+它的值将用于替换 _application.properties 中的 _`@spring.profiles.active@` 中的占位符:
 
 ```
 spring.profiles.active=@spring.profiles.active@
@@ -167,7 +167,7 @@ spring.profiles.active=@spring.profiles.active@
 
 现在，我们需要启用 pom.xm l中的资源过滤:
 
-```
+```xml
 <build>
     <resources>
         <resource>
