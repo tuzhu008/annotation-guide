@@ -26,7 +26,7 @@ public @interface Lazy {
 
 * `@Bean` 注解的 bean 工厂方法，以延迟方法调用\(创建 bean\)
 
-* 一个 `@Configuration` 类和所有包含的 `@Bean` 方法都将受到影响
+* 一个 `@Configuration` 类和其包含的所有 `@Bean` 方法都将受到影响
 
 * 一个 `@Component` 类，它不是一个 `@Configuration` 类，这个 bean 将被延迟初始化
 
