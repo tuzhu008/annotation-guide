@@ -5,7 +5,7 @@
 * [Ioc](Ioc.md)
 * [AOP](AOP.md)
 * [DI](DI.md)
-  
+
 ## Spring
 
 * [依赖注入相关](Spring/requestmapping/di.md)
@@ -19,7 +19,7 @@
   * [@Lookup](/Spring/Lookup.md)
   * [@Primary](/Spring/Primary.md)
   * [@Scope](/Spring/Scope.md)
-* [上下文配置相关]()
+* [上下文配置相关](Spring/requestmapping/shang-xia-wen-pei-zhi-xiang-guan.md)
   * [@Profile](/Spring/Profile.md)
   * [@Import](/Spring/Import.md)
   * [@ImportResource](/Spring/ImportResource.md)
