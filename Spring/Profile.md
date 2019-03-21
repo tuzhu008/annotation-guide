@@ -106,3 +106,16 @@ env.setActiveProfiles("someProfile");
 
 同样，可以在 web 应用程序的 web.xml 中使用 `Context` 参数激活配置文件:
 
+```java
+<context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/app-config.xml</param-value>
+</context-param>
+<context-param>
+    <param-name>spring.profiles.active</param-name>
+    <param-value>dev</param-value>
+</context-param>
+```
+
+
+
