@@ -150,3 +150,17 @@ public abstract class StudentServices {
 
 使用抽象比使用存根好看一些，但是我们只能在不使用 _**component-scan **_或 _**@Bean**_**-管理**周围的 bean 时使用它:
 
+```java
+@Test
+public void whenAbstractGetterMethodInjects_thenNewInstanceReturned() {
+    // ... initialize context
+ 
+    StudentServices services = context.getBean(StudentServices.class);    
+    assertEquals("PASS", services.appendMark("Alex", 89));
+    assertEquals("FAIL", services.appendMark("Bethany", 78));
+    assertEquals("PASS", services.appendMark("Claire", 96));
+}
+```
+
+通过这个设置，我们可以将 Spring 依赖项以及方法依赖项添加到通知中。
+
