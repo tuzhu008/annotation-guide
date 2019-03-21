@@ -268,12 +268,12 @@ public class ProductionDatasourceConfig implements DatasourceConfig {
 public class SpringProfilesTest {
     @Autowired
     DatasourceConfig datasourceConfig;
- 
+
     public void setupDatasource() {
         datasourceConfig.setup();
     }
 }
 ```
 
-
+当 “dev” 配置文件为 active spring 注入 `DevDatasourceConfig` 对象时，在调用setup\(\)方法时，输出如下:
 
