@@ -124,3 +124,21 @@ public class SchoolNotification {
 
 然后，我们可以向 `StudentServices` 添加一个方法，该方法获取并保存学生数据:
 
+```java
+public abstract class StudentServices {
+  
+    private Map<String, SchoolNotification> notes = new HashMap<>();
+  
+    @Lookup
+    protected abstract SchoolNotification getNotification(String name);
+ 
+    public String appendMark(String name, Integer mark) {
+        SchoolNotification notification
+          = notes.computeIfAbsent(name, exists -> getNotification(name)));
+        return notification.addMark(mark);
+    }
+}
+```
+
+
+
