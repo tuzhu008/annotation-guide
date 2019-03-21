@@ -133,5 +133,31 @@ env.setActiveProfiles("someProfile");
 export spring_profiles_active=dev
 ```
 
+### **Maven 配置文件** {#maven-profile}
+
+还可以通过指定 Maven 配置文件中的 `spring.profiles.active` 配置属性激活 Spring 配置文件。
+
+在每个 Maven 配置文件中，我们都可以设置 `spring.profiles.active`属性:
+
+```xml
+<profiles>
+    <profile>
+        <id>dev</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <properties>
+            <spring.profiles.active>dev</spring.profiles.active>
+        </properties>
+    </profile>
+    <profile>
+        <id>prod</id>
+        <properties>
+            <spring.profiles.active>prod</spring.profiles.active>
+        </properties>
+    </profile>
+</profiles>
+```
+
 
 
