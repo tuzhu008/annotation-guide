@@ -23,7 +23,9 @@ class VehicleFactoryConfig {}
 同样，我们可以用 `basePackageClasses`  参数指向基本包中的类:
 
 ```java
-
+@Configuration
+@ComponentScan(basePackageClasses = VehicleFactoryConfig.class)
+class VehicleFactoryConfig {}
 ```
 
 
