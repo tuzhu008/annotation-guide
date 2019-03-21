@@ -128,5 +128,17 @@ public Region getRegion(){
 
 在这里，为了初始化一个 **lazy** **bean**，我们从另一个 bean 引用它。
 
-我们想要延迟加载的bean:
+我们想要延迟加载的 bean:
+
+```java
+@Lazy
+@Component
+public class City {
+    public City() {
+        System.out.println("City bean initialized");
+    }
+}
+```
+
+
 
