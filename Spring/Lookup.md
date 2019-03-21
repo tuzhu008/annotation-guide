@@ -148,5 +148,5 @@ public abstract class StudentServices {
 
 其次，我们有时可以使 `@ lookup` 注释的方法抽象，就像上面的例子一样。
 
-使用抽象比使用存根好看一些，但是我们只能在不使用组件扫描或@ bean管理周围的bean时使用它:
+使用抽象比使用存根好看一些，但是我们只能在不使用 _**component-scan **_或 _**@Bean**_**-管理**周围的 bean 时使用它:
 
