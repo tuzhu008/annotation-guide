@@ -22,5 +22,5 @@ public @interface Service {
 
 ## 解析
 
-应用程序的业务逻辑通常驻留在 service 中——所以我们将使用@Service注释来表示类属于该层:
+应用程序的业务逻辑通常驻留在 service 中——所以我们将使用 `@Service` 注释来表示类属于该层:
 
