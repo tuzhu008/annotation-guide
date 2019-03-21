@@ -11,6 +11,7 @@
   * [@Repository](/Spring/Bean/Repository.md)
   * [@Service](/Spring/Bean/Service.md)
   * [@Controller](/Spring/Bean/Controller.md)
+  * [@Configuration](/Spring/Bean/Configuration.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Required](/Spring/Required.md)
