@@ -181,5 +181,12 @@ private Map<String, Integer> valuesMap;
 private Integer valuesMapKey1;
 ```
 
+如果我们不确定映射是否包含某个键，我们应该选择一个更安全的表达式，它不会抛出异常，但在没有找到键时将值设置为 `null`:
+
+```java
+@Value("#{${valuesMap}['unknownKey']}")
+private Integer unknownMapKey;
+```
+
 
 
