@@ -20,6 +20,7 @@
 * [@Lazy](/Spring//Lazy.md)
 * [@Lookup](/Spring/Lookup.md)
 * [@Primary](/Spring/Primary.md)
+* [@Scope](/Spring/Scope.md)
 * [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
 * [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
