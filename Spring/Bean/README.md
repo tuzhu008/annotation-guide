@@ -16,7 +16,7 @@
 
 ```java
 @Configuration
-@ComponentScan(basePackages = "com.baeldung.annotations")
+@ComponentScan(basePackages = "com.aho.annotations")
 class VehicleFactoryConfig {}
 ```
 
