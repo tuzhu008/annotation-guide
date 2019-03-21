@@ -18,13 +18,11 @@ public @interface Qualifier {
 
 ```java
 class Bike implements Vehicle {}
- 
+
 class Car implements Vehicle {}
 ```
 
-如果 Spring 需要注入一个 Vehicle bean ，它最终会有多个匹配的定义。在这种情况下，我们可以使用 `@Qualifier` 注解显式地提供bean的名称。
-
-
+如果 Spring 需要注入一个 Vehicle bean ，它最终会有多个匹配的定义。在这种情况下，我们可以使用 `@Qualifier` 注解显式地提供bean 的名称。
 
 使用构造函数注入:
 
