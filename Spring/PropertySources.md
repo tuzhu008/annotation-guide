@@ -15,5 +15,5 @@ public @interface PropertySources {
 
 ## 解析
 
-我们可以使用这个注释来指定多个 `@PropertySource` 配置:
+我们可以使用这个注解来指定多个 `@PropertySource` 配置:
 
