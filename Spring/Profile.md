@@ -205,9 +205,7 @@ mvn clean package -Pprod
 
 ### 默认的配置文件
 
-任何没有指定配置文件的 bean 都属于“defult”配置件。
+任何没有指定配置文件的 bean 都属于 “default” 配置件。
 
-Spring还提供了一种在没有其他配置文件处于活动状态时设置默认配置文件的方法——使用“Spring .profile .default”属性。
-
-
+Spring 还提供了一种在没有其他配置文件处于活动状态时设置默认配置文件的方法——使用 `spring.profiles.default` 属性。
 
