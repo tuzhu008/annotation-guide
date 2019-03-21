@@ -109,5 +109,12 @@ private String valueFromFile;
 private String systemValue;
 ```
 
+可以为可能没有定义的属性提供默认值。在这个例子中，值“some default”将被注入:
+
+```java
+@Value("${unknown.param:some default}")
+private String someDefault;
+```
+
 
 
