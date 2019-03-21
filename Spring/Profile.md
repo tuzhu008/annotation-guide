@@ -55,5 +55,11 @@ public class DevDatasourceConfig
 public class DevDatasourceConfig
 ```
 
+### 用 XML 声明配置文件
+
+配置文件也可以用 XML 配置- `<beans>` 标签具有“概要文件”属性，该属性接受用逗号分隔的适用概要文件的值:
+
+
+
 
 
