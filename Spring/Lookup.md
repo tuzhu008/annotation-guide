@@ -82,11 +82,10 @@ public void whenLookupMethodCalled_thenNewInstanceReturned() {
     // ... initialize context
     StudentServices first = this.context.getBean(StudentServices.class);
     StudentServices second = this.context.getBean(StudentServices.class);
-        
+
     assertEquals(first, second); 
     assertNotEquals(first.getNotification(), second.getNotification()); 
 }
-
 ```
 
 
