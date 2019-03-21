@@ -322,7 +322,7 @@ mvn spring-boot:run
 
 但是 Spring Boot 带来的最重要的与配置文件相关的特性是特定于配置文件的属性文件。这些必须在 `applications-{profile}.properties` 格式中命名。
 
-Spring Boot 将自动加载应用程序中的属性。所有配置文件的属性文件，特定于概要文件的.properties文件中的属性文件仅适用于指定的概要文件。
+Spring Boot 将自动加载应用程序中的属性。所有配置文件的属性文件，特定于配置文件的.properties文件中的属性文件仅适用于指定的概要文件。
 
 例如，我们可以使用两个名为application-dev的文件为开发和生产概要文件配置不同的数据源。属性和application-production.properties:
 
