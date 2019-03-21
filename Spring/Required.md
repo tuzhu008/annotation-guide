@@ -14,7 +14,7 @@ void setColor(String color) {
 ```
 
 ```java
-<bean class="com.baeldung.annotations.Bike">
+<bean class="com.aho.annotations.Bike">
     <property name="color" value="green" />
 </bean>
 ```
