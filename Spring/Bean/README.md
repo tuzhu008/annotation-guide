@@ -34,3 +34,12 @@ class VehicleFactoryConfig {}
 
 `@ComponentScan` 利用了 Java 8 的重复注解特性，这意味着我们可以用它多次标记一个类:
 
+```java
+@Configuration
+@ComponentScan(basePackages = "com.baeldung.annotations")
+@ComponentScan(basePackageClasses = VehicleFactoryConfig.class)
+class VehicleFactoryConfig {
+```
+
+
+
