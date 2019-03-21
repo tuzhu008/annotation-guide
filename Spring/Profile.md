@@ -328,3 +328,21 @@ Spring Boot 将自动加载应用程序中的属性。所有配置文件的属�
 
 在 `application-production.properties` 中，我们可以设置一个 MySql 数据源:
 
+```
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/db
+spring.datasource.username=root
+spring.datasource.password=root
+```
+
+然后，我们可以在 \`_application-dev.properties_\` 中为 dev 配置相同的属性，使用内存中的 H2 数据库:
+
+```
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+spring.datasource.username=sa
+spring.datasource.password=sa
+```
+
+通过这种方式，我们可以很容易地为不同的环境提供不同的配置。
+
