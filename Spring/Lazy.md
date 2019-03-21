@@ -34,5 +34,5 @@ public @interface Lazy {
 
 该注解有一个名为 `value` 的参数，默认值为 `true`。这对重写默认行为是有用的。
 
-例如，在全局设置为惰性时标记 bean 要被热切加载，或者在一个标记为@Lazy的@Configuration类中将特定的@Bean方法配置为热切加载:
+例如，在全局设置为惰性时标记 bean 要被急切地加载，或者在一个标记为@Lazy的@Configuration类中将特定的@Bean方法配置为热切加载:
 
