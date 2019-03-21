@@ -41,5 +41,5 @@ class VehicleFactoryConfig {}
 class VehicleFactoryConfig {
 ```
 
-
+或者，我们可以使用 `@ComponentScan` 来指定多个 `@ComponentScan` 配置:
 
