@@ -181,3 +181,9 @@ spring.profiles.active=@spring.profiles.active@
 
 并添加一个 `-P` 参数来切换将应用哪个 Maven 配置文件:
 
+```
+mvn clean package -Pprod
+```
+
+这个命令将打包用于 prod 配置文件的应用程序。它还在应用程序运行时为该应用程序应用 `spring.profiles.active` 值 \`_prod_\` 
+
