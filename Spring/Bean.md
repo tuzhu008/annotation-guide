@@ -28,7 +28,7 @@ public @interface Bean {
 
 ## 解析
 
-`@Bean` 标记了一个实例化 Spring bean 的工厂方法:
+`@Bean` 标记了一个实例化 Spring bean 的**工厂**方法:
 
 ```java
 @Bean
@@ -38,4 +38,6 @@ Engine engine() {
 ```
 
 当需要返回类型的新实例时，Spring 调用这些方法。
+
+
 
