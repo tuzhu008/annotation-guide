@@ -90,7 +90,10 @@ listOfValues=A,B,C
 
 作为一个基本的和几乎无用的使用例子，我们只能注入“string value”从注释字段:
 
-
+```java
+@Value("string value")
+private String stringValue;
+```
 
 
 
