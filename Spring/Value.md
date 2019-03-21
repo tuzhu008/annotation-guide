@@ -205,5 +205,5 @@ private Integer unknownMapKeyWithDefaultValue;
 private Map<String, Integer> valuesMapFiltered;
 ```
 
-
+我们还可以使用 `@Value` 注释注入所有当前系统属性:
 
