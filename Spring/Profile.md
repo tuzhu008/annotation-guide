@@ -61,8 +61,7 @@ public class DevDatasourceConfig
 
 ```xml
 <beans profile="dev">
-    <bean id="devDatasourceConfig"
-      class="org.baeldung.profiles.DevDatasourceConfig" />
+    <bean id="devDatasourceConfig" class="org.baeldung.profiles.DevDatasourceConfig" />
 </beans>
 ```
 
