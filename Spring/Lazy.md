@@ -57,3 +57,7 @@ class VehicleFactoryConfig {
 
 在这个快速教程中，我们将讨论 Spring 的 `@Lazy` 注解。
 
+### 懒初始化
+
+`@Lazy` 注解自 Spring 3.0 版本以来一直存在。有几种方法可以告诉 IoC 容器惰性地初始化 bean。
+
