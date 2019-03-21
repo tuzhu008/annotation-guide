@@ -207,5 +207,10 @@ private Map<String, Integer> valuesMapFiltered;
 
 我们还可以使用 `@Value` 注解注入所有当前系统属性:
 
+```java
+@Value("#{systemProperties}")
+private Map<String, String> systemPropertiesMap;
+```
+
 
 
