@@ -26,3 +26,12 @@ class Car implements Vehicle {}
 
 使用构造函数注入:
 
+```java
+@Autowired
+Biker(@Qualifier("bike") Vehicle vehicle) {
+    this.vehicle = vehicle;
+}
+```
+
+使用 setter 注入:
+
