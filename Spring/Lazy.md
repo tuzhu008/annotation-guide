@@ -30,7 +30,7 @@ public @interface Lazy {
 
 * 一个 `@Component` 类，它不是一个 `@Configuration` 类，这个 bean 将被延迟初始化
 
-* @Autowired构造函数、setter或字段，以惰性地加载依赖项本身\(通过代理\)
+* `@Autowired` 构造函数、setter 或字段，以惰性地加载依赖项本身\(通过代理\)
 
 
 
