@@ -35,7 +35,7 @@ class VehicleRepository {
 
 为了启用异常转换，我们需要声明我们自己的 `PersistenceExceptionTranslationPostProcessor` bean:
 
-```
+```java
 @Bean
 public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
     return new PersistenceExceptionTranslationPostProcessor();
