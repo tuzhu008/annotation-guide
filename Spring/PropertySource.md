@@ -61,5 +61,13 @@ public @interface PropertySource {
 
 ## 解析
 
+通过这个注解，我们可以为应用程序设置定义属性文件:
+
+```java
+@Configuration
+@PropertySource("classpath:/annotations.properties")
+class VehicleFactoryConfig {}
+```
+
 
 
