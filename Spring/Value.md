@@ -8,10 +8,10 @@
 @Documented
 public @interface Value {
 
-    /**
-     * The actual value expression: for example {@code #{systemProperties.myProp}}.
-     */
-    String value();
+	/**
+	 * The actual value expression: for example {@code #{systemProperties.myProp}}.
+	 */
+	String value();
 
 }
 ```
@@ -27,6 +27,8 @@ Engine(@Value("8") int cylinderCount) {
     this.cylinderCount = cylinderCount;
 }
 ```
+
+Setter 注入:
 
 
 
