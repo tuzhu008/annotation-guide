@@ -11,6 +11,7 @@
 * [@Required](/Spring/Required.md)
 * [@Value](/Spring/Value.md)
 * [@DependsOn](/Spring/DependsOn.md)
+* [@Lazy](/Spring//Lazy.md)
 * [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
 * [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
