@@ -39,3 +39,15 @@ public @interface Lookup {
 
 还要注意，`@Lookup` 是 XML 元素 `lookup-method` 的 Java 等效项。
 
+### 使用 @Lookup
+
+#### 将原型作用域 bean 注入到一个单例 bean 中
+
+如果我们碰巧决定拥有一个原型 Spring bean，那么我们几乎马上就会面临一个问题:我们的单例 Spring bean 如何访问这些原型Spring bean ?
+
+现在，Provider 当然是一种方法，尽管 `@Lookup` 在某些方面更加通用。
+
+首先，让我们创建一个原型bean，稍后我们将把它注入到一个单例bean中:
+
+
+
