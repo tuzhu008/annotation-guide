@@ -125,5 +125,13 @@ env.setActiveProfiles("someProfile");
 -Dspring.profiles.active=dev
 ```
 
+#### 环境变量
+
+在 Unix 环境中，还可以通过环境变量激活配置文件:
+
+```
+export spring_profiles_active=dev
+```
+
 
 
