@@ -41,5 +41,5 @@ class Biker {
 }
 ```
 
-在前面的示例中，`Car` 是主要车辆。因此，在 `Driver` 类中，Spring 注入了一个 `Car` bean。当然，在Biker bean中，field vehicle的值将是一个Bike对象，因为它是限定的。
+在前面的示例中，`Car` 是主要车辆。因此，在 `Driver` 类中，Spring 注入了一个 `Car` bean。当然，在 `Biker` bean 中，field vehicle的值将是一个Bike对象，因为它是限定的。
 
