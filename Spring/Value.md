@@ -80,3 +80,17 @@ String fuelType;
 
 让我们定义属性文件:
 
+```
+value.from.file=Value got from the file
+priority=Properties file
+listOfValues=A,B,C
+```
+
+### 使用案例
+
+作为一个基本的和几乎无用的使用例子，我们只能注入“string value”从注释字段:
+
+
+
+
+
