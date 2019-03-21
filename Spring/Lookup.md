@@ -76,3 +76,18 @@ public class StudentServices {
 
 使用 `@Lookup`，我们可以通过我们的单例 bean 获得一个通知实例:
 
+```java
+@Test
+public void whenLookupMethodCalled_thenNewInstanceReturned() {
+    // ... initialize context
+    StudentServices first = this.context.getBean(StudentServices.class);
+    StudentServices second = this.context.getBean(StudentServices.class);
+        
+    assertEquals(first, second); 
+    assertNotEquals(first.getNotification(), second.getNotification()); 
+}
+
+```
+
+
+
