@@ -32,5 +32,10 @@ public @interface Lookup {
 
 本质上，Spring 将覆盖我们的带注解的方法，并使用方法的返回类型和参数作为 `BeanFactory#getBean` 的参数。
 
-@Lookup用于:
+`@Lookup` 用于:
+
+* 将原型作用域 bean 注入到单例 bean 中\(类似于提供者\)
+* 注入依赖项程序
+
+还要注意，`@Lookup` 是 XML 元素查找方法的 Java 等效项。
 
