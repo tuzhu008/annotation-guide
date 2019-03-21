@@ -116,5 +116,14 @@ private String systemValue;
 private String someDefault;
 ```
 
+如果在属性文件中将相同的属性定义为系统属性，那么将应用系统属性。
+
+假设我们有一个属性优先级，它定义为一个值为“system property”的系统属性，并定义为属性文件中的其他内容。在下面的代码中，值将是“System property”:
+
+```java
+@Value("${priority}")
+private String prioritySystemProperty;
+```
+
 
 
