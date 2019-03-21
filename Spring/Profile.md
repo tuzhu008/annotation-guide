@@ -314,5 +314,11 @@ SpringApplication.setAdditionalProfiles("dev");
 </plugins>
 ```
 
+并执行 Spring Boot 特定 Maven 目标:
+
+```
+mvn spring-boot:run
+```
+
 
 
