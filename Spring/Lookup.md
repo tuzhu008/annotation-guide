@@ -24,3 +24,9 @@ public @interface Lookup {
 
 有关注释的详细信息可以在本文中找到。
 
+## 详述
+
+`@Lookup` 注释了解 Spring 的方法级依赖项注入支持。
+
+
+
