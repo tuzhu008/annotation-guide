@@ -148,5 +148,12 @@ private String spelValue;
 private String spelSomeDefault;
 ```
 
+此外，我们还可以使用来自其他 bean 的字段值。假设我们有一个名为 `someBean` 的 bean，其字段 `somvaluue `等于 `10`。然后在这个例子中将 `10` 分配给字段:
+
+```java
+@Value("#{someBean.someValue}")
+private Integer someBeanValue;
+```
+
 
 
