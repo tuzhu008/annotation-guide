@@ -57,5 +57,22 @@ public class SchoolNotification {
 }
 ```
 
+如果我们创建一个使用 `@Lookup` 的单例 bean:
+
+```java
+@Component
+public class StudentServices {
+ 
+    // ... member variables, etc.
+ 
+    @Lookup
+    public SchoolNotification getNotification() {
+        return null;
+    }
+ 
+    // ... getters and setters
+}
+```
+
 
 
