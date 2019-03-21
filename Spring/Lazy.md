@@ -114,5 +114,15 @@ Country bean initialized
 
 要将此应用于特定的 bean，让我们从类中删除 `@Lazy`。
 
-然后将其添加到所需bean的配置中:
+然后将其添加到所需 bean 的配置中:
+
+```java
+@Bean
+@Lazy(true)
+public Region getRegion(){
+    return new Region();
+}
+```
+
+
 
