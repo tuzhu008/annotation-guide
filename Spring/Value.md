@@ -53,5 +53,13 @@ void setCylinderCount(int cylinderCount) {
 int cylinderCount;
 ```
 
+当然，注入静态值是没有用的。因此，我们可以使用 `@Value` 中的占位符字符串来连接外部源\(例如 `.properties` 或 `.yaml` 文件\)中定义的值。
+
+让我们假设以下 `.properties` 文件:
+
+```java
+engine.fuelType=petrol
+```
+
 
 
