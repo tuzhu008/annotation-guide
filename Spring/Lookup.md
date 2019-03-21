@@ -103,16 +103,16 @@ public void whenLookupMethodCalled_thenNewInstanceReturned() {
 @Scope("prototype")
 public class SchoolNotification {
     @Autowired Grader grader;
- 
+
     private String name;
     private Collection<Integer> marks;
- 
+
     public SchoolNotification(String name) {
         // ... set fields
     }
- 
+
     // ... getters and setters
- 
+
     public String addMark(Integer mark) {
         this.marks.add(mark);
         return this.grader.grade(this.marks);
@@ -120,5 +120,7 @@ public class SchoolNotification {
 }
 ```
 
+现在，它依赖于一些 Spring 上下文以及我们将以程序方式提供的附加上下文。
 
+然后，我们可以向StudentServices添加一个方法，该方法获取并保存学生数据:
 
