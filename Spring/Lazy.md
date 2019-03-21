@@ -163,3 +163,15 @@ public class Region {
 
 在 City 类上使用 `@Component` 注解，并使用 `@Autowired` 引用它:
 
+```java
+@Test
+public void givenLazyAnnotation_whenAutowire_thenLazyBean() {
+    // load up ctx appication context
+    Region region = ctx.getBean(Region.class);
+    region.getCityInstance();
+}
+
+```
+
+
+
