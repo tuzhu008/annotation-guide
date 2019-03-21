@@ -226,5 +226,9 @@ public class ProfileManager {
 }
 ```
 
+## 配置文件使用示例
+
+考虑这样一个场景:我们必须为开发和生产环境维护数据源配置。让我们创建一个公共接口 `DatasourceConfig`，它需要由两个数据源实现来实现:
+
 
 
