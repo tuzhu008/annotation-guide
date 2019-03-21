@@ -59,7 +59,7 @@ public class DevDatasourceConfig
 
 配置文件也可以用 XML 配置- `<beans>` 标签具有 `profiles` 属性，该属性接受用逗号分隔的适用配置文件的值:
 
-```
+```xml
 <beans profile="dev">
     <bean id="devDatasourceConfig"
       class="org.baeldung.profiles.DevDatasourceConfig" />
