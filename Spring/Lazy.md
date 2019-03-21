@@ -104,3 +104,15 @@ public void givenLazyAnnotation_whenConfigClass_thenLazyAll() {
 
 如我们所见，所有 的bean 只有在我们第一次请求时才会创建:
 
+```
+Bean factory for ...AnnotationConfigApplicationContext: 
+...DefaultListableBeanFactory: [...];
+// application context started
+Region bean initialized
+Country bean initialized
+```
+
+要将此应用于特定的 bean，让我们从类中删除 `@Lazy`。
+
+然后将其添加到所需bean的配置中:
+
