@@ -65,5 +65,17 @@ public class DevDatasourceConfig
 </beans>
 ```
 
+### 设置配置文件
+
+下一步是激活和设置陪自己文件，以便在容器中注册相应的 bean。
+
+这可以通过多种方式实现——我们将在下面几节中对此进行探讨。
+
+#### 通过 WebApplicationInitializer 接口
+
+在 web 应用程序中，可以使用 `WebApplicationInitializer` 以编程方式配置 `ServletContext`。
+
+这也是一个非常方便的位置来设置我们的活动配置文件编程:
+
 
 
