@@ -40,7 +40,7 @@ public @interface Lazy {
 @Configuration
 @Lazy
 class VehicleFactoryConfig {
- 
+
     @Bean
     @Lazy(false)
     Engine engine() {
