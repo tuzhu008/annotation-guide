@@ -140,5 +140,24 @@ public class City {
 }
 ```
 
+引用：
+
+```java
+public class Region {
+ 
+    @Lazy
+    @Autowired
+    private City city;
+ 
+    public Region() {
+        System.out.println("Region bean initialized");
+    }
+ 
+    public City getCityInstance() {
+        return city;
+    }
+}
+```
+
 
 
