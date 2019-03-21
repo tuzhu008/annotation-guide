@@ -7,6 +7,7 @@
 
 * [@Autowired](/Spring/autowired.md)
 * [@Bean](/Spring/Bean.md)
+* [@Qualifier](/Spring/Qualifier.md)
 * [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
 * [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
@@ -26,7 +27,6 @@
 * [@ComponentScan](/Spring/componentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
-* [@Service](/Spring/Service.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Repository](/Spring/Repository.md)
 * [@Target](/Spring/Target.md)
