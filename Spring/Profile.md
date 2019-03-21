@@ -249,5 +249,18 @@ public class DevDatasourceConfig implements DatasourceConfig {
 }
 ```
 
+生产环境的配置:
+
+```java
+@Component
+@Profile("production")
+public class ProductionDatasourceConfig implements DatasourceConfig {
+    @Override
+    public void setup() {
+       System.out.println("Setting up datasource for PRODUCTION environment. ");
+    }
+}
+```
+
 
 
