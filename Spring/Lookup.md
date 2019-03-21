@@ -37,5 +37,5 @@ public @interface Lookup {
 * 将原型作用域 bean 注入到单例 bean 中\(类似于提供者\)
 * 注入依赖项程序
 
-还要注意，`@Lookup` 是 XML 元素查找方法的 Java 等效项。
+还要注意，`@Lookup` 是 XML 元素 `lookup-method` 的 Java 等效项。
 
