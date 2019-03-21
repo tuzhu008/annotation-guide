@@ -26,9 +26,17 @@ public @interface Bean {
 }
 ```
 
-
-
 ## 解析
 
 `@Bean` 标记了一个实例化 Spring bean 的工厂方法:
+
+```
+@Bean
+Engine engine() {
+    return new Engine();
+}
+
+```
+
+
 
