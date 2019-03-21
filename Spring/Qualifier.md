@@ -35,3 +35,22 @@ Biker(@Qualifier("bike") Vehicle vehicle) {
 
 使用 setter 注入:
 
+```java
+@Autowired
+void setVehicle(@Qualifier("bike") Vehicle vehicle) {
+    this.vehicle = vehicle;
+}
+```
+
+等价于:
+
+```java
+@Autowired
+@Qualifier("bike")
+void setVehicle(Vehicle vehicle) {
+    this.vehicle = vehicle;
+}
+```
+
+
+
