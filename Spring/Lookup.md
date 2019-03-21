@@ -62,17 +62,17 @@ public class SchoolNotification {
 ```java
 @Component
 public class StudentServices {
- 
+
     // ... member variables, etc.
- 
+
     @Lookup
     public SchoolNotification getNotification() {
         return null;
     }
- 
+
     // ... getters and setters
 }
 ```
 
-
+使用 `@Lookup`，我们可以通过我们的单例 bean 获得一个通知实例:
 
