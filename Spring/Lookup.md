@@ -47,5 +47,15 @@ public @interface Lookup {
 
 现在，Provider 当然是一种方法，尽管 `@Lookup` 在某些方面更加通用。
 
-首先，让我们创建一个原型 bean，稍后我们将把它注入到一个单例bean中:
+首先，让我们创建一个原型 bean，稍后我们将把它注入到一个单例 bean中:
+
+```java
+@Component
+@Scope("prototype")
+public class SchoolNotification {
+    // ... prototype-scoped state
+}
+```
+
+
 
