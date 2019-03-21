@@ -31,3 +31,18 @@ public @interface Configuration {
 
 _Configuration _类可以包含用 @Bean 注解的 bean 工厂方法:
 
+```java
+@Configuration
+class VehicleFactoryConfig {
+ 
+    @Bean
+    Engine engine() {
+        return new Engine();
+    }
+ 
+}
+
+```
+
+
+
