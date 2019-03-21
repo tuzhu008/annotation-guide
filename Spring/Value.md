@@ -102,5 +102,12 @@ private String stringValue;
 private String valueFromFile;
 ```
 
+我们还可以使用相同的语法从系统属性设置值。假设我们已经定义了一个名为 `systemValue` 的系统属性，并查看下面的示例:
+
+```java
+@Value("${systemValue}")
+private String systemValue;
+```
+
 
 
