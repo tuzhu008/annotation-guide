@@ -72,7 +72,7 @@ class VehicleFactoryConfig {
 ```java
 @Lazy
 @Configuration
-@ComponentScan(basePackages = "com.baeldung.lazy")
+@ComponentScan(basePackages = "com.aho.lazy")
 public class AppConfig {
 
     @Bean
