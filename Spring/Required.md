@@ -1,6 +1,15 @@
-# @Required
+# ~~@Required\(~~Deprecated\)
 
 ## 定义
+
+```java
+@Deprecated
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface Required {
+
+}
+```
 
 ## 解析
 
