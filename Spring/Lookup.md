@@ -164,3 +164,9 @@ public void whenAbstractGetterMethodInjects_thenNewInstanceReturned() {
 
 通过这个设置，我们可以将 Spring 依赖项以及方法依赖项添加到 `SchoolNotification` 中。
 
+#### 限制
+
+尽管 `@Lookup` 功能强大，但也存在一些明显的限制:
+
+
+
