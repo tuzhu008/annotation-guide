@@ -126,5 +126,7 @@ public Region getRegion(){
 
 #### 用于 @Autowired
 
+在这里，为了初始化一个 **lazy** **bean**，我们从另一个 bean 引用它。
 
+我们想要延迟加载的bean:
 
