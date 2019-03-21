@@ -47,9 +47,7 @@ public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
 或者，通过XML配置:
 
 ```xml
-<bean class=
-  "org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
-
+<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 ```
 
 
