@@ -8,6 +8,7 @@
 * [@Autowired](/Spring/autowired.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
+* [@Required](/Spring/Required.md)
 * [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
 * [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
