@@ -28,7 +28,7 @@ public @interface Lazy {
 
 * 一个 `@Configuration` 类和所有包含的 `@Bean` 方法都将受到影响
 
-* 一个 `@Component` 类，它不是一个@Configuration类，这个bean将被延迟初始化
+* 一个 `@Component` 类，它不是一个 `@Configuration` 类，这个 bean 将被延迟初始化
 
 * @Autowired构造函数、setter或字段，以惰性地加载依赖项本身\(通过代理\)
 
