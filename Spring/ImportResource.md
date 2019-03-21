@@ -49,7 +49,9 @@ public @interface ImportResource {
 我们可以使用这个注解导入 XML 配置。我们可以用 `locations` 参数指定 XML 文件的位置，或者用它的别名 `value` 参数指定:
 
 ```java
-
+@Configuration
+@ImportResource("classpath:/annotations.xml")
+class VehicleFactoryConfig {}
 ```
 
 
