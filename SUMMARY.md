@@ -8,6 +8,7 @@
 * [@Autowired](/Spring/autowired.md)
 * [Bean](/Spring/Bean/README.md)
   * [@Component](/Spring/Bean/Component.md)
+  * [@Repository](/Spring/Bean/Repository.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Required](/Spring/Required.md)
@@ -32,6 +33,6 @@
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
 * [@Qualifier](/Spring/Qualifier.md)
-* [@Repository](/Spring/Repository.md)
+
 * [@Target](/Spring/Target.md)
 
