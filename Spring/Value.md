@@ -188,5 +188,15 @@ private Integer valuesMapKey1;
 private Integer unknownMapKey;
 ```
 
+我们还可以为可能不存在的属性或键设置默认值:
+
+```java
+@Value("#{${unknownMap : {key1: '1', key2: '2'}}}")
+private Map<String, Integer> unknownMap;
+ 
+@Value("#{${valuesMap}['unknownKey'] ?: 5}")
+private Integer unknownMapKeyWithDefaultValue;
+```
+
 
 
