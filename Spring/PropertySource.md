@@ -69,5 +69,5 @@ public @interface PropertySource {
 class VehicleFactoryConfig {}
 ```
 
-
+`@PropertySource` 利用了Java 8 的重复注解特性，这意味着我们可以用它多次标记一个类:
 
