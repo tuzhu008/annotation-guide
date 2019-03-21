@@ -117,5 +117,13 @@ env.setActiveProfiles("someProfile");
 </context-param>
 ```
 
+### **JVM 系统参数**
+
+配置文件名称也可以通过 JVM 系统参数传入。作为参数传递的配置文件名称将在应用程序启动时激活:
+
+```java
+-Dspring.profiles.active=dev
+```
+
 
 
