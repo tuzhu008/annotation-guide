@@ -41,3 +41,12 @@ Engine engine() {
 
 生成的 bean 具有与工厂方法相同的名称。如果我们想给它起个不同的名字，我们可以用这个注释的 `name` 或者 `value` 参数\(参数 `value` 是参数 `name`的别名\)：
 
+```java
+@Bean("engine")
+Engine getEngine() {
+    return new Engine();
+}
+```
+
+
+
