@@ -81,16 +81,17 @@ public class DevDatasourceConfig
 @Configuration
 public class MyWebApplicationInitializer 
   implements WebApplicationInitializer {
- 
+
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-  
+
         servletContext.setInitParameter(
           "spring.profiles.active", "dev");
     }
 }
-
 ```
 
+#### 通过 _**ConfigurableEnvironment**_
 
+您还可以直接在 environment 上设置配置文件:
 
