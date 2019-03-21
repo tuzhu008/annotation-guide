@@ -159,10 +159,19 @@ private Integer someBeanValue;
 
 我们还可以使用 `@Value` 注解注入 Map 属性。
 
-首先，我们需要在属性文件中的 `{key: ' value '} `表单中定义属性:
+首先，我们需要在属性文件中的 `{key: ' value '}`表单中定义属性:
 
 ```java
 valuesMap={key1: '1', key2: '2', key3: '3'}
+```
+
+**注意，映射中的值必须用单引号括起来。**
+
+现在我们可以从属性文件中以映射的形式注入这个值:
+
+```java
+@Value("#{${valuesMap}}")
+private Map<String, Integer> valuesMap;
 ```
 
 
