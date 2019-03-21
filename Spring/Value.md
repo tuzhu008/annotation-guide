@@ -174,5 +174,12 @@ valuesMap={key1: '1', key2: '2', key3: '3'}
 private Map<String, Integer> valuesMap;
 ```
 
+如果我们需要在 Map中 获取特定键的值，我们所要做的就是在表达式中添加键的名称:
+
+```java
+@Value("#{${valuesMap}.key1}")
+private Integer valuesMapKey1;
+```
+
 
 
