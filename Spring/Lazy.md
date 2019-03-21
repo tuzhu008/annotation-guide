@@ -92,7 +92,7 @@ public class AppConfig {
 ```java
 @Test
 public void givenLazyAnnotation_whenConfigClass_thenLazyAll() {
- 
+
     AnnotationConfigApplicationContext ctx
      = new AnnotationConfigApplicationContext();
     ctx.register(AppConfig.class);
@@ -102,5 +102,5 @@ public void givenLazyAnnotation_whenConfigClass_thenLazyAll() {
 }
 ```
 
-
+如我们所见，所有 的bean 只有在我们第一次请求时才会创建:
 
