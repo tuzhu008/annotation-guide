@@ -5,7 +5,7 @@
 
 ## Spring
 
-* 依赖注入
+* [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
   * [@Bean](/Spring/Bean.md)
   * [@Qualifier](/Spring/Qualifier.md)
@@ -16,7 +16,7 @@
   * [@Lookup](/Spring/Lookup.md)
   * [@Primary](/Spring/Primary.md)
   * [@Scope](/Spring/Scope.md)
-* Context Configuration Annotations
+* [上下文配置相关]
   * [@Profile](/Spring/Profile.md)
   * [@Import](/Spring/Import.md)
   * [@ImportResource](/Spring/ImportResource.md)
