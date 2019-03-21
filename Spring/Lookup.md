@@ -90,7 +90,5 @@ public void whenLookupMethodCalled_thenNewInstanceReturned() {
 
 注意，在 `StudentServices` 中，我们将 `getNotification` 方法保留为存根。
 
-
-
-这是因为Spring通过调用beanFactory.getBean\(student notify .class\)覆盖了该方法，所以我们可以让它为空。
+这是因为 Spring 通过调用 `beanFactory.getBean(StudentNotification.class)` 覆盖了该方法，所以我们可以让它为空。
 
