@@ -262,5 +262,5 @@ public class ProductionDatasourceConfig implements DatasourceConfig {
 }
 ```
 
-
+现在让我们创建一个测试并注入我们的 `DatasourceConfig` 接口;根据活动配置文件，Spring 将注入 `DevDatasourceConfig` 或`ProductionDatasourceConfig` bean:
 
