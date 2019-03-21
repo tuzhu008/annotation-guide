@@ -24,3 +24,12 @@ public @interface Controller {
 
 `@Controller` 是一个类级注解，它告诉 Spring 框架这个类在 Spring MVC 中充当 **controller**:
 
+```java
+@Controller
+public class VehicleController {
+    // ...
+}
+```
+
+
+
