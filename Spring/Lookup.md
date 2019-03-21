@@ -171,5 +171,5 @@ public void whenAbstractGetterMethodInjects_thenNewInstanceReturned() {
 * `@Lookup` 注解的方法\(如 `getNotification`\)在组件扫描周围类\(如 `Student`\)时必须是具体的。这是因为组件扫描跳过了抽象beans。
 * 当周围的类是 `@Bean`_ _管理的时，`@Lookup`注解的方法根本不起作用。
 
-在这些情况下，如果我们需要将原型bean注入到单例中，我们可以将Provider作为替代。
+在这些情况下，如果我们需要将原型 bean 注入到单例中，我们可以将 Provider 作为替代。
 
