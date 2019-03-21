@@ -30,7 +30,7 @@ public @interface Lookup {
 
 使用 `@Lookup` 注释的方法告诉 Spring 在调用方法时返回【方法返回值类型】的实例。
 
-本质上，Spring 将覆盖我们的带注释的方法，并使用方法的返回类型和参数作为BeanFactory\#getBean的参数。
+本质上，Spring 将覆盖我们的带注解的方法，并使用方法的返回类型和参数作为BeanFactory\#getBean的参数。
 
 @Lookup用于:
 
