@@ -29,7 +29,5 @@ public @interface Configuration {
 
 ## 解析
 
-_Configuration _类可以包含用 @Bean 注解的 bean 定义方法:
-
-
+_Configuration _类可以包含用 @Bean 注解的 bean 工厂方法:
 
