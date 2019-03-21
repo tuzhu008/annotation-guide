@@ -36,3 +36,18 @@ public @interface Lazy {
 
 例如，在全局设置为惰性时标记 bean 要被贪婪地加载，或者在一个标记为 `@Lazy` 的`@Configuration` 类中将特定的 `@Bean` 方法配置为热切加载:
 
+```java
+@Configuration
+@Lazy
+class VehicleFactoryConfig {
+ 
+    @Bean
+    @Lazy(false)
+    Engine engine() {
+        return new Engine();
+    }
+}
+```
+
+
+
