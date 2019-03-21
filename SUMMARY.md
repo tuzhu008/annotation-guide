@@ -10,6 +10,7 @@
   * [@Component](/Spring/Bean/Component.md)
   * [@Repository](/Spring/Bean/Repository.md)
   * [@Service](/Spring/Bean/Service.md)
+  * [@Controller](/Spring/Bean/Controller.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Required](/Spring/Required.md)
@@ -26,14 +27,12 @@
   * [@PatchMapping](/Spring/requestmapping/patchMapping.md)
 * [@Spring](/Spring/spring.md)
 * [@SpringBootApplication](/Spring/SpringBootApplication.md)
-* [@Controller](/Spring/Controller.md)
+
 * [@RestController](/Spring/RestController.md)
 * [@ResponseBody](/Spring/ResponseBody.md)
-* [@Component](/Spring/Component.md)
 * [@ComponentScan](/Spring/componentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
-* [@Qualifier](/Spring/Qualifier.md)
 
 * [@Target](/Spring/Target.md)
 
