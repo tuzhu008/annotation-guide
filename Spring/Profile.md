@@ -31,5 +31,11 @@ class Bike implements Vehicle {}
 
 Profiles 是框架的一个核心特性—它允许我们将 bean 映射到不同的 profiles—例如，dev、test、prod。
 
-然后，我们可以在不同的环境中激活不同的配置文件来引导我们需要的 bean:
+然后，我们可以在不同的环境中激活不同的配置文件来引导我们需要的 bean
+
+### 在 Bean 上使用 _**@Profile**_**on**
+
+
+
+
 
