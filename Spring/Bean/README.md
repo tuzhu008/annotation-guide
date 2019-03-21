@@ -62,5 +62,5 @@ class VehicleFactoryConfig {}
 
 当我们使用 Spring 原型注解时，很容易创建一个切入点来针对所有具有特定原型的类。
 
-例如，假设我们想要度量 DAO 层方法的执行时间。我们将利用 \`@Repository\` 原型创建以下方面\(使用AspectJ注释\):
+例如，假设我们想要度量 DAO 层方法的执行时间。我们将利用 `@Repository` 原型创建以下方面\(使用AspectJ注释\):
 
