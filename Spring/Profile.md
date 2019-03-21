@@ -104,5 +104,5 @@ env.setActiveProfiles("someProfile");
 
 ### _**web.xml 中的 **_**Context 参数**
 
-
+同样，可以在 web 应用程序的 web.xml 中使用 `Context` 参数激活配置文件:
 
