@@ -281,5 +281,11 @@ public class SpringProfilesTest {
 Setting up datasource for DEV environment.
 ```
 
+### Spring Boot 的配置文件
+
+Spring Boot 支持到目前为止概述的所有配置文件，还提供了一些附加功能。
+
+初始化参数 `spring.profiles.active` 。在第 4 节中，还可以在 Spring Boot 中设置为一个属性，以定义当前活动的配置文件。这是Spring Boot会自动拾取的一个标准属性:
+
 
 
