@@ -61,3 +61,7 @@ class VehicleFactoryConfig {
 
 `@Lazy` 注解自 Spring 3.0 版本以来一直存在。有几种方法可以告诉 IoC 容器惰性地初始化 bean。
 
+### _**@Configuration 类**_
+
+当我们将 `@Lazy` 注解放在 `@Configuration` 类上时，它表明所有带有@Bean注释的方法都应该延迟加载。
+
