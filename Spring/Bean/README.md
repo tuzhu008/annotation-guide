@@ -52,5 +52,11 @@ class VehicleFactoryConfig {
 class VehicleFactoryConfig {}
 ```
 
+使用 XML 配置时，配置组件扫描同样简单:
+
+```xml
+<context:component-scan base-package="com.baeldung" />
+```
+
 
 
