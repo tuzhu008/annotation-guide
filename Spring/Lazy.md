@@ -170,8 +170,7 @@ public void givenLazyAnnotation_whenAutowire_thenLazyBean() {
     Region region = ctx.getBean(Region.class);
     region.getCityInstance();
 }
-
 ```
 
-
+在这里，只有在调用 `getCityInstance()` 方法时才初始化 City bean。
 
