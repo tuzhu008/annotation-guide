@@ -133,7 +133,7 @@ env.setActiveProfiles("someProfile");
 export spring_profiles_active=dev
 ```
 
-### **Maven 配置文件** {#maven-profile}
+#### **Maven 配置文件**
 
 还可以通过指定 Maven 配置文件中的 `spring.profiles.active` 配置属性激活 Spring 配置文件。
 
@@ -185,5 +185,15 @@ spring.profiles.active=@spring.profiles.active@
 mvn clean package -Pprod
 ```
 
-这个命令将打包用于 prod 配置文件的应用程序。它还在应用程序运行时为该应用程序应用 `spring.profiles.active` 值 \`_prod_\` 
+这个命令将打包用于 prod 配置文件的应用程序。它还在应用程序运行时为该应用程序应用 `spring.profiles.active` 值 \`_prod_\`
+
+#### _**@ActiveProfile **_**in Tests**
+
+测试可以很容易地指定哪些配置文件是活动的——使用 `@ActiveProfile` 注解来启用特定的配置文件:
+
+```java
+@ActiveProfiles("dev")
+```
+
+
 
