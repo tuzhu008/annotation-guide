@@ -142,9 +142,9 @@ public abstract class StudentServices {
 
 在运行时，Spring 将以同样的方式实现该方法，并使用一些额外的技巧。
 
-首先，请注意，它可以调用一个复杂的构造函数，也可以注入其他 Spring bean，这使我们可以将 `SchoolNotification` 更像一个Spring感知方法。
+首先，请注意，它可以调用一个复杂的构造函数，也可以注入其他 Spring bean，这使我们可以将 `SchoolNotification` 更像一个Spring-aware 方法。
 
-它通过调用beanFactory.getBean\(SchoolNotification\)来实现getSchoolNotification。类名称\)。
+它通过调用 `beanFactory.getBean(SchoolNotification.class, name)` 来实现 `getSchoolNotification`\)。
 
 其次，我们有时可以使@ lookup注释的方法抽象，就像上面的例子一样。
 
