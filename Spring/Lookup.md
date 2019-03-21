@@ -92,3 +92,33 @@ public void whenLookupMethodCalled_thenNewInstanceReturned() {
 
 这是因为 Spring 通过调用 `beanFactory.getBean(StudentNotification.class)` 覆盖了该方法，所以我们可以让它为空。
 
+#### 注入依赖项程序
+
+不过，更强大的是 `@Lookup` 允许我们以程序的方式注入依赖项，而这是 Provider 无法做到的。
+
+让我们用一些状态来增强 `StudentNotification`:
+
+```java
+@Component
+@Scope("prototype")
+public class SchoolNotification {
+    @Autowired Grader grader;
+ 
+    private String name;
+    private Collection<Integer> marks;
+ 
+    public SchoolNotification(String name) {
+        // ... set fields
+    }
+ 
+    // ... getters and setters
+ 
+    public String addMark(Integer mark) {
+        this.marks.add(mark);
+        return this.grader.grade(this.marks);
+    }
+}
+```
+
+
+
