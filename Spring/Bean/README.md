@@ -14,3 +14,11 @@
 
 `@ComponentScan` 配置要扫描的包，以获得带有注解 `@Configuration` 的类。我们可以使用一个 `basePackages` 或 `value` 参数\(`value` 是 `basePackages` 的别名\)直接指定基本包名:
 
+```java
+@Configuration
+@ComponentScan(basePackages = "com.baeldung.annotations")
+class VehicleFactoryConfig {}
+```
+
+
+
