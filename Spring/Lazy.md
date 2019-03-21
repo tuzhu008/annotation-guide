@@ -24,3 +24,13 @@ public @interface Lazy {
 
 这个注解的行为取决于我们将它精确地放在哪里。我们可以这样写:
 
+* `@Bean` 注解的 bean 工厂方法，以延迟方法调用\(因此创建bean\)
+
+* 一个@Configuration类和所有包含的@Bean方法都将受到影响
+
+* 一个@Component类，它不是一个@Configuration类，这个bean将被延迟初始化
+
+* @Autowired构造函数、setter或字段，以惰性地加载依赖项本身\(通过代理\)
+
+
+
