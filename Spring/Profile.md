@@ -29,7 +29,7 @@ class Bike implements Vehicle {}
 
 ## 详述
 
-概要文件是框架的一个核心特性—允许我们将 bean 映射到不同的概要文件—例如，dev、test、prod。
+Profiles 是框架的一个核心特性—允许我们将 bean 映射到不同的概要文件—例如，dev、test、prod。
 
 然后，我们可以在不同的环境中激活不同的配置文件来引导我们需要的bean:
 
