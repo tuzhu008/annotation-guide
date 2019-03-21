@@ -236,5 +236,18 @@ public interface DatasourceConfig {
 }
 ```
 
+以下是开发环境的配置:
+
+```java
+@Component
+@Profile("dev")
+public class DevDatasourceConfig implements DatasourceConfig {
+    @Override
+    public void setup() {
+        System.out.println("Setting up datasource for DEV environment. ");
+    }
+}
+```
+
 
 
