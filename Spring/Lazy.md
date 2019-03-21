@@ -32,5 +32,7 @@ public @interface Lazy {
 
 * `@Autowired` 构造函数、setter 或字段，以惰性地加载依赖项本身\(通过代理\)
 
-该注解有一个名为 `value` 的参数，默认值为 `true`。重写默认行为是有用的。
+该注解有一个名为 `value` 的参数，默认值为 `true`。这对重写默认行为是有用的。
+
+
 
