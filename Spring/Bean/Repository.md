@@ -31,7 +31,7 @@ class VehicleRepository {
 }
 ```
 
-使用此注解的一个优点是，它启用了自动持久性异常转换。当使用 Hibernate 之类的持久性框架时，在使用 `@Repository` 注释的类中抛出的本机异常将自动转换为 Spring 的 \`D ataAccessExeption\`子类。
+使用此注解的一个优点是，它启用了自动持久性异常转换。当使用 Hibernate 之类的持久性框架时，在使用 `@Repository` 注释的类中抛出的本机异常将自动转换为 Spring 的 `DataAccessExeption` 子类。
 
 为了启用异常转换，我们需要声明我们自己的PersistenceExceptionTranslationPostProcessor bean:
 
