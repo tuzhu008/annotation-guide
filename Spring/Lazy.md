@@ -63,5 +63,5 @@ class VehicleFactoryConfig {
 
 ### _**@Configuration 类**_
 
-当我们将 `@Lazy` 注解放在 `@Configuration` 类上时，它表明所有带有@Bean注释的方法都应该延迟加载。
+当我们将 `@Lazy` 注解放在 `@Configuration` 类上时，它表明所有带有 `@Bean` 注释的方法都应该延迟加载。
 
