@@ -1,7 +1,5 @@
 # @Bean
 
-
-
 ## 定义
 
 ```java
@@ -10,25 +8,27 @@
 @Documented
 public @interface Bean {
 
-	@AliasFor("name")
-	String[] value() default {};
+    @AliasFor("name")
+    String[] value() default {};
 
-	@AliasFor("value")
-	String[] name() default {};
-	
-	@Deprecated
-	Autowire autowire() default Autowire.NO;
+    @AliasFor("value")
+    String[] name() default {};
 
-	boolean autowireCandidate() default true;
+    @Deprecated
+    Autowire autowire() default Autowire.NO;
 
-	String initMethod() default "";
+    boolean autowireCandidate() default true;
 
-	String destroyMethod() default AbstractBeanDefinition.INFER_METHOD;
+    String initMethod() default "";
+
+    String destroyMethod() default AbstractBeanDefinition.INFER_METHOD;
 
 }
 ```
 
-标记了一个实例化Spring bean的工厂方法:
 
 
+## 解析
+
+`@Bean` 标记了一个实例化 Spring bean 的工厂方法:
 
