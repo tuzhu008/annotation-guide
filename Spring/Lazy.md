@@ -65,3 +65,27 @@ class VehicleFactoryConfig {
 
 当我们将 `@Lazy` 注解放在 `@Configuration` 类上时，它表明所有带有 `@Bean` 注释的方法都应该延迟加载。
 
+这与基于 XML 的配置的 `default-lazy-init="true"` 属性相同。
+
+让我们来看看这里:
+
+```
+@Lazy
+@Configuration
+@ComponentScan(basePackages = "com.baeldung.lazy")
+public class AppConfig {
+ 
+    @Bean
+    public Region getRegion(){
+        return new Region();
+    }
+ 
+    @Bean
+    public Country getCountry(){
+        return new Country();
+    }
+}
+```
+
+
+
