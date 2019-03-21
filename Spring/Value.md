@@ -61,5 +61,11 @@ int cylinderCount;
 engine.fuelType=petrol
 ```
 
+我们可以注入引擎的价值。燃料类型与以下:
+
+```java
+
+```
+
 
 
