@@ -37,5 +37,14 @@ void setCylinderCount(@Value("8") int cylinderCount) {
 }
 ```
 
+等价于：
+
+```java
+@Value("8")
+void setCylinderCount(int cylinderCount) {
+    this.cylinderCount = cylinderCount;
+}
+```
+
 
 
