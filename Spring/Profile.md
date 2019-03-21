@@ -45,7 +45,15 @@ Profiles 是框架的一个核心特性—它允许我们将 bean 映射到不�
 public class DevDatasourceConfig
 ```
 
-作为一种快速的旁注，配置文件名称也可以用 `NOT` 操作符作为前缀，例如“!”将它们从配置文件中排除。
+作为一种快速的旁注，配置文件名称也可以用 `NOT` 操作符作为前缀，例如 \`!dev\` 将它们从配置文件中排除。
 
-在下面的例子中，只有当“dev”配置文件不活动时，组件才会被激活:
+在下面的例子中，只有当 “dev” 配置文件不活动时，组件才会被激活:
+
+```java
+@Component
+@Profile("!dev")
+public class DevDatasourceConfig
+```
+
+
 
