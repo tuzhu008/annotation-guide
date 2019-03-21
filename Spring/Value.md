@@ -50,7 +50,7 @@ void setCylinderCount(int cylinderCount) {
 
 字段注入:
 
-```
+```java
 @Value("8")
 int cylinderCount;
 ```
