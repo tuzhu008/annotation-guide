@@ -324,7 +324,7 @@ mvn spring-boot:run
 
 Spring Boot 将自动加载应用程序中的属性。所有配置文件的属性文件，特定于配置文件的 `.properties` 文件中的属性文件仅适用于指定的配置文件。
 
-例如，我们可以使用两个名为application-dev的文件为开发和生产概要文件配置不同的数据源。属性和application-production.properties:
+例如，我们可以使用两个名为 `application-dev.properties` 和 `application-production.properties` 的文件为开发和生产配置文件配置不同的数据源。
 
-application-production。属性文件，我们可以设置一个MySql数据源:
+在 `application-production.properties` 中，我们可以设置一个 MySql 数据源:
 
