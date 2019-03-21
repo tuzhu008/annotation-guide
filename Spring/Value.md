@@ -95,5 +95,5 @@ listOfValues=A,B,C
 private String stringValue;
 ```
 
-
+使用 `@PropertySource` 注解允许我们使用 `@Value` 注解处理来自属性文件的值。在下面的例子中，我们得到“Value get from the file”分配给字段:
 
