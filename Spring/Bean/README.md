@@ -64,3 +64,28 @@ class VehicleFactoryConfig {}
 
 例如，假设我们想要度量 DAO 层方法的执行时间。我们将利用 `@Repository` 原型创建以下方面\(使用 AspectJ 注解\):
 
+```java
+@Aspect
+@Component
+public class PerformanceAspect {
+    @Pointcut("within(@org.springframework.stereotype.Repository *)")
+    public void repositoryClassMethods() {};
+ 
+    @Around("repositoryClassMethods()")
+    public Object measureMethodExecutionTime(ProceedingJoinPoint joinPoint) 
+      throws Throwable {
+        long start = System.nanoTime();
+        Object returnValue = joinPoint.proceed();
+        long end = System.nanoTime();
+        String methodName = joinPoint.getSignature().getName();
+        System.out.println(
+          "Execution of " + methodName + " took " + 
+          TimeUnit.NANOSECONDS.toMillis(end - start) + " ms");
+        return returnValue;
+    }
+}
+
+```
+
+
+
