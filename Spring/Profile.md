@@ -293,3 +293,26 @@ spring.profiles.active=dev
 
 要以编程方式设置配置文件，我们还可以使用 `SpringApplication` 类:
 
+```
+SpringApplication.setAdditionalProfiles("dev");
+```
+
+要在 Spring Boot 中使用 Maven 设置配置文件，我们可以在 _pom.xml 中的 _ \`_spring-boot-maven-plugin_\` 中指定配置文件名称:
+
+```xml
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <profiles>
+                <profile>dev</profile>
+            </profiles>
+        </configuration>
+    </plugin>
+    ...
+</plugins>
+```
+
+
+
