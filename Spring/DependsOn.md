@@ -21,3 +21,20 @@ public @interface DependsOn {
 
 我们可以在指定依赖 bean 名称的依赖类上使用 `@DependsOn`。注解的 `value` 参数需要一个包含依赖 bean 名称的数组:
 
+```java
+@DependsOn("engine")
+class Car implements Vehicle {}
+```
+
+或者，如果我们用 `@Bean` 注释定义一个 bean，那么工厂方法应该用 `@DependsOn` 注释:
+
+```java
+@Bean
+@DependsOn("fuel")
+Engine engine() {
+    return new Engine();
+}
+```
+
+
+
