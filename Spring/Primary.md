@@ -19,3 +19,27 @@ public @interface Primary {
 
 然而，大多数时候我们需要一个特定的 bean，很少需要其他 bean。我们可以用 `@Primary` 来简化这种情况：如果我们用 `@Primary` 来标记最常用的 bean，它将会被选择在不合格的注入点:
 
+```java
+@Component
+@Primary
+class Car implements Vehicle {}
+ 
+@Component
+class Bike implements Vehicle {}
+ 
+@Component
+class Driver {
+    @Autowired
+    Vehicle vehicle;
+}
+ 
+@Component
+class Biker {
+    @Autowired
+    @Qualifier("bike")
+    Vehicle vehicle;
+}
+```
+
+
+
