@@ -42,5 +42,15 @@ public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
 }
 ```
 
+注意，在大多数情况下，Spring 自动执行上述步骤。
+
+或者，通过XML配置:
+
+```xml
+<bean class=
+  "org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+
+```
+
 
 
