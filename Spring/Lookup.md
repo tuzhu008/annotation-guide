@@ -126,12 +126,12 @@ public class SchoolNotification {
 
 ```java
 public abstract class StudentServices {
-  
+
     private Map<String, SchoolNotification> notes = new HashMap<>();
-  
+
     @Lookup
     protected abstract SchoolNotification getNotification(String name);
- 
+
     public String appendMark(String name, Integer mark) {
         SchoolNotification notification
           = notes.computeIfAbsent(name, exists -> getNotification(name)));
@@ -140,5 +140,13 @@ public abstract class StudentServices {
 }
 ```
 
+在运行时，Spring 将以同样的方式实现该方法，并使用一些额外的技巧。
 
+首先，请注意，它可以调用一个复杂的构造函数，也可以注入其他 Spring bean，这使我们可以将 `SchoolNotification` 更像一个Spring感知方法。
+
+它通过调用beanFactory.getBean\(SchoolNotification\)来实现getSchoolNotification。类名称\)。
+
+其次，我们有时可以使@ lookup注释的方法抽象，就像上面的例子一样。
+
+使用抽象比使用存根好看一些，但是我们只能在不使用组件扫描或@ bean管理周围的bean时使用它:
 
