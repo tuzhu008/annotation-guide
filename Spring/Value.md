@@ -132,5 +132,14 @@ private String prioritySystemProperty;
 private String[] valuesArray;
 ```
 
+## 使用SpEL的高级示例
+
+我们还可以使用 SpEL 表达式来获取值。如果我们有一个名为 priority 的系统属性，那么它的值将在下一个例子中应用到该字段:
+
+```java
+@Value("#{systemProperties['priority']}")
+private String spelValue;
+```
+
 
 
