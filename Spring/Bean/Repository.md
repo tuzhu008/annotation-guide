@@ -22,5 +22,5 @@ public @interface Repository {
 
 ## 解析
 
-DAO 或 Repository 类通常表示应用程序中的数据库访问层，应该用@Repository注释:
+DAO 或 Repository 类通常表示应用程序中的数据库访问层，应该用 `@Repository` 注解:
 
