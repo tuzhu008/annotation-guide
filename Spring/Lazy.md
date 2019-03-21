@@ -159,5 +159,9 @@ public class Region {
 }
 ```
 
-**注意，`@Lazy` 在这两个地方都是强制的。**
+**注意，**`@Lazy`** 在这两个地方都是强制的。**
+
+在 City 类上使用 `@Component` 注解，并使用@Autowired引用它:
+
+
 
