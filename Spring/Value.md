@@ -193,9 +193,16 @@ private Integer unknownMapKey;
 ```java
 @Value("#{${unknownMap : {key1: '1', key2: '2'}}}")
 private Map<String, Integer> unknownMap;
- 
+
 @Value("#{${valuesMap}['unknownKey'] ?: 5}")
 private Integer unknownMapKeyWithDefaultValue;
+```
+
+映射条目也可以在注入之前过滤。假设我们只需要得到那些值大于 1 的项:
+
+```java
+@Value("#{${valuesMap}.?[value>'1']}")
+private Map<String, Integer> valuesMapFiltered;
 ```
 
 
