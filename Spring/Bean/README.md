@@ -70,7 +70,7 @@ class VehicleFactoryConfig {}
 public class PerformanceAspect {
     @Pointcut("within(@org.springframework.stereotype.Repository *)")
     public void repositoryClassMethods() {};
- 
+
     @Around("repositoryClassMethods()")
     public Object measureMethodExecutionTime(ProceedingJoinPoint joinPoint) 
       throws Throwable {
@@ -84,8 +84,11 @@ public class PerformanceAspect {
         return returnValue;
     }
 }
-
 ```
 
+在本例中，我们创建了一个切入点，它匹配使用 \`@Repository\` 注释的类中的所有方法。我们使用@Around通知来针对这个切入点，并确定被拦截的方法调用的执行时间。
 
+
+
+使用这种方法，我们可以向每个应用程序层添加日志记录、性能管理、审计或其他行为。
 
