@@ -75,7 +75,22 @@ public class DevDatasourceConfig
 
 在 web 应用程序中，可以使用 `WebApplicationInitializer` 以编程方式配置 `ServletContext`。
 
-这也是一个非常方便的位置来设置我们的活动配置文件编程:
+这可以非常方便地来设置我们的活动配置文件:
+
+```java
+@Configuration
+public class MyWebApplicationInitializer 
+  implements WebApplicationInitializer {
+ 
+    @Override
+    public void onStartup(ServletContext servletContext) throws ServletException {
+  
+        servletContext.setInitParameter(
+          "spring.profiles.active", "dev");
+    }
+}
+
+```
 
 
 
