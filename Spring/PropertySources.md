@@ -17,3 +17,14 @@ public @interface PropertySources {
 
 我们可以使用这个注解来指定多个 `@PropertySource` 配置:
 
+```java
+@Configuration
+@PropertySources({ 
+    @PropertySource("classpath:/annotations.properties"),
+    @PropertySource("classpath:/vehicle-factory.properties")
+})
+class VehicleFactoryConfig {}
+```
+
+
+
