@@ -69,17 +69,17 @@ class VehicleFactoryConfig {
 
 让我们来看看这里:
 
-```
+```java
 @Lazy
 @Configuration
 @ComponentScan(basePackages = "com.baeldung.lazy")
 public class AppConfig {
- 
+
     @Bean
     public Region getRegion(){
         return new Region();
     }
- 
+
     @Bean
     public Country getCountry(){
         return new Country();
