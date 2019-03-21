@@ -34,5 +34,5 @@ class CarUtility {
 
 默认情况下，该类的 bean 实例具有与初始值为小写的类名称相同的名称。此外，我们可以使用该注解的可选值参数指定一个不同的名称。
 
-由于 `@Repository`、`@Service`、`@Configuration` 和 `@Controller` 都是 `@Component` 的元注解，所以它们共享相同的 bean命名行为。此外，Spring在组件扫描过程中自动拾取它们。
+由于 `@Repository`、`@Service`、`@Configuration` 和 `@Controller` 都是 `@Component` 的元注解，所以它们共享相同的 bean命名行为。此外，Spring 在组件扫描过程中自动拾取它们。
 
