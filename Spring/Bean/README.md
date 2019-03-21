@@ -20,5 +20,5 @@
 class VehicleFactoryConfig {}
 ```
 
-
+同样，我们可以用 _basePackageClasses_ 参数指向基本包中的类:
 
