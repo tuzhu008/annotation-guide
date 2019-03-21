@@ -195,5 +195,14 @@ mvn clean package -Pprod
 @ActiveProfiles("dev")
 ```
 
+总之，我们研究了激活配置文件的多种方法。现在让我们看看哪个优先级高于另一个，如果你使用多个优先级会发生什么——从最高优先级到最低优先级:
+
+1. Context parameter in _web.xml_
+2. _WebApplicationInitializer_
+3. JVM System parameter
+4. Environment variabl
+5. Maven profile
+  
+
 
 
