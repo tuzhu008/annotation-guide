@@ -87,5 +87,20 @@ public class AppConfig {
 }
 ```
 
+现在让我们测试功能:
+
+```java
+@Test
+public void givenLazyAnnotation_whenConfigClass_thenLazyAll() {
+ 
+    AnnotationConfigApplicationContext ctx
+     = new AnnotationConfigApplicationContext();
+    ctx.register(AppConfig.class);
+    ctx.refresh();
+    ctx.getBean(Region.class);
+    ctx.getBean(Country.class);
+}
+```
+
 
 
