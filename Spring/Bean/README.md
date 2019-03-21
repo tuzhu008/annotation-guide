@@ -12,5 +12,5 @@
 
 如果启用了组件扫描，Spring 可以自动扫描包中的 bean。
 
-`@ComponentScan` 配置要扫描的包，以获得带有注解 \`@C**onfiguration**\` 的类。我们可以使用一个basePackages或value参数\(value是basePackages的别名\)直接指定基本包名:
+`@ComponentScan` 配置要扫描的包，以获得带有注解 `@Configuration` 的类。我们可以使用一个basePackages或value参数\(value是basePackages的别名\)直接指定基本包名:
 
