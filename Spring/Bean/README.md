@@ -32,5 +32,5 @@ class VehicleFactoryConfig {}
 
 如果没有指定参数，则扫描发生在 `@ComponentScan` 注解类所在的包中。
 
-@ComponentScan利用了Java 8的重复注释特性，这意味着我们可以用它多次标记一个类:
+`@ComponentScan` 利用了 Java 8 的重复注解特性，这意味着我们可以用它多次标记一个类:
 
