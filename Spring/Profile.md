@@ -277,3 +277,9 @@ public class SpringProfilesTest {
 
 当 “dev” 配置文件为 active spring 注入 `DevDatasourceConfig` 对象时，在调用 `setup()` 方法时，输出如下:
 
+```
+Setting up datasource for DEV environment.
+```
+
+
+
