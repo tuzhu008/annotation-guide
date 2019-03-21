@@ -95,3 +95,12 @@ public class MyWebApplicationInitializer
 
 您还可以直接在 environment 上设置配置文件:
 
+```java
+@Autowired
+private ConfigurableEnvironment env;
+...
+env.setActiveProfiles("someProfile");
+```
+
+
+
