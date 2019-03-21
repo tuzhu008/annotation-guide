@@ -39,3 +39,11 @@ Profiles 是框架的一个核心特性—它允许我们将 bean 映射到不�
 
 考虑一个基本场景——我们有一个 bean，它应该只在开发期间活动，而不是部署在生产环境中。我们用一个 “dev” 配置文件来注解这个 bean，它只会在开发过程中出现在容器中——在生产中，dev 不会被激活:
 
+```java
+@Component
+@Profile("dev")
+public class DevDatasourceConfig
+```
+
+
+
