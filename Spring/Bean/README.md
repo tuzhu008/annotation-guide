@@ -36,7 +36,7 @@ class VehicleFactoryConfig {}
 
 ```java
 @Configuration
-@ComponentScan(basePackages = "com.baeldung.annotations")
+@ComponentScan(basePackages = "com.aho.annotations")
 @ComponentScan(basePackageClasses = VehicleFactoryConfig.class)
 class VehicleFactoryConfig {
 ```
@@ -46,7 +46,7 @@ class VehicleFactoryConfig {
 ```java
 @Configuration
 @ComponentScans({ 
-  @ComponentScan(basePackages = "com.baeldung.annotations"), 
+  @ComponentScan(basePackages = "com.aho.annotations"), 
   @ComponentScan(basePackageClasses = VehicleFactoryConfig.class)
 })
 class VehicleFactoryConfig {}
