@@ -30,7 +30,7 @@ class VehicleFactoryConfig {}
 
 两个参数都是数组，因此我们可以为每个参数提供多个包。
 
-如果没有指定参数，则扫描发生在 `@ComponentScan` 带注释类所在的包中。
+如果没有指定参数，则扫描发生在 `@ComponentScan` 注解类所在的包中。
 
 @ComponentScan利用了Java 8的重复注释特性，这意味着我们可以用它多次标记一个类:
 
