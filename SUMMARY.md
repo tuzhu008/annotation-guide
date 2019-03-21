@@ -7,7 +7,7 @@
 
 * [@Autowired](/Spring/autowired.md)
 * [Bean](/Spring/Bean/README.md)
-  * [@Component](/Spring/Component.md)
+  * [@Component](/Spring/Bean/Component.md)
 * [@Bean](/Spring/Bean.md)
 * [@Qualifier](/Spring/Qualifier.md)
 * [@Required](/Spring/Required.md)
