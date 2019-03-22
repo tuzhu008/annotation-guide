@@ -49,3 +49,16 @@ public @interface SpringBootApplication {
 
 这是一个方便的注解，相当于声明`@Configuration`、`@EnableAutoConfiguration` 和 `@ComponentScan`。
 
+```java
+ @Configuration
+ public class AppConfig {
+
+     @Bean
+     public MyBean myBean() {
+         // instantiate, configure and return bean ...
+     }
+ }
+```
+
+
+
