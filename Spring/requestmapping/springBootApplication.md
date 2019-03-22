@@ -109,12 +109,18 @@ public @interface SpringBootApplication {
 `@Configuration` 类不仅可以使用组件扫描引导，还可以自己使用 `@ComponentScan` 注解配置组件扫描:
 
 ```java
-@Configuration
+ @Configuration
  @ComponentScan("com.acme.app.services")
  public class AppConfig {
      // various @Bean definitions ...
  }
 ```
+
+### 使用外部值
+
+#### 使用 `Environment` Api
+
+外部值可以通过将 Spring `Environment`注入到一个 `@Configuration` 类来查找——例如，使用@Autowired注解:
 
 
 
