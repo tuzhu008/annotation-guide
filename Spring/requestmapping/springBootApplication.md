@@ -45,7 +45,7 @@ public @interface SpringBootApplication {
 
 ## 解析
 
-用于指示一个配置类，该类声明一个或多个 @Bean 方法，并触发自动配置和组件扫描。这是一个方便的注解，相当于声明`@Configuration`、`@EnableAutoConfiguration` 和 `@ComponentScan`。
+用于指示一个配置类，该类声明一个或多个 @Bean 方法，并触发自动配置和组件扫描。
 
-
+这是一个方便的注解，相当于声明`@Configuration`、`@EnableAutoConfiguration` 和 `@ComponentScan`。
 

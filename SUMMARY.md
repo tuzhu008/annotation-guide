@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [annotation](annotation.md)
-* [Ioc](Ioc.md)
+* [IoC](Ioc.md)
 * [AOP](AOP.md)
 * [DI](DI.md)
 
@@ -48,7 +48,7 @@
   * [@Controller](/Spring/Bean/Controller.md)
   * [@Configuration](/Spring/Bean/Configuration.md)
 
-
 ## MyBatis
 
 * [@Delete](Spring/MyBatis/Delete.md)
+
