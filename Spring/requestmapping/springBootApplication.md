@@ -157,5 +157,19 @@ public @interface SpringBootApplication {
 
 可以使用 `@Value` 注解将外部值注入 `@Configuration` 类:
 
+```
+ @Configuration
+ @PropertySource("classpath:/com/acme/app.properties")
+ public class AppConfig {
+
+     @Value("${bean.name}") String beanName;
+
+     @Bean
+     public MyBean myBean() {
+         return new MyBean(beanName);
+     }
+ }
+```
+
 
 
