@@ -85,5 +85,5 @@ public @interface SpringBootApplication {
  </beans>
 ```
 
-
+在上面的例子中，`<context:annotation-config/>` 是必需的，以便启用 `ConfigurationClassPostProcessor` 和其他与注解相关的 post 处理器，这些处理器可以方便地处理 `@Configuration` 类。
 
