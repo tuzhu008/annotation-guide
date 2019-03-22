@@ -41,6 +41,7 @@
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
 * [@Target](/Spring/Target.md)
+* [@Inject](/Spring/Inject.md)
 * [Bean](/Spring/Bean/README.md)
   * [@Component](/Spring/Bean/Component.md)
   * [@Repository](/Spring/Bean/Repository.md)
