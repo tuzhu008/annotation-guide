@@ -60,7 +60,9 @@ public @interface SpringBootApplication {
  }
 ```
 
+### 引导 @Configuration 类
 
+#### 通过 `AnnotationConfigApplicationContext`
 
 `@Configuration` 类通常使用 `AnnotationConfigApplicationContext` 或其支持 web 的变体`AnnotationConfigWebApplicationContext` 引导。关于前者的一个简单例子如下:
 
@@ -71,6 +73,8 @@ public @interface SpringBootApplication {
  MyBean myBean = ctx.getBean(MyBean.class);
  // use myBean ...
 ```
+
+#### 通过 Spring `<beans> `XML
 
 
 
