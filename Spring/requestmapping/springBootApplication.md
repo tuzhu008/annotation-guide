@@ -255,5 +255,24 @@ public @interface SpringBootApplication {
  }
 ```
 
+#### 使用 @ImportResource 注解的 Spring XML
+
+如上所述，`@Configuration` 类可以声明为 Spring XML 文件中的常规 Spring &lt;bean&gt; 定义。还可以使用 `@ImportResource` 注解将 Spring XML 配置文件导入 `@Configuration` 类。可以注入从 XML 导入的 Bean 定义——例如，使用 `@Inject` 注释:
+
+```java
+@Configuration
+ @ImportResource("classpath:/com/acme/database-config.xml")
+ public class AppConfig {
+
+     @Inject DataSource dataSource; // from XML
+
+     @Bean
+     public MyBean myBean() {
+         // inject the XML-defined dataSource bean
+         return new MyBean(this.dataSource);
+     }
+ }
+```
+
 
 
