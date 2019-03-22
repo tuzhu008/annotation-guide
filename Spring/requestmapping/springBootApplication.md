@@ -137,5 +137,21 @@ public @interface SpringBootApplication {
  }
 ```
 
-通过 `Environment` 解析的属性驻留在一个或多个“属性源”对象中，`@Configuration` 类可以使用@PropertySource注释将属性源贡献给环境对象:
+通过 `Environment` 解析的属性驻留在一个或多个“属性源”对象中，`@Configuration` 类可以使用 `@PropertySource` 注解将属性源贡献给环境对象:
+
+```java
+ @Configuration
+ @PropertySource("classpath:/com/acme/app.properties")
+ public class AppConfig {
+
+     @Inject Environment env;
+
+     @Bean
+     public MyBean myBean() {
+         return new MyBean(env.getProperty("bean.name"));
+     }
+ }
+```
+
+
 
