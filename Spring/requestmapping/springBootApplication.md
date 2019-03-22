@@ -74,7 +74,16 @@ public @interface SpringBootApplication {
  // use myBean ...
 ```
 
-#### 通过 Spring `<beans> `XML
+#### 通过 Spring `<beans>`XML
+
+作为直接针对注释 `AnnotationConfigApplicationContext` 注册 `@Configuration` 类的替代方法，`@Configuration` 类可以在Spring XML 文件中声明为普通的 &lt;bean&gt; 定义:
+
+```java
+ <beans>
+    <context:annotation-config/>
+    <bean class="com.acme.AppConfig"/>
+ </beans>
+```
 
 
 
