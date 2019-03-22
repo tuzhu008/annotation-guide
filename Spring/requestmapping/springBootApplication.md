@@ -274,5 +274,7 @@ public @interface SpringBootApplication {
  }
 ```
 
+#### 使用嵌套的 @Configuration 类
 
+`@Configuration` 类可以相互嵌套，如下:
 
