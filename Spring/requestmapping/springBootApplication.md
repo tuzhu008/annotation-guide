@@ -87,3 +87,9 @@ public @interface SpringBootApplication {
 
 在上面的例子中，`<context:annotation-config/>` 是必需的，以便启用 `ConfigurationClassPostProcessor` 和其他与注解相关的 post 处理器，这些处理器可以方便地处理 `@Configuration` 类。
 
+#### 通过组件扫描
+
+`@Configuration` 使用 `@Component` 元注解，因此 `@Configuration` 类是组件扫描的候选对象\(通常使用Spring XML的&lt;context:component-scan/&gt;元素\)，因此也可以像任何常规的@Component一样利用@Autowired/@Inject。特别是，如果一个构造函数存在，自动装配语义将透明地应用于该构造函数:
+
+
+
