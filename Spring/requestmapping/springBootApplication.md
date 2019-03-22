@@ -177,5 +177,5 @@ public @interface SpringBootApplication {
 
 #### 使用 @Import 注解
 
-
+`@Configuration` 类可以使用 `@Import` 注释组成，类似于 `<import>` 在 Spring XML 中工作的方式。因为@Configuration对象在容器中被管理为Spring bean，所以导入的配置可能被注入——例如，通过构造函数注入:
 
