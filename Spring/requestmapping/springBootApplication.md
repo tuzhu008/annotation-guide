@@ -207,5 +207,11 @@ public @interface SpringBootApplication {
  }
 ```
 
+现在 `AppConfig` 和导入的 `DatabaseConfig` 都可以通过在 Spring 上下文中只注册 AppConfig 来引导:
+
+```java
+ new AnnotationConfigApplicationContext(AppConfig.class);
+```
+
 
 
