@@ -122,3 +122,20 @@ public @interface SpringBootApplication {
 
 外部值可以通过将 Spring `Environment`注入到一个 `@Configuration` 类来查找——例如，使用 `@Autowired` 注解:
 
+```
+@Configuration
+ public class AppConfig {
+
+     @Autowired Environment env;
+
+     @Bean
+     public MyBean myBean() {
+         MyBean myBean = new MyBean();
+         myBean.setName(env.getProperty("bean.name"));
+         return myBean;
+     }
+ }
+```
+
+
+
