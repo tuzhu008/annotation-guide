@@ -153,5 +153,9 @@ public @interface SpringBootApplication {
  }
 ```
 
+#### 使用`@Value` 注解
+
+可以使用 `@Value` 注解将外部值注入 `@Configuration` 类:
+
 
 
