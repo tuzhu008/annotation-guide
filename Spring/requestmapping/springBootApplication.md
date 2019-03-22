@@ -106,5 +106,5 @@ public @interface SpringBootApplication {
  }
 ```
 
-`@Configuration` 类不仅可以使用组件扫描引导，还可以自己使用 `@ComponentScan` 注释配置组件扫描:
+`@Configuration` 类不仅可以使用组件扫描引导，还可以自己使用 `@ComponentScan` 注解配置组件扫描:
 
