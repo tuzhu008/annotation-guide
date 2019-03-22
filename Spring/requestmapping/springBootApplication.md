@@ -303,3 +303,9 @@ public @interface SpringBootApplication {
 
 还请注意，嵌套的 `@Configuration` 类可以与 `@Profile` 注解一起使用，从而为封闭的 `@Configuration` 类提供相同 bean 的两个选项，效果很好。
 
+### 延迟初始化配置
+
+默认情况下，`@Bean `方法将在容器启动时急切地实例化。为了避免这种情况，可以将  `@Configuration` 与 `@Lazy` 注解一起使用，以指示默认情况下，类中声明的所有 `@Bean` 方法都是惰性初始化的。注意 `@Lazy` 也可以用于单个 `@Bean` 方法。
+
+
+
