@@ -137,5 +137,5 @@ public @interface SpringBootApplication {
  }
 ```
 
-
+通过 `Environment` 解析的属性驻留在一个或多个“属性源”对象中，@Configuration类可以使用@PropertySource注释将属性源贡献给环境对象:
 
