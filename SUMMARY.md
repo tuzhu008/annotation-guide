@@ -48,3 +48,7 @@
   * [@Controller](/Spring/Bean/Controller.md)
   * [@Configuration](/Spring/Bean/Configuration.md)
 
+
+## MyBatis
+
+* [@Delete](Spring/MyBatis/Delete.md)
