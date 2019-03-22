@@ -37,7 +37,7 @@
 * [@SpringBootApplication](/Spring/SpringBootApplication.md)
 * [@RestController](/Spring/RestController.md)
 * [@ResponseBody](/Spring/ResponseBody.md)
-* [@ComponentScan](/Spring/componentScan.md)
+* [@ComponentScan](/Spring/ComponentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
 * [@Target](/Spring/Target.md)
