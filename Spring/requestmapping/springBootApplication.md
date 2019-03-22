@@ -179,3 +179,33 @@ public @interface SpringBootApplication {
 
 `@Configuration` 类可以使用 `@Import` 注释组成，类似于 `<import>` 在 Spring XML 中工作的方式。因为 `@Configuration` 对象在容器中被管理为 Spring bean，所以导入的配置可能被注入——例如，通过构造函数注入:
 
+```java
+@Configuration
+ public class DatabaseConfig {
+
+     @Bean
+     public DataSource dataSource() {
+         // instantiate, configure and return DataSource
+     }
+ }
+
+ @Configuration
+ @Import(DatabaseConfig.class)
+ public class AppConfig {
+
+     private final DatabaseConfig dataConfig;
+
+     public AppConfig(DatabaseConfig dataConfig) {
+         this.dataConfig = dataConfig;
+     }
+
+     @Bean
+     public MyBean myBean() {
+         // reference the dataSource() bean method
+         return new MyBean(dataConfig.dataSource());
+     }
+ }
+```
+
+
+
