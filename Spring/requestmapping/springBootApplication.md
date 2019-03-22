@@ -213,5 +213,47 @@ public @interface SpringBootApplication {
  new AnnotationConfigApplicationContext(AppConfig.class);
 ```
 
+#### 使用 @Profile 注释
+
+`@Configuration` 类可能被标记为 `@Profile` 注释，以指示只有在给定的配置文件或配置文件处于活动状态时才应该处理它们:
+
+```java
+ @Profile("development")
+ @Configuration
+ public class EmbeddedDatabaseConfig {
+
+     @Bean
+     public DataSource dataSource() {
+         // instantiate, configure and return embedded DataSource
+     }
+ }
+
+ @Profile("production")
+ @Configuration
+ public class ProductionDatabaseConfig {
+
+     @Bean
+     public DataSource dataSource() {
+         // instantiate, configure and return production DataSource
+     }
+ }
+```
+
+或者，您也可以在 `@Bean` 方法级别声明配置条件——例如，对于相同配置类中的其他 bean 变量:
+
+```java
+ @Configuration
+ public class ProfileDatabaseConfig {
+
+     @Bean("dataSource")
+     @Profile("development")
+     public DataSource embeddedDatabase() { ... }
+
+     @Bean("dataSource")
+     @Profile("production")
+     public DataSource productionDatabase() { ... }
+ }
+```
+
 
 
