@@ -108,7 +108,7 @@ public @interface SpringBootApplication {
 
 `@Configuration` 类不仅可以使用组件扫描引导，还可以自己使用 `@ComponentScan` 注解配置组件扫描:
 
-```
+```java
 @Configuration
  @ComponentScan("com.acme.app.services")
  public class AppConfig {
