@@ -278,3 +278,26 @@ public @interface SpringBootApplication {
 
 `@Configuration` 类可以相互嵌套，如下:
 
+```java
+ @Configuration
+ public class AppConfig {
+
+     @Inject DataSource dataSource;
+
+     @Bean
+     public MyBean myBean() {
+         return new MyBean(dataSource);
+     }
+
+     @Configuration
+     static class DatabaseConfig {
+         @Bean
+         DataSource dataSource() {
+             return new EmbeddedDatabaseBuilder().build();
+         }
+     }
+ }
+```
+
+
+
