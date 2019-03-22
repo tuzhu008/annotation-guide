@@ -299,5 +299,7 @@ public @interface SpringBootApplication {
  }
 ```
 
+在启动这样的配置时，只需要针对应用程序上下文注册 AppConfig。由于是一个嵌套的@Configuration类，DatabaseConfig将自动注册。这避免了在AppConfig和DatabaseConfig之间的关系已经隐式清晰时使用@Import注释。
 
+还请注意，嵌套的@Configuration类可以与@Profile注释一起使用，从而为封闭的@Configuration类提供相同bean的两个选项，效果很好。
 
