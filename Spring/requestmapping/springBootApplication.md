@@ -171,5 +171,5 @@ public @interface SpringBootApplication {
  }
 ```
 
-
+这种方法通常与 Spring 的 `PropertySourcesPlaceholderConfigurer` 一起使用，后者可以通过 `<context:property-placeholder/>`在XML配置中自动启用，也可以通过专用的静态@Bean方法在@Configuration类中显式启用\(详细信息请参阅@Bean的javadocs的“关于beanfactorypostprocessor -return @Bean方法的说明”\)。但是，请注意，只有在需要自定义配置\(如占位符语法等\)时，才需要通过静态@Bean方法显式注册PropertySourcesPlaceholderConfigurer。具体地说，如果没有bean后处理器\(例如PropertySourcesPlaceholderConfigurer\)为ApplicationContext注册了嵌入式值解析器，Spring将注册一个默认的嵌入式值解析器，它根据环境中注册的属性源解析占位符。参见下面关于使用@ImportResource用Spring XML组合@Configuration类的小节;参见@Value javadocs;有关使用诸如PropertySourcesPlaceholderConfigurer之类的BeanFactoryPostProcessor类型的详细信息，请参阅@Bean javadocs。
 
