@@ -91,3 +91,20 @@ public @interface SpringBootApplication {
 
 `@Configuration` 使用 `@Component` 元注解，因此 `@Configuration` 类是组件扫描的候选对象\(通常使用 Spring XML 的`<context:component-scan/>` 元素\)，因此也可以像任何常规的 `@Component` 一样利用 `@Autowired`/`@Inject`。特别是，如果一个构造函数存在，自动装配语义将透明地应用于该构造函数:
 
+```java
+ @Configuration
+ public class AppConfig {
+
+     private final SomeBean someBean;
+
+     public AppConfig(SomeBean someBean) {
+         this.someBean = someBean;
+     }
+
+     // @Bean definition using "SomeBean"
+
+ }
+```
+
+
+
