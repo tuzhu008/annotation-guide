@@ -218,8 +218,17 @@ public class AppConfig {
 
 可以使用 `@Description` 注解对 Bean 添加描述：
 
-```
+```java
+@Configuration
+public class AppConfig {
 
+    @Bean
+    @Description("Provides a basic example of a bean")
+    public Foo foo() {
+        return new Foo();
+    }
+
+}
 ```
 
 
