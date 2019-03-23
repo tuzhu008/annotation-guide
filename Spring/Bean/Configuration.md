@@ -152,5 +152,5 @@ public class AppConfig {
 }
 ```
 
-
+`clientDao()` 方法 `clientService1()` 和 `clientService2()` 被各自调用了一次。因为这个方法创建并返回了一个新的ClientDaoImpl实例，你通常期望会有2个实例（每个服务各一个）。这有一个明显的问题：在Spring中，bean实例默认情况下是单例。神奇的地方在于：所有的@Configuration类在启动时都使用CGLIB进行子类实例化。在子类中，子方法在调用父方法创建一个新的实例之前会首先检查任何缓存\(作用域\)的bean。注意，从Spring 3.2开始，不再需要将CGLIB添加到类路径中，因为CGLIB类已经被打包在org.springframework.cglib下，直接包含在spring-core JAR中。
 
