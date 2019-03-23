@@ -55,5 +55,26 @@ class VehicleFactoryConfig {
 </beans>
 ```
 
+### **bean依赖注入**
+
+当 `@Beans` 相互依赖时，表示依赖关系就像一个 bean 方法调用另一个方法一样简单：
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public Foo foo() {
+        return new Foo(bar());
+    }
+
+    @Bean
+    public Bar bar() {
+        return new Bar();
+    }
+
+}
+```
+
 
 
