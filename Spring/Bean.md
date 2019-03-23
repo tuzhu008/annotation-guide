@@ -159,8 +159,8 @@ public class MyConfiguration {
 
 **@Scope和 scope 代理**
 
-Spring 提供了一个通过范围代理来处理范围依赖的便捷方法。使用 XML 配置创建此类代理的最简单方法是元素。使用 `@Scope` 注解配置Java中的bean提供了与proxyMode属性相似的支持。默认是没有代理（ScopedProxyMode.NO），但您可以指定ScopedProxyMode.TARGET\_CLASS或ScopedProxyMode.INTERFACES。
+Spring 提供了一个通过范围代理来处理范围依赖的便捷方法。使用 XML 配置创建此类代理的最简单方法是元素。使用 `@Scope` 注解配置 Java 中的 bean 提供了与 proxyMode 属性相似的支持。默认是没有代理（ScopedProxyMode.NO），但您可以指定ScopedProxyMode.TARGET\_CLASS 或 ScopedProxyMode.INTERFACES。
 
-如果你使用Java将XML参考文档（请参阅上述链接）到范围的@Bean中移植范围限定的代理示例，则它将如下所示  
-如果你将XML 参考文档的scoped代理示例转化为Java @Bean，如下所示：
+如果你使用 Java 将 XML 参考文档（请参阅上述链接）到范围的 @Bean 中移植范围限定的代理示例，则它将如下所示  
+如果你将 XML 参考文档的scoped代理示例转化为Java @Bean，如下所示：
 
