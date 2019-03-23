@@ -76,5 +76,9 @@ public class AppConfig {
 }
 ```
 
+上面的例子，foo 接受一个 bar 的引用来进行构造器注入：
+
+> 这种方法声明的 bean 的依赖关系只有在 @Configuration 类的 @Bean 方法中有效。你不能在 @Component 类中来声明 bean 的依赖关系。
+
 
 
