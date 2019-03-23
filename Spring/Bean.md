@@ -144,8 +144,17 @@ public class AppConfig {
 
 默认的作用域是单例，但是你可以用 `@Scope` 注解重写作用域。
 
-```
+```java
+@Configuration
+public class MyConfiguration {
 
+    @Bean
+    @Scope("prototype")
+    public Encryptor encryptor() {
+        // ...
+    }
+
+}
 ```
 
 
