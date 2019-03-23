@@ -101,3 +101,27 @@ public abstract class CommandManager {
 
 使用 Java 支持配置，您可以创建一个 CommandManager 的子类，覆盖它抽象的 `createCommand()` 方法，以便它查找一个新的（原型）命令对象：
 
+```java
+@Bean
+@Scope("prototype")
+public AsyncCommand asyncCommand() {
+    AsyncCommand command = new AsyncCommand();
+    // inject dependencies here as required
+    return command;
+}
+
+@Bean
+public CommandManager commandManager() {
+    // return new anonymous implementation of CommandManager with command() overridden
+    // to return a new prototype Command object
+    return new CommandManager() {
+        protected Command createCommand() {
+            return asyncCommand();
+        }
+    }
+}
+
+```
+
+
+
