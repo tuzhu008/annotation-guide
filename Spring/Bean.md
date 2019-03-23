@@ -28,7 +28,7 @@ public @interface Bean {
 
 ## 解析
 
-`@Bean` 注解用来说明通过 Spring IoC 容器来管理时一个新对象的实例化，配置和初始化的方法。
+`@Bean` 注解用来说明通过 Spring IoC 容器来管理一个新对象的实例化，配置和初始化的方法。
 
 `@Bean` 标记了一个实例化 Spring bean 的**工厂**方法:
 
