@@ -119,3 +119,20 @@ public DataSource dataSource() throws NamingException {
 
 当然上面的 Foo 例子中，在构造期间直接调用 `init()` 方法同样有效：
 
+```java
+@Configuration
+public class AppConfig {
+    @Bean
+    public Foo foo() {
+        Foo foo = new Foo();
+        foo.init();
+        return foo;
+    }
+
+    // ...
+
+}
+```
+
+
+
