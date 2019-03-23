@@ -54,5 +54,18 @@ Engine getEngine() {
 
 #### **Bean 依赖**
 
-**`@Bean`** 注解方法可以具有描述构建该 bean 所需依赖关系的任意数量的参数。例如，如果我们的 Engine 需要一个 Gear，我们可以通过一个方法参数实现该依赖：
+`@Bean` 注解方法可以具有描述构建该 bean 所需依赖关系的任意数量的参数。例如，如果我们的 Engine 需要一个 Gear，我们可以通过一个方法参数实现该依赖：
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public Engine engine(Gear gear) {
+        return new Engine(Gear gear);
+    }
+}
+```
+
+
 
