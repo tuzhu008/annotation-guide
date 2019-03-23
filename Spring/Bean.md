@@ -181,5 +181,21 @@ public Service userService() {
 }
 ```
 
+### **自定义 Bean 命名**
+
+默认情况下，配置类使用 `@Bean` 方法的名称作为生成的 bean 的名称。但是，可以使用 name 属性来重写此功能。
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean(name = "myFoo")
+    public Foo foo() {
+        return new Foo();
+    }
+
+}
+```
+
 
 
