@@ -80,5 +80,24 @@ public class AppConfig {
 
 > 这种方法声明的 bean 的依赖关系只有在 `@Configuration` 类的 `@Bean` 方法中有效。你**不能**在 `@Component` 类中来声明 bean 的依赖关系。
 
+### **方法查找注入**
+
+如前所述，方法查找注入是一个你很少用用到的高级特性。在单例的 bean 对原型的 bean 有依赖性的情况下，它非常有用。这种类型的配置使用，Java 提供了实现此模式的自然方法。
+
+```java
+public abstract class CommandManager {
+    public Object process(Object commandState) {
+        // grab a new instance of the appropriate Command interface
+        Command command = createCommand();
+        // set the state on the (hopefully brand new) Command instance
+        command.setState(commandState);
+        return command.execute();
+    }
+
+    // okay... but where is the implementation of this method?
+    protected abstract Command createCommand();
+}
+```
+
 
 
