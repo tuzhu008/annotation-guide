@@ -197,5 +197,21 @@ public class AppConfig {
 }
 ```
 
+### **Bean别名**
+
+有时一个单一的 bean 需要给出多个名称，称为 bean 别名。 为了实现这个目标，`@Bean` 注解的 name 属性接受一个 String 数组。
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean(name = { "dataSource", "subsystemA-dataSource", "subsystemB-dataSource" })
+    public DataSource dataSource() {
+        // instantiate, configure and return DataSource bean...
+    }
+
+}
+```
+
 
 
