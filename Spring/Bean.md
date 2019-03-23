@@ -164,3 +164,22 @@ Spring 提供了一个通过范围代理来处理范围依赖的便捷方法。�
 如果你使用 Java 将 XML 参考文档（请参阅上述链接）到范围的 @Bean 中移植范围限定的代理示例，则它将如下所示  
 如果你将 XML 参考文档的 scoped 代理示例转化为 Java @Bean，如下所示：
 
+```java
+// an HTTP Session-scoped bean exposed as a proxy
+@Bean
+@SessionScope
+public UserPreferences userPreferences() {
+    return new UserPreferences();
+}
+
+@Bean
+public Service userService() {
+    UserService service = new SimpleUserService();
+    // a reference to the proxied userPreferences bean
+    service.setUserPreferences(userPreferences());
+    return service;
+}
+```
+
+
+
