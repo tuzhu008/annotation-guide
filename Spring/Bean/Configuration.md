@@ -120,7 +120,36 @@ public CommandManager commandManager() {
         }
     }
 }
+```
 
+### **有关基于Java配置内部如何工作的更多信息**
+
+下面的例子展示了一个 `@Bean` 注解的方法被调用两次：
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public ClientService clientService1() {
+        ClientServiceImpl clientService = new ClientServiceImpl();
+        clientService.setClientDao(clientDao());
+        return clientService;
+    }
+
+    @Bean
+    public ClientService clientService2() {
+        ClientServiceImpl clientService = new ClientServiceImpl();
+        clientService.setClientDao(clientDao());
+        return clientService;
+    }
+
+    @Bean
+    public ClientDao clientDao() {
+        return new ClientDaoImpl();
+    }
+
+}
 ```
 
 
