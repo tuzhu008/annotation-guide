@@ -73,7 +73,7 @@ public class AppConfig {
 
 完全支持常规的 Spring 生命周期回调。如果一个 bean 实现了 `InitializingBean`，`DisposableBean` 或 `Lifecycle` 接口，它们的相关方法就会被容器调用。
 
-完全支持\*Aware系列的接口，例如：BeanFactoryAware，BeanNameAware，MessageSourceAware，ApplicationContextAware等。
+完全支持 \*Aware 系列的接口，例如：`BeanFactoryAware`，`BeanNameAware`，`MessageSourceAware`，`ApplicationContextAware` 等。
 
-@Bean注解支持任意的初始化和销毁回调方法，这与Spring XML 中bean元素上的init方法和destroy-method属性非常相似：v
+`@Bean` 注解支持任意的初始化和销毁回调方法，这与Spring XML 中bean元素上的init方法和destroy-method属性非常相似：v
 
