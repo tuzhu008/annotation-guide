@@ -29,19 +29,20 @@ public @interface Configuration {
 
 ## 解析
 
+一个用 `@Configuration` 注解的类说明这个类的主要是作为一个bean定义的资源文件。
+
 _Configuration _类可以包含用 @Bean 注解的 bean 工厂方法:
 
 ```java
 @Configuration
 class VehicleFactoryConfig {
- 
+
     @Bean
     Engine engine() {
         return new Engine();
     }
- 
-}
 
+}
 ```
 
 
