@@ -115,5 +115,7 @@ public DataSource dataSource() throws NamingException {
 }
 ```
 
+另外，通过 `@Bean` 方法，通常会选择使用编程来进行 JNDI 查找：要么使用 Spring 的 JndiTemplate/JndiLocatorDelegate 帮助类，要么直接使用 JNDI InitialContext，但不能使用 JndiObjectFactoryBean 变体来强制将返回类型声明为 FactoryBean 类型以代替目标的实际类型，它将使得在其他@Bean方法中更难用于交叉引用调用这些在此引用提供资源的方法。
 
+当然上面的Foo例子中，在构造期间直接调用init（）方法同样有效：
 
