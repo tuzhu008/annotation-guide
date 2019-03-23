@@ -67,5 +67,13 @@ public class AppConfig {
 }
 ```
 
+### **生命周期回调**
 
+任何使用了 `@Bean` 定义了的类都支持常规生命周期回调，并且可以使用 JSR-250 中的 `@PostConstruct` 和 `@PreDestroy` 注解，详细信息，参考JSR-250注解。
+
+完全支持常规的Spring生命周期回调。如果一个bean实现了InitializingBean，DisposableBean或Lifecycle接口，它们的相关方法就会被容器调用。
+
+完全支持\*Aware系列的接口，例如：BeanFactoryAware，BeanNameAware，MessageSourceAware，ApplicationContextAware等。
+
+@Bean注解支持任意的初始化和销毁回调方法，这与Spring XML 中bean元素上的init方法和destroy-method属性非常相似：v
 
