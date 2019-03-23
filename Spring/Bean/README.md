@@ -4,7 +4,7 @@
 
 在 Spring 中，由 Spring IoC 容器管理的对象叫做 beans。 bean 就是由 Spring IoC 容器实例化、组装和以其他方式管理的对象。此外 bean 只是你应用中许多对象中的一个。Beans 以及他们之间的依赖关系是通过容器配置元数据反映出来。
 
-## Spring Bean Annotations
+## Spring Bean 注解
 
 在 Spring 容器中配置 bean 有几种方法。我们可以使用 XML 配置声明它们。我们可以在配置类中使用 `@Bean` 注释声明bean。
 
