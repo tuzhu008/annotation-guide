@@ -75,5 +75,36 @@ public class AppConfig {
 
 完全支持 \*Aware 系列的接口，例如：`BeanFactoryAware`，`BeanNameAware`，`MessageSourceAware`，`ApplicationContextAware` 等。
 
-`@Bean` 注解支持任意的初始化和销毁回调方法，这与Spring XML 中bean元素上的init方法和destroy-method属性非常相似：v
+`@Bean` 注解支持任意的初始化和销毁回调方法，这与 Spring XML 中bean元素上的 init 方法和 destroy-method 属性非常相似：
+
+```java
+public class Foo {
+    public void init() {
+        // initialization logic
+    }
+}
+
+public class Bar {
+    public void cleanup() {
+        // destruction logic
+    }
+}
+
+@Configuration
+public class AppConfig {
+
+    @Bean(initMethod = "init")
+    public Foo foo() {
+        return new Foo();
+    }
+
+    @Bean(destroyMethod = "cleanup")
+    public Bar bar() {
+        return new Bar();
+    }
+
+}
+```
+
+
 
