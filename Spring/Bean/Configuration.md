@@ -154,3 +154,9 @@ public class AppConfig {
 
 `clientDao()` 方法被 `clientService1()` 和 `clientService2()` 各自调用了一次。因为这个方法创建并返回了一个新的 ClientDaoImpl 实例，你通常期望会有2个实例（每个服务各一个）。这有一个明显的问题：在 Spring 中，bean 实例默认情况下是单例。神奇的地方在于：所有的 `@Configuration` 类在启动时都使用 CGLIB 进行子类实例化。在子类中，子方法在调用父方法创建一个新的实例之前会首先检查任何缓存\(作用域\)的 bean。注意，从 Spring 3.2 开始，不再需要将 CGLIB 添加到类路径中，因为 CGLIB 类已经被打包在 org.springframework.cglib 下，直接包含在 spring-core JAR 中。
 
+> 根据不同的 bean 作用域，它们的行为也是不同的。我们这里讨论的都是单例模式。
+>
+> 这里有一些限制是由于 CGLIB 在启动时动态添加的特性，特别是配置类都不能是final类型。然而从 4.3 开始，配置类中允许使用任何构造函数，包含@Autowired使用或单个非默认构造函数声明进行默认注入。如果你希望避免CGLIB带来的任何限制，那么可以考虑子在非@Configuration注解类中声明@Bean注解方法。例如，使用@Component注解类。在 @Bean方法之间的交叉调用不会被拦截，所以你需要在构造器或者方法级别上排除依赖注入。
+
+
+
