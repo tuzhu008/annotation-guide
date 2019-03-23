@@ -45,5 +45,13 @@ class VehicleFactoryConfig {
 }
 ```
 
+上面的 VehicleFactoryConfig 类和 Spring XML 的配置是等价的：
+
+```xml
+<beans>
+    <bean id="engine" class="com.aho.services.Engine"/>
+</beans>
+```
+
 
 
