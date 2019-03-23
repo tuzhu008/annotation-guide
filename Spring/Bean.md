@@ -178,7 +178,6 @@ public Service userService() {
     // a reference to the proxied userPreferences bean
     service.setUserPreferences(userPreferences());
     return service;
-}
 ```
 
 ### **自定义 Bean 命名**
@@ -211,6 +210,16 @@ public class AppConfig {
     }
 
 }
+```
+
+### **Bean描述**
+
+有时候需要提供一个详细的 bean 描述文本是非常有用的。当对 bean 暴露（可能通过 JMX）进行监控使，特别有用。
+
+可以使用 `@Description` 注解对 Bean 添加描述：
+
+```
+
 ```
 
 
