@@ -24,3 +24,35 @@ Java 提供了一种表达弃用的方法，因为随着类的发展，它的 AP
 
 我们使用 `@Deprecated` 注解来弃用方法、类或字段，并在注释部分使用 `@Deprecated` Javadoc 标记来通知开发人员弃用的原因，以及可以用什么来替代这个弃用的方法、类或字段。举个例子:
 
+```java
+class DeprecatedDemo {
+   /* @deprecated This field is replaced by 
+    * MAX_NUM field
+    */
+   @Deprecated
+   int num=10;
+	
+   final int MAX_NUM=10;
+    
+   /* @deprecated As of release 1.5, replaced 
+    * by myMsg2(String msg, String msg2)
+    */
+   @Deprecated
+   public void myMsg(){
+       System.out.println("This method is marked as deprecated");
+   }
+     
+   public void myMsg2(String msg, String msg2){
+       System.out.println(msg+msg2);
+   }
+    
+   public static void main(String a[]){      
+    	DeprecatedDemo obj = new DeprecatedDemo();
+        obj.myMsg();
+        System.out.println(obj.num);
+   }
+}
+```
+
+
+
