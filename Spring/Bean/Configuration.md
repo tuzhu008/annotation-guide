@@ -33,6 +33,8 @@ public @interface Configuration {
 
 `@Configuration` 注解的类说明这个类的主要是作为一个 bean 定义的资源文件。
 
+**@Configuration 类最终只是容器中的一个 bean。**
+
 _Configuration _类可以包含用 @Bean 注解的 bean 工厂方法:
 
 ```java
