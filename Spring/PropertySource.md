@@ -100,7 +100,7 @@ public class AppConfig {
 
 任何出现在 `@PropertySource` 中的资源位置占位符都会被注册在环境变量中的资源解析。
 
-```
+```java
 @Configuration
 @PropertySource("classpath:/com/${my.placeholder:default/path}/app.properties")
 public class AppConfig {
@@ -116,6 +116,5 @@ public class AppConfig {
 }
 ```
 
-  
 
 
