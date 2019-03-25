@@ -27,13 +27,12 @@ public @interface SpringBootApplication {
         annotation = EnableAutoConfiguration.class
     )
     Class<?>[] exclude() default {};
-    
+
     /**
-	 * Exclude specific auto-configuration class names such that they will never be
-	 * applied.
-	 * @return the class names to exclude
-	 * @since 1.3.0
-	 */
+     * 排除特定的自动配置类名，这样它们就永远不会被应用
+     * @return 要排除的类
+     * @since 1.3.0
+     */
     @AliasFor(
         annotation = EnableAutoConfiguration.class
     )
