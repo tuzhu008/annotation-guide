@@ -18,5 +18,13 @@ public @interface MyCustomAnnotation {
 }
 ```
 
+```java
+@MyCustomAnnotation
+public class MyClass { 
+     //Class body
+}
+
+```
+
 
 
