@@ -61,5 +61,5 @@ This method is marked as deprecated
 10
 ```
 
-
+在上面的例子中，我们有一个废弃的方法和一个废弃的字段。正如您所看到的，我们已经使用 `@Deprecated`注解对它们进行了标记，并且在注解部分中，我们使用了 `@Deprecated`  javadoc 标记\(用于文档目的\)来通知程序员使用什么来替代它。
 
