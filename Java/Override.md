@@ -19,37 +19,24 @@ public @interface Override {
 
 下面的例子演示了如何指示一个方法覆盖其父类中的一个方法:
 
-方法重写父类：
-
 ```java
-/**
- * @classdesc Abstract class representing a network connection.
- * @class
- */
-function Connection() {}
-
-/**
- * Open the connection.
- */
-Connection.prototype.open = function() {
-    // ...
-};
-
-
-/**
- * @classdesc Class representing a socket connection.
- * @class
- * @augments Connection
- */
-function Socket() {}
-
-/**
- * Open the socket.
- * @override
- */
-Socket.prototype.open = function() {
-    // ...
-};
+class ParentClass
+{
+	public void displayMethod(String msg){
+		System.out.println(msg);
+	}
+}
+class SubClass extends ParentClass
+{
+	@Override
+	public void displayMethod(String msg){
+		System.out.println("Message is: "+ msg);
+	}
+	public static void main(String args[]){
+		SubClass obj = new SubClass();
+		obj.displayMethod("Hey!!");
+	}
+}
 ```
 
 
