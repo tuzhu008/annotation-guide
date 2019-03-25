@@ -80,5 +80,42 @@ class VehicleFactoryConfig {}
 class VehicleFactoryConfig {}
 ```
 
+给出一个名为 ”app.properties” 的文件，它含了 `testbean.name=myTestBean` 的键值对，下面的 `@Configuration` 类使用`@PropertySource` 的方式来调用 `testBean.getName()`，将会返回 ”myTestBean”。
+
+```java
+@Configuration
+@PropertySource("classpath:/com/myco/app.properties")
+public class AppConfig {
+ @Autowired
+ Environment env;
+
+ @Bean
+ public TestBean testBean() {
+  TestBean testBean = new TestBean();
+  testBean.setName(env.getProperty("testbean.name"));
+  return testBean;
+ }
+}
+```
+
+任何出现在 `@PropertySource` 中的资源位置占位符都会被注册在环境变量中的资源解析。
+
+```
+@Configuration
+@PropertySource("classpath:/com/${my.placeholder:default/path}/app.properties")
+public class AppConfig {
+ @Autowired
+ Environment env;
+
+ @Bean
+ public TestBean testBean() {
+  TestBean testBean = new TestBean();
+  testBean.setName(env.getProperty("testbean.name"));
+  return testBean;
+ }
+}
+```
+
+  
 
 
