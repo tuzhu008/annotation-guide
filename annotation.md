@@ -83,7 +83,7 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
- 
+
 @Documented
 @Target(ElementType.METHOD)
 @Inherited
@@ -96,5 +96,5 @@ public @interface MyCustomAnnotation{
 }
 ```
 
-
+注意：在创建注释时设置默认值的所有元素都可以在使用注释时跳过。例如，如果我把上面的注释应用到一个类上，我会这样做:
 
