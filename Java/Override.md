@@ -20,14 +20,13 @@ public @interface Override {
 下面的例子演示了如何指示一个方法覆盖其父类中的一个方法:
 
 ```java
-class ParentClass
-{
+class ParentClass {
     public void displayMethod(String msg){
         System.out.println(msg);
     }
 }
-class SubClass extends ParentClass
-{
+
+class SubClass extends ParentClass {
     @Override
     public void displayMethod(String msg){
         System.out.println("Message is: "+ msg);
@@ -39,5 +38,5 @@ class SubClass extends ParentClass
 }
 ```
 
-在上面的例子中，我们覆盖了子类中的方法 `displaymethod()`。即使我们不使用@Override注释，程序仍然可以正常运行，不会出现任何问题，您可能想知道为什么要使用这个注释。让我们讨论一下:
+在上面的例子中，我们在子类中的方法 `displaymethod()`。即使我们不使用 `@Override` 注释，程序仍然可以正常运行，不会出现任何问题，您可能想知道为什么要使用这个注释。让我们讨论一下:
 
