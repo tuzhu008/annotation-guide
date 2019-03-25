@@ -19,10 +19,10 @@
 )}
 )
 public @interface SpringBootApplication {
-/**
-	 * Exclude specific auto-configuration classes such that they will never be applied.
-	 * @return the classes to exclude
-	 */
+    /**
+     * 排除特定的自动配置类，这样它们就永远不会被应用。
+     * @return 要排除的类
+     */
     @AliasFor(
         annotation = EnableAutoConfiguration.class
     )
