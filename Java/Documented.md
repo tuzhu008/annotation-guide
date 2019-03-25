@@ -25,5 +25,5 @@ public class MyClass {
 }
 ```
 
-
+在为类 MyClass 生成 javadoc 时，将包含 `@MyCustomAnnotation`。
 
