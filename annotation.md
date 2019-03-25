@@ -74,7 +74,7 @@ JDK 8 新增注解：
 
 * 注解也可以有元素。它们看起来像方法。例如在下面的代码中，我们有四个元素。我们不应该为这些元素提供实现。
 
-* 所有注解都继承 java.lang.annotation。注解的接口。注释不能包含任何extends子句。
+* 所有注解都继承了 ` java.lang.annotation.Annotation` 接口。注释不能包含任何extends子句。
 
 
 
