@@ -47,7 +47,17 @@ public @interface SpringBootApplication {
 
 这是一个方便的注解，相当于声明`@Configuration`、`@EnableAutoConfiguration` 和 `@ComponentScan`。
 
+我们使用这个注释来标记 Spring Boot 应用程序的主类:
 
+```java
+@SpringBootApplication
+class VehicleFactoryApplication {
+ 
+    public static void main(String[] args) {
+        SpringApplication.run(VehicleFactoryApplication.class, args);
+    }
+}
+```
 
 
 
