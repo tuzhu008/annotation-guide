@@ -37,7 +37,14 @@ public @interface SpringBootApplication {
         annotation = EnableAutoConfiguration.class
     )
     String[] excludeName() default {};
-
+    
+    
+	/**
+	 * Base packages to scan for annotated components. Use {@link #scanBasePackageClasses}
+	 * for a type-safe alternative to String-based package names.
+	 * @return base packages to scan
+	 * @since 1.3.0
+	 */
     @AliasFor(
         annotation = ComponentScan.class,
         attribute = "basePackages"
