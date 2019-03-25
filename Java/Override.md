@@ -22,22 +22,22 @@ public @interface Override {
 ```java
 class ParentClass
 {
-	public void displayMethod(String msg){
-		System.out.println(msg);
-	}
+    public void displayMethod(String msg){
+        System.out.println(msg);
+    }
 }
 class SubClass extends ParentClass
 {
-	@Override
-	public void displayMethod(String msg){
-		System.out.println("Message is: "+ msg);
-	}
-	public static void main(String args[]){
-		SubClass obj = new SubClass();
-		obj.displayMethod("Hey!!");
-	}
+    @Override
+    public void displayMethod(String msg){
+        System.out.println("Message is: "+ msg);
+    }
+    public static void main(String args[]){
+        SubClass obj = new SubClass();
+        obj.displayMethod("Hey!!");
+    }
 }
 ```
 
-
+在上面的例子中，我们覆盖了子类中的方法 `displaymethod()`。即使我们不使用@Override注释，程序仍然可以正常运行，不会出现任何问题，您可能想知道为什么要使用这个注释。让我们讨论一下:
 
