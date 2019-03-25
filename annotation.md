@@ -133,5 +133,5 @@ public class MyClass {
 }
 ```
 
-让我们再次回到主题:在自定义注解示例中，我们使用了以下四个注释：`@Documented` 、`@Target`、`@Inherited` & `@Retention`。让我们详细讨论一下。
+让我们再次回到主题:在自定义注解示例中，我们使用了以下四个注释：`@Documented` 、`@Target`、`@Inherited` & `@Retention`。
 
