@@ -44,7 +44,7 @@ public @interface ImportAutoConfiguration {
 
 自动配置试图尽可能地智能化，当您定义更多自己的配置时，它就会后退。您总是可以手动 `exclude()` 您永远不想应用的任何配置\(如果您没有访问这些配置的权限，则使用 `excludeName()`\)。您还可以通过 \``spring.autoconfigure.exclude`\` 排除它们。在注册了用户定义的 bean 之后，总是会应用自动配置。
 
-使用 `@EnableAutoConfiguration` 注释的类包\(通常通过 `@SpringBootApplication`\)具有特定的意义，通常用作“缺省值”。例如，它将用于扫描 `@Entity` 类。通常建议将@EnableAutoConfiguration\(如果不使用@SpringBootApplication\)放在根包中，以便可以搜索所有子包和类。
+使用 `@EnableAutoConfiguration` 注释的类包\(通常通过 `@SpringBootApplication`\)具有特定的意义，通常用作“缺省值”。例如，它将用于扫描 `@Entity` 类。通常建议将 `@EnableAutoConfiguration`\(如果不使用@SpringBootApplication\)放在根包中，以便可以搜索所有子包和类。
 
 自动配置类是常规的Spring配置bean。它们是使用SpringFactoriesLoader机制定位的\(针对该类进行键控\)。通常，自动配置bean是@条件bean\(通常使用@ConditionalOnClass和@ConditionalOnMissingBean注释\)。
 
