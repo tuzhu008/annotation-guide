@@ -11,9 +11,9 @@
 public @interface ImportAutoConfiguration {
 
     /**
-     * The auto-configuration classes that should be imported. This is an alias for
-     * {@link #classes()}.
-     * @return the classes to import
+     * 应该导入的自动配置类。{@link #classes()} 的别名
+     * 
+     * @return 要导入的类
      */
     @AliasFor("classes")
     Class<?>[] value() default {};
