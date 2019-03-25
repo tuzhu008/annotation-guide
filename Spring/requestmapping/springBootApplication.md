@@ -52,7 +52,7 @@ public @interface SpringBootApplication {
     String[] scanBasePackages() default {};
 
     /**
-     * 类型安全的 {@link #scanBasePackages} 替代方案，用于指定扫描带注释组件的包。
+     * 类型安全的 {@link #scanBasePackages} 替代方案，用于指定扫描带组件组件的包。
      * Type-safe alternative to {@link #scanBasePackages} for specifying the packages to
      * scan for annotated components. The package of each class specified will be scanned.
      * <p>
