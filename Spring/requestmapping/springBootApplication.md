@@ -50,7 +50,16 @@ public @interface SpringBootApplication {
         attribute = "basePackages"
     )
     String[] scanBasePackages() default {};
-
+    
+    /**
+	 * Type-safe alternative to {@link #scanBasePackages} for specifying the packages to
+	 * scan for annotated components. The package of each class specified will be scanned.
+	 * <p>
+	 * Consider creating a special no-op marker class or interface in each package that
+	 * serves no purpose other than being referenced by this attribute.
+	 * @return base packages to scan
+	 * @since 1.3.0
+	 */
     @AliasFor(
         annotation = ComponentScan.class,
         attribute = "basePackageClasses"
