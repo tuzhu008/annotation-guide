@@ -12,7 +12,8 @@
 * [@Deprecated](/Java/Deprecated.md)
 * [@SuppressWarnings](/Java/SuppressWarnings.md)
 * [@Documented](/Java/Documented.md)
-
+* [@Target](/Java/Target.md)
+  
 ## Spring
 
 * [Bean](/Spring/Bean/README.md)
@@ -54,7 +55,7 @@
 * [@ComponentScan](/Spring/ComponentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
-* [@Target](/Spring/Target.md)
+
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
 
