@@ -46,5 +46,5 @@ public @interface ImportAutoConfiguration {
 
 使用 `@EnableAutoConfiguration` 注释的类包\(通常通过 `@SpringBootApplication`\)具有特定的意义，通常用作“缺省值”。例如，它将用于扫描 `@Entity` 类。通常建议将 `@EnableAutoConfiguration`\(如果不使用 `@SpringBootApplication)`放在根包中，以便可以搜索所有子包和类。
 
-自动配置类是常规的Spring配置bean。它们是使用SpringFactoriesLoader机制定位的\(针对该类进行键控\)。通常，自动配置bean是@条件bean\(通常使用@ConditionalOnClass和@ConditionalOnMissingBean注释\)。
+自动配置类是常规的 Spring 配置 bean。它们是使用SpringFactoriesLoader机制定位的\(针对该类进行键控\)。通常，自动配置bean是@条件bean\(通常使用@ConditionalOnClass和@ConditionalOnMissingBean注释\)。
 
