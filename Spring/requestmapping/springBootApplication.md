@@ -53,12 +53,9 @@ public @interface SpringBootApplication {
 
     /**
      * 类型安全的 {@link #scanBasePackages} 替代方案，用于指定用于扫描的带组件的包。
-     * Type-safe alternative to {@link #scanBasePackages} for specifying the packages to
-     * scan for annotated components. The package of each class specified will be scanned.
-     * <p>
-     * Consider creating a special no-op marker class or interface in each package that
-     * serves no purpose other than being referenced by this attribute.
-     * @return base packages to scan
+     * 将扫描指定的每个类的包。
+     * 考虑在每个包中创建一个特殊的 no-op 标记类或接口，这个类或接口除了被这个属性引用之外没有其他用途。
+     * @return 要扫描的基本包
      * @since 1.3.0
      */
     @AliasFor(
