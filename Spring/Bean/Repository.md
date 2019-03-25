@@ -22,6 +22,8 @@ public @interface Repository {
 
 ## 解析
 
+使用 `@Repository` 注解是数据访问对象（DAOs）或库能提供异常转换的最好方式，这个注解还允许组件扫描，查找并配置你的 DAOs 和库，并且不需要为它们提供 XML 配置文件。
+
 DAO 或 Repository 类通常表示应用程序中的数据库访问层，应该用 `@Repository` 注解:
 
 ```java
