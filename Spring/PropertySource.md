@@ -61,6 +61,8 @@ public @interface PropertySource {
 
 ## 解析
 
+`@PropertySource` 注解对添加一个 PropertySource 到 Spring 的环境变量中提供了一个便捷的和声明式的机制。
+
 通过这个注解，我们可以为应用程序设置定义属性文件:
 
 ```java
