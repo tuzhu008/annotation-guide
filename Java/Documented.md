@@ -23,7 +23,6 @@ public @interface MyCustomAnnotation {
 public class MyClass { 
      //Class body
 }
-
 ```
 
 
