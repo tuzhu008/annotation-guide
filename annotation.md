@@ -121,5 +121,17 @@ public class MyClass {
 }
 ```
 
+目的:
+
+```java
+@MyCustomAnnotation(
+    count=3,
+    books={"C++", "Java"}
+)
+public class MyClass {
+
+}
+```
+
 
 
