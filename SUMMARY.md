@@ -9,6 +9,7 @@
 ## Java
 
 * [@Override](/Java/Override.md)
+* [@Deprecated](/Java/Deprecated.md)
 
 ## Spring
 
