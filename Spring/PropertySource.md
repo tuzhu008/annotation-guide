@@ -116,5 +116,5 @@ public class AppConfig {
 }
 ```
 
-
+假设 ”my.placeholder” 已经在其中的一个资源中被注册，例如：系统属性或环境变量，占位符将会被正确的值解析。如果没有，”default/path” 将会使用默认值。如果没有默认值，而且无法解释属性，则抛出 IllegalArgumentException 异常。
 
