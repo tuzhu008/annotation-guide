@@ -76,5 +76,25 @@ JDK 8 新增注解：
 
 * 所有注解都继承了 `java.lang.annotation.Annotation` 接口，注解不能包含任何 extends 子句。
 
+```java
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+ 
+@Documented
+@Target(ElementType.METHOD)
+@Inherited
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyCustomAnnotation{
+    int studentAge() default 18;
+    String studentName();
+    String stuAddress();
+    String stuStream() default "CSE";
+}
+```
+
 
 
