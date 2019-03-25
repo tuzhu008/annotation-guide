@@ -12,7 +12,7 @@ public @interface SuppressWarnings {
 
 ## 解析
 
-这个注解指示编译器忽略特定的警告。例如，在下面的代码中，我调用了一个弃用的方法\(假设方法deprecatedMethod\(\)被标记为@Deprecated注释\)，因此编译器应该生成一个警告，但是我使用了@@SuppressWarnings注释，该注释将抑制该警告。
+这个注解指示编译器忽略特定的警告。例如，在下面的代码中，我调用了一个弃用的方法\(假设方法 `deprecatedMethod()` 被标记为@Deprecated注释\)，因此编译器应该生成一个警告，但是我使用了@@SuppressWarnings注释，该注释将抑制该警告。
 
 ```java
 @SuppressWarnings("deprecation")
