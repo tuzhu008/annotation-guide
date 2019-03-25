@@ -11,6 +11,7 @@
 * [@Override](/Java/Override.md)
 * [@Deprecated](/Java/Deprecated.md)
 * [@SuppressWarnings](/Java/SuppressWarnings.md)
+* [@Documented](/Java/Documented.md)
 
 ## Spring
 
