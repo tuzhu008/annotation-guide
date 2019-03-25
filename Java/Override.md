@@ -15,5 +15,5 @@ public @interface Override {
 
 此标记是为了与闭包编译器兼容而提供的。默认情况下，JSDoc 自动标识覆盖父类的符号。
 
-如果JSDoc注释包含@inheritdoc标记，则不需要包含@override标记。@inheritdoc标记的存在意味着@override标记的存在。
+如果 JSDoc 注释包含 `@inheritdoc` 标记，则不需要包含@override标记。@inheritdoc标记的存在意味着@override标记的存在。
 
