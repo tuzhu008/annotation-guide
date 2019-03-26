@@ -33,7 +33,7 @@ public class Config {
 
 应用程序应该只包含一个 `@SpringBootConfiguration`，大多数惯用的  Spring Boot 应用程序将从`@ SpringBootApplication` 继承它。
 
-```
+```java
 /*
  * 发现@SpringBootApplication是一个复合注解，
  * 包括@ComponentScan，和@SpringBootConfiguration，@EnableAutoConfiguration
@@ -44,13 +44,13 @@ public class Config {
 @SpringBootApplication
 public class App 
 {   
-    
+
     @RequestMapping(value="/hello")
     public String Hello(){
         return "hello";
     }
-    
-    
+
+
     @Bean
     public Runnable createRunnable() {
         return () -> System.out.println("spring boot is running");
@@ -66,8 +66,8 @@ public class App
         int age = (int) map.get("age");
         System.out.println("age=="+age);
     }
-    
-    
+
+
     @Bean
     public EmbeddedServletContainerFactory servletFactory(){
         TomcatEmbeddedServletContainerFactory tomcatFactory = 
@@ -75,7 +75,7 @@ public class App
         //tomcatFactory.setPort(8011);
         tomcatFactory.setSessionTimeout(10,TimeUnit.SECONDS);
         return tomcatFactory;
-        
+
     }
 }
 ```
