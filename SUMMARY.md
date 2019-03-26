@@ -38,14 +38,15 @@
   * [@Lookup](/Spring/Lookup.md)
   * [@Primary](/Spring/Primary.md)
   * [@Scope](/Spring/Scope.md)
+  
 * [上下文配置相关](Spring/requestmapping/shang-xia-wen-pei-zhi-xiang-guan.md)
   * [@Profile](/Spring/Profile.md)
   * [@Import](/Spring/Import.md)
   * [@ImportResource](/Spring/ImportResource.md)
   * [@PropertySource](/Spring/PropertySource.md)
   * [@PropertySources](/Spring/PropertySources.md)
-* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
-* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
+
+
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
   * [@PostMapping](/Spring/requestmapping/postMapping.md)
@@ -63,6 +64,10 @@
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
 
+## Spring Boot
+
+* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
+* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 
 ## MyBatis
 
