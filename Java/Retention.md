@@ -31,7 +31,7 @@ import java.lang.annotation.RetentionPolicy;
 
 这里我们使用了 `RetentionPolicy.RUNTIME`。还有另外两种选择。让我们看看这是什么意思:
 
-* `RetentionPolicy.RUNTIME`：注释应该在运行时可用，以便通过java反射进行检查。
+* `RetentionPolicy.RUNTIME`：注解应该在运行时可用，以便通过 java 反射进行检查。
 
 * `RetentionPolicy.CLASS`：注释将在. CLASS文件中，但在运行时不可用。
 
