@@ -12,5 +12,23 @@ public @interface Inherited {
 
 ## 解析
 
+`@Inherited` 注解表示类中使用的自定义注释应该由其所有子类继承。例如:
+
+```java
+java.lang.annotation.Inherited
+
+@Inherited
+public @interface MyCustomAnnotation {
+
+}
+```
+
+```java
+@MyCustomAnnotation
+public class MyParentClass { 
+  ... 
+}
+```
+
 
 
