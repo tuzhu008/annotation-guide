@@ -51,7 +51,6 @@
 * [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
 * [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 
-
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
   * [@PostMapping](/Spring/requestmapping/postMapping.md)
