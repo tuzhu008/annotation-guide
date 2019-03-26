@@ -49,8 +49,9 @@
 * [条件注册](Spring/conditional/README.md)
   * [@Conditional](Spring/conditional/Conditional.md)
   * [@ConditionalOnClass](SpringBoot/conditional/ConditionalOnClass.md)
-  * [@CondtionalOnBean](SpringBoot/conditional/CondtionalOnBean.md)
+  * [@ConditionalOnBean](SpringBoot/conditional/ConditionalOnBean.md)
   * [@ConditionalOnMissingBean](SpringBoot/conditional/ConditionalOnMissingBean.md)
+  * [@ConditionalOnMissingFilterBean](SpringBoot/conditional/ConditionalOnMissingFilterBean.md)
 
 ## Spring Boot
 
