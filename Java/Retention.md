@@ -35,9 +35,7 @@ import java.lang.annotation.RetentionPolicy;
 
 * `RetentionPolicy.CLASS`：注释将在. CLASS文件中，但在运行时不可用。
 
-* RetentionPolicy。源代码：注释将在程序的源代码中可用，既不在.class文件中，也不在运行时可用。
-
-
+* `RetentionPolicy.SOURCE`：注释将在程序的源代码中可用，既不在.class文件中，也不在运行时可用。
 
 以上就是本主题“Java注释”的全部内容。如果你有任何问题，请在下面留言。
 
