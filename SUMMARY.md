@@ -46,6 +46,11 @@
   * [@PropertySource](/Spring/PropertySource.md)
   * [@PropertySources](/Spring/PropertySources.md)
 
+## Spring Boot
+
+* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
+* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
+
 
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
@@ -64,10 +69,6 @@
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
 
-## Spring Boot
-
-* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
-* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
 
 ## MyBatis
 
