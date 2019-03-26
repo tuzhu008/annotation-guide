@@ -64,3 +64,13 @@ public class MyClass {
 
 单个 ElementType 常量在 `@Target` 注解中出现多次是编译时错误。例如，下面的 `@Target` 元注释是非法的:
 
+```java
+@Target({ElementType.FIELD, ElementType.METHOD, ElementType.FIELD})
+    public @interface Bogus {
+        ...
+    }
+ 
+```
+
+
+
