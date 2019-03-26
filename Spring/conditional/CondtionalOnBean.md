@@ -1,4 +1,4 @@
-# @Conditional
+# @CondtionalOnBean
 
 ## 定义
 
