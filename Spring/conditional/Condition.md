@@ -21,5 +21,9 @@ public interface Condition {
 
 ## 解析
 
+要注册组件，必须匹配的单个条件。
 
+条件将在 bean 定义即将注册之前立即进行检查，并且可以根据那时可以确定的任何标准自由否决注册。
+
+条件必须遵循与 `BeanFactoryPostProcessor` 相同的限制，并且注意永远不要与 bean 实例交互。要对与@Configuration bean交互的条件进行更细粒度的控制，请考虑ConfigurationCondition接口。
 
