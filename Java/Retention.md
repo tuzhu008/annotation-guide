@@ -17,5 +17,5 @@ public @interface Retention {
 
 ## 解析
 
-
+它指示带注解类型的注解将保留多长时间。
 
