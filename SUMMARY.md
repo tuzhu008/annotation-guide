@@ -48,8 +48,8 @@
 
 ## Spring Boot
 
-* [@SpringBootApplication](/Spring/requestmapping/springBootApplication.md)
-* [@EnableAutoConfiguration](/Spring/requestmapping/EnableAutoConfiguration.md)
+* [@SpringBootApplication](/SpringBoot/springBootApplication.md)
+* [@EnableAutoConfiguration](/SpringBoot/EnableAutoConfiguration.md)
 
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
