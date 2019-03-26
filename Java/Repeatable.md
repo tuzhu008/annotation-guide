@@ -18,5 +18,5 @@ public @interface Repeatable {
 
 ## 解析
 
-
+该注解用于指示声明它\(元\)注释的注释类型是Repeatable。@Repeatable的值表示可重复注释类型的包含注释类型。
 
