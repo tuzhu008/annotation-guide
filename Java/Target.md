@@ -45,6 +45,7 @@ public class MyClass {
 
 1. 如果你不定义任何 Target 类型，这意味着注解可以应用于任何元素。
 2. 除了 `ElementType.METHOD`，注解可以具有以下可能的 Target 值。
+
    * ElementType.METHOD
 
    * ElementType.PACKAGE
@@ -61,7 +62,5 @@ public class MyClass {
 
    * ElementType.FIELD
 
-
-
-
+单个 ElementType 常量在 `@Target` 注解中出现多次是编译时错误。例如，下面的 `@Target` 元注释是非法的:
 
