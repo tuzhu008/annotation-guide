@@ -36,5 +36,5 @@ public class MyChildClass extends MyParentClass {
 }
 ```
 
-
+在这里，类 `MyParentClass` 使用标注 `@MyCustomAnnotation` ，该标注使用 `@Inheritd`标注。这意味着子类 `MyChildClass` 继承了`@MyCustomAnnotation`。
 
