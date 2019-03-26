@@ -28,13 +28,13 @@ public @interface ImportResource {
     String[] locations() default {};
 
     /**
-     * {@link BeanDefinitionReader} implementation to use when processing
-     * resources specified via the {@link #value} attribute.
-     * <p>By default, the reader will be adapted to the resource path specified:
-     * {@code ".groovy"} files will be processed with a
-     * {@link org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader GroovyBeanDefinitionReader};
-     * whereas, all other resources will be processed with an
-     * {@link org.springframework.beans.factory.xml.XmlBeanDefinitionReader XmlBeanDefinitionReader}.
+     * {@link BeanDefinitionReader} 实现用于在处理通过 {@link #value} 属性指定的资源时使用的。
+     * <p>默认情况下，reader 将适应指定的资源路径:
+     * {@code ".groovy"} 文件将用一个
+     * {@link org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader GroovyBeanDefinitionReader}
+     * 处理;
+     * 然而，所有其他资源都将使用
+     * {@link org.springframework.beans.factory.xml.XmlBeanDefinitionReader XmlBeanDefinitionReader} 处理.
      * @see #value
      */
     Class<? extends BeanDefinitionReader> reader() default BeanDefinitionReader.class;
