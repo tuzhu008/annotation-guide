@@ -35,8 +35,8 @@ public class Config {
 
 ```java
 /*
- * 发现@SpringBootApplication是一个复合注解，
- * 包括@ComponentScan，和@SpringBootConfiguration，@EnableAutoConfiguration
+ * 发现 @SpringBootApplication 是一个复合注解，
+ * 包括 @ComponentScan，和 @SpringBootConfiguration，@EnableAutoConfiguration
  * 
  */
 
