@@ -44,7 +44,24 @@ public class MyClass {
 注意：
 
 1. 如果你不定义任何 Target 类型，这意味着注解可以应用于任何元素。
-2. 除了 `ElementType.METHOD`，注释可以具有以下可能的目标值。
+2. 除了 `ElementType.METHOD`，注解可以具有以下可能的 Target 值。
+   * ElementType.METHOD
+
+   * ElementType.PACKAGE
+
+   * ElementType.PARAMETER
+
+   * ElementType.TYPE
+
+   * ElementType.ANNOTATION\_TYPE
+
+   * ElementType.CONSTRUCTOR
+
+   * ElementType.LOCAL\_VARIABLE
+
+   * ElementType.FIELD
+
+
 
 
 
