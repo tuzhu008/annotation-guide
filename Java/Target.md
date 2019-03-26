@@ -31,7 +31,7 @@ public @interface MyCustomAnnotation {
 }
 ```
 
-```
+```java
 public class MyClass {
    @MyCustomAnnotation
    public void myMethod()
@@ -39,8 +39,12 @@ public class MyClass {
        //Doing something
    }
 }
-
 ```
+
+注意：
+
+1. 如果你不定义任何 Target 类型，这意味着注解可以应用于任何元素。
+2. 除了 `ElementType.METHOD`，注释可以具有以下可能的目标值。
 
 
 
