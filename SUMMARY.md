@@ -45,6 +45,12 @@
   * [@ImportResource](/Spring/ImportResource.md)
   * [@PropertySource](/Spring/PropertySource.md)
   * [@PropertySources](/Spring/PropertySources.md)
+  
+* [条件注册](Spring/conditional/READMA.md)
+  * [@Conditional](Spring/conditional/Conditional.md)
+  * [@ConditionalOnClass](Spring/conditional/ConditionalOnClass.md)
+  * [@CondtionalOnBean](Spring/conditional/CondtionalOnBean.md)
+  * [@ConditionalOnMissingBean](Spring/conditional/ConditionalOnMissingBean.md)
 
 ## Spring Boot
 
