@@ -19,3 +19,15 @@ public @interface Retention {
 
 它指示带注解类型的注解将保留多长时间。
 
+```java
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyCustomAnnotation {
+    
+}
+```
+
+
+
