@@ -9,7 +9,7 @@
 public @interface ImportResource {
 
     /**
-     * Alias for {@link #locations}.
+     * {@link #locations} 的别名
      * @see #locations
      * @see #reader
      */
