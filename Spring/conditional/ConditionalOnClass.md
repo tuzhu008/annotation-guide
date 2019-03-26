@@ -1,4 +1,4 @@
-# @Conditional
+# @ConditionalOnClass
 
 ## 定义
 
