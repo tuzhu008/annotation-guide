@@ -50,6 +50,7 @@
 
 * [@SpringBootApplication](/SpringBoot/springBootApplication.md)
 * [@EnableAutoConfiguration](/SpringBoot/EnableAutoConfiguration.md)
+* [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
 
 
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
