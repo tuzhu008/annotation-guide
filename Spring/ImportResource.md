@@ -17,11 +17,9 @@ public @interface ImportResource {
     String[] value() default {};
 
     /**
-     * Resource locations from which to import.
-     * <p>Supports resource-loading prefixes such as {@code classpath:},
-     * {@code file:}, etc.
-     * <p>Consult the Javadoc for {@link #reader} for details on how resources
-     * will be processed.
+     * 要从其中导入的资源位置。
+     * 支持资源加载前缀，如 {@code classpath:},}, {@code file:}, 等.
+     * 有关如何处理资源的详细信息，请参考 Javadoc 中的 {@link #reader}。
      * @since 4.2
      * @see #value
      * @see #reader
