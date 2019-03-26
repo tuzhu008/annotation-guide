@@ -30,5 +30,11 @@ public class MyParentClass {
 }
 ```
 
+```java
+public class MyChildClass extends MyParentClass { 
+   ... 
+}
+```
+
 
 
