@@ -19,14 +19,6 @@ public @interface SpringBootConfiguration {
 `@SpringBootConfiguration`可以作为 Spring 的标准 `@Configuration` 注解的替代，以便自动找到配置\(例如在测试中\)。
 
 ```java
-package com.lhkj.pluto.config;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.context.annotation.Bean;
-
 @SpringBootConfiguration
 public class Config {
     @Bean
@@ -41,7 +33,52 @@ public class Config {
 
 应用程序应该只包含一个 `@SpringBootConfiguration`，大多数惯用的  Spring Boot 应用程序将从`@ SpringBootApplication` 继承它。
 
+```
+/*
+ * 发现@SpringBootApplication是一个复合注解，
+ * 包括@ComponentScan，和@SpringBootConfiguration，@EnableAutoConfiguration
+ * 
+ */
 
+@RestController
+@SpringBootApplication
+public class App 
+{   
+    
+    @RequestMapping(value="/hello")
+    public String Hello(){
+        return "hello";
+    }
+    
+    
+    @Bean
+    public Runnable createRunnable() {
+        return () -> System.out.println("spring boot is running");
+    }
+
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
+        context.getBean(Runnable.class).run();
+        System.out.println(context.getBean(User.class));
+        Map map = (Map) context.getBean("createMap");   //注意这里直接获取到这个方法bean
+        int age = (int) map.get("age");
+        System.out.println("age=="+age);
+    }
+    
+    
+    @Bean
+    public EmbeddedServletContainerFactory servletFactory(){
+        TomcatEmbeddedServletContainerFactory tomcatFactory = 
+                new TomcatEmbeddedServletContainerFactory();
+        //tomcatFactory.setPort(8011);
+        tomcatFactory.setSessionTimeout(10,TimeUnit.SECONDS);
+        return tomcatFactory;
+        
+    }
+}
+```
 
 
 
