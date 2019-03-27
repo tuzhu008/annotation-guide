@@ -159,7 +159,7 @@ public class DemoApplication {
 }
 ```
 
-就是这样！Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀邮件和与ConfigProperties类中的一个字段相同的名称。
+就是这样！Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀邮件和与 ConfigProperties 类中的一个字段相同的名称。
 
 Spring使用一些放松的规则来绑定属性。因此，以下变量都绑定到属性主机名:
 
