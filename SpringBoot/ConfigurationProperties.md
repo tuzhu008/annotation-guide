@@ -236,6 +236,12 @@ private int port;
 private String from;
 ```
 
+这可以帮助我们减少代码中的 if - else 条件，并使其看起来更干净、更简洁。
+
+**如果这些验证失败，那么主应用程序将不能以 IllegalStateException 启动。**
+
+Hibernate 验证框架使用标准的 Java bean getter 和 setter，因此为每个属性声明 getter 和 setter 非常重要。
+
 为了校验内嵌属性的值，你需要使用 `@Valid`注解关联的字段以触发它的校验，例如：
 
 ```java
