@@ -149,6 +149,16 @@ mail.credentials.authMethod=SHA1
 
 **注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主 Spring 应用程序类中添加`@EnableConfigurationProperties(ConfigProperties.class)`来将属性绑定到 POJO 中:
 
+```java
+@SpringBootApplication
+@EnableConfigurationProperties(ConfigProperties.class)
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+```
+
 ### Relaxed绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
