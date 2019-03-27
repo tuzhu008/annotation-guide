@@ -65,16 +65,20 @@ public FooComponent fooComponent() {
 
 所有以`foo`为前缀的属性定义都会被映射到`FooComponent`上。
 
-
-
 ### 嵌套属性
 
 我们可以在 Lists、Maps 和 Classes 中嵌套属性。
 
-让我们创建一个新的凭证类，用于一些嵌套属性:
+让我们创建一个新的 `Credentials`_ _类，用于一些嵌套属性:
 
 ```
-
+public class Credentials {
+    private String authMethod;
+    private String username;
+    private String password;
+ 
+    // standard getters and setters
+}
 ```
 
 ### Relaxed绑定
