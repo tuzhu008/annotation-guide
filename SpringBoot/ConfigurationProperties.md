@@ -81,6 +81,22 @@ public class Credentials {
 }
 ```
 
+我们还更新了 ConfigProperties 类来使用 List、Map 和 `Credentials `类:
+
+```java
+public class ConfigProperties {
+ 
+    private String host;
+    private int port;
+    private String from;
+    private List<String> defaultRecipients;
+    private Map<String, String> additionalHeaders;
+    private Credentials credentials;
+  
+    // standard getters and setters
+}
+```
+
 ### Relaxed绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
