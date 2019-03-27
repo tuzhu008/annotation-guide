@@ -17,20 +17,21 @@ public @interface ConfigurationProperties {
     @AliasFor("prefix")
     String value() default "";
 
-    /**
-     * The name prefix of the properties that are valid to bind to this object. Synonym
-     * for {@link #value()}. A valid prefix is defined by one or more words separated with
-     * dots (e.g. {@code "acme.system.feature"}).
-     * @return the name prefix of the properties to bind
+     /**
+     * 绑定到此对象的有效属性的名称前缀。
+     * {@link #value()} 的同义词。 
+     * 一个有效的前缀是由一个或多个用 . 分隔的单词定义的(例如. {@code "acme.system.feature"})
+     * @return 要绑定的属性的名称前缀
      */
+
     @AliasFor("value")
     String prefix() default "";
 
     /**
-     * Flag to indicate that when binding to this object invalid fields should be ignored.
-     * Invalid means invalid according to the binder that is used, and usually this means
-     * fields of the wrong type (or that cannot be coerced into the correct type).
-     * @return the flag value (default false)
+     * 一个标记，指示绑定到此对象时应忽略无效字段。
+     * 根据使用的绑定器，Invalid 表示无效，
+     * 通常这表示类型错误的字段(或者不能强制转换为正确的类型)。
+     * @return 标记的值 (default false)
      */
     boolean ignoreInvalidFields() default false;
 
