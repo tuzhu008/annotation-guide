@@ -205,18 +205,20 @@ public class ConfigProperties {
 
 ### 校验
 
-Spring Boot 将尝试校验外部配置，默认使用 JSR-303（如果在 classpath 路径中），你只需要将 JSR-303 `javax.validation`约束注解添加到`@ConfigurationProperties`类上：
+Spring Boot 将尝试校验外部配置，默认使用 JSR-303（如果在 classpath 路径中），你只需要将 JSR-303 `javax.validation`约束注解添加到`@ConfigurationProperties`类上。
+
+例如，让我们强制设置 hostName 属性:
 
 ```java
-@ConfigurationProperties(prefix="connection")
-public class ConnectionProperties {
+@NotBlank
+private String hostName;
+```
 
-    @NotNull
-    private InetAddress remoteAddress;
+authMethod 属性从 1到 4个字符长:
 
-    // ... getters and setters
-
-}
+```java
+@Length(max = 4, min = 1)
+private String authMethod;
 ```
 
 为了校验内嵌属性的值，你需要使用 `@Valid`注解关联的字段以触发它的校验，例如：
