@@ -94,8 +94,8 @@ public class OwnerProperties {
 | :--- | :--- |
 | person.firstName | 标准驼峰规则 |
 | person.first-name | 虚线表示，推荐用于 .properties 和 .yml 文件中 |
-| person.first_name | 下划线表示，用于 .properties 和 .yml 文件的可选格式 |
-| PERSON_FIRST_NAME | 大写形式，使用系统环境变量时推荐 |
+| person.first\_name | 下划线表示，用于 .properties 和 .yml 文件的可选格式 |
+| PERSON\_FIRST\_NAME | 大写形式，使用系统环境变量时推荐 |
 
 
 
