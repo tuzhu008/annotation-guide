@@ -71,12 +71,12 @@ public FooComponent fooComponent() {
 
 让我们创建一个新的 `Credentials`_ _类，用于一些嵌套属性:
 
-```
+```java
 public class Credentials {
     private String authMethod;
     private String username;
     private String password;
- 
+
     // standard getters and setters
 }
 ```
