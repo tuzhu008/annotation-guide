@@ -58,6 +58,7 @@
 * [@EnableAutoConfiguration](/SpringBoot/EnableAutoConfiguration.md)
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
 * [@ConfigurationProperties](/SpringBoot/ConfigurationProperties.md)
+* [@EnableConfigurationProperties](/SpringBoot/EnableConfigurationProperties.md)
 
 * [条件注册](SpringBoot/conditional/README.md)
   * [@ConditionalOnClass](SpringBoot/conditional/ConditionalOnClass.md)
