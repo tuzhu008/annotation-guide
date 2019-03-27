@@ -87,9 +87,11 @@ public class ConfigProperties {
 
 我们还使用 `@PropertySource` 来定义属性文件的位置。否则，Spring 使用默认位置\(classpath:application.properties\)。
 
-**`@ConfigurationProperties`**_** 最适合使用具有相同前缀的**_**阶层式的**_**属性。所以我们添加了一个 `mail` 前缀。**_
+`@ConfigurationProperties`_** 最适合使用具有相同前缀的**_**阶层式的**_**属性。所以我们添加了一个 **_`mail`_** 前缀。**_
 
-Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。.
+Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。
+
+注意：如果我们不在POJO中使用@Configuration，那么我们需要在主Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
 
 ### 嵌套属性
 
