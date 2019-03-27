@@ -119,7 +119,7 @@ public class ConnectionProperties {
 }
 ```
 
-为了校验内嵌属性的值，你需要使用 `@Valid `注解关联的字段以触发它的校验，例如：
+为了校验内嵌属性的值，你需要使用 `@Valid`注解关联的字段以触发它的校验，例如：
 
 ```java
 @ConfigurationProperties(prefix="connection")
@@ -143,5 +143,7 @@ public class ConnectionProperties {
 }
 ```
 
+你也可以通过创建一个叫做`configurationPropertiesValidator`的 bean 来添加自定义的 Spring`Validator`。`@Bean`方法需要声明为`static`，因为配置属性校验器在应用程序生命周期中创建的比较早，将`@Bean`方法声明为`static`允许该 bean 在创建时不需要实例化`@Configuration`类，从而避免了早期实例化（early instantiation）的所有问题。相关的示例可以看[这里](https://github.com/spring-projects/spring-boot/tree/v1.4.1.RELEASE/spring-boot-samples/spring-boot-sample-property-validation)。
 
+**注**`spring-boot-actuator`模块包含一个暴露所有`@ConfigurationProperties`beans的端点（endpoint），通过浏览器打开`/configprops`进行浏览，或使用等效的JMX端点，具体参考[Production ready features](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/V.%20Spring%20Boot%20Actuator/40.%20Endpoints.md)。
 
