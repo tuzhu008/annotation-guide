@@ -74,14 +74,22 @@ public FooComponent fooComponent() {
 @PropertySource("classpath:configprops.properties")
 @ConfigurationProperties(prefix = "mail")
 public class ConfigProperties {
-     
+
     private String hostName;
     private int port;
     private String from;
- 
+
     // standard getters and setters
 }
 ```
+
+我们使用 `@Configuration` ，以便 Spring 在应用程序上下文中创建一个 Spring bean。
+
+我们还使用 `@PropertySource` 来定义属性文件的位置。否则，Spring 使用默认位置\(classpath:application.properties\)。
+
+**`@ConfigurationProperties`**_** 最适合使用具有相同前缀的**_**阶层式的**_**属性。所以我们添加了一个 `mail` 前缀。**_
+
+Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。.
 
 ### 嵌套属性
 
