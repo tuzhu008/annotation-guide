@@ -91,7 +91,7 @@ public class ConfigProperties {
 
 Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。
 
-注意：如果我们不在POJO中使用@Configuration，那么我们需要在主Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
+注意：如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
 
 ### 嵌套属性
 
