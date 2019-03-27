@@ -65,6 +65,24 @@ public FooComponent fooComponent() {
 
 所有以`foo`为前缀的属性定义都会被映射到`FooComponent`上。
 
+### 简单属性
+
+官方文档建议将配置属性隔离到单独的 POJO 中。我们从这里开始:
+
+```java
+@Configuration
+@PropertySource("classpath:configprops.properties")
+@ConfigurationProperties(prefix = "mail")
+public class ConfigProperties {
+     
+    private String hostName;
+    private int port;
+    private String from;
+ 
+    // standard getters and setters
+}
+```
+
 ### 嵌套属性
 
 我们可以在 Lists、Maps 和 Classes 中嵌套属性。
