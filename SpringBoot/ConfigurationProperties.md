@@ -221,7 +221,7 @@ authMethod 属性从 1到 4个字符长:
 private String authMethod;
 ```
 
-
+port 属性Fong
 
 为了校验内嵌属性的值，你需要使用 `@Valid`注解关联的字段以触发它的校验，例如：
 
