@@ -91,7 +91,28 @@ public class ConfigProperties {
 
 Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。
 
-注意：如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
+**注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主 Spring 应用程序类中添加`@EnableConfigurationProperties(ConfigProperties.class)`来将属性绑定到 POJO 中:
+
+```java
+@SpringBootApplication
+@EnableConfigurationProperties(ConfigProperties.class)
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+```
+
+就是这样！**Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀 mail 和与 ConfigProperties 类中的一个字段相同的名称。**
+
+我们可以使用以下属性文件设置所有字段:
+
+```bash
+#Simple properties
+mail.hostname=host@mail.com
+mail.port=9000
+mail.from=mailer@mail.com
+```
 
 ### 嵌套属性
 
@@ -147,30 +168,7 @@ mail.credentials.password=password
 mail.credentials.authMethod=SHA1
 ```
 
-**注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主 Spring 应用程序类中添加`@EnableConfigurationProperties(ConfigProperties.class)`来将属性绑定到 POJO 中:
-
-```java
-@SpringBootApplication
-@EnableConfigurationProperties(ConfigProperties.class)
-public class DemoApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
-    }
-}
-```
-
-就是这样！**Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀 mail 和与 ConfigProperties 类中的一个字段相同的名称。**
-
-我们可以使用以下属性文件设置所有字段:
-
-```bash
-#Simple properties
-mail.hostname=host@mail.com
-mail.port=9000
-mail.from=mailer@mail.com
-```
-
-### Relaxed绑定
+### Relaxed 绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
 
