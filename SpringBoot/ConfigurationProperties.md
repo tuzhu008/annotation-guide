@@ -70,7 +70,7 @@ public FooComponent fooComponent() {
 官方文档建议将配置属性隔离到单独的 POJO 中。我们从这里开始:
 
 ```java
-@Configuration
+@Component
 @PropertySource("classpath:configprops.properties")
 @ConfigurationProperties(prefix = "mail")
 public class ConfigProperties {
@@ -91,7 +91,7 @@ public class ConfigProperties {
 
 Spring 框架使用标准的 Java bean setter，因此为每个属性声明 setter 非常重要。
 
-**注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主 Spring 应用程序类中添加`@EnableConfigurationProperties(ConfigProperties.class)`来将属性绑定到 POJO 中:
+**注意：**如果我们不在 POJO 中使用 `@Component`，那么我们需要在主 Spring 应用程序类中添加`@EnableConfigurationProperties(ConfigProperties.class)`来将属性绑定到 POJO 中:
 
 ```java
 @SpringBootApplication
