@@ -105,7 +105,7 @@ public class OwnerProperties {
 
 ### 校验
 
-Spring Boot 将尝试校验外部配置，默认使用 JSR-303（如果在 classpath 路径中），你只需要将 JSR-303 `javax.validation `约束注解添加到`@ConfigurationProperties`类上：
+Spring Boot 将尝试校验外部配置，默认使用 JSR-303（如果在 classpath 路径中），你只需要将 JSR-303 `javax.validation`约束注解添加到`@ConfigurationProperties`类上：
 
 ```java
 @ConfigurationProperties(prefix="connection")
@@ -115,6 +115,30 @@ public class ConnectionProperties {
     private InetAddress remoteAddress;
 
     // ... getters and setters
+
+}
+```
+
+为了校验内嵌属性的值，你需要使用 `@Valid `注解关联的字段以触发它的校验，例如：
+
+```java
+@ConfigurationProperties(prefix="connection")
+public class ConnectionProperties {
+
+    @NotNull
+    @Valid
+    private RemoteAddress remoteAddress;
+
+    // ... getters and setters
+
+    public static class RemoteAddress {
+
+        @NotEmpty
+        public String hostname;
+
+        // ... getters and setters
+
+    }
 
 }
 ```
