@@ -9,9 +9,9 @@
 public @interface ConfigurationProperties {
 
     /**
-     * The name prefix of the properties that are valid to bind to this object. Synonym
-     * for {@link #prefix()}. A valid prefix is defined by one or more words separated
-     * with dots (e.g. {@code "acme.system.feature"}).
+     * 绑定到此对象的有效属性的名称前缀。
+     * {@link #prefix()} 的同义词。 
+     * 一个有效的前缀是由一个或多个用 . 分隔的单词定义的(例如. {@code "acme.system.feature"})
      * @return the name prefix of the properties to bind
      */
     @AliasFor("prefix")
@@ -48,5 +48,5 @@ public @interface ConfigurationProperties {
 
 外部化配置的注解。如果您想绑定和验证一些外部属性\(例如来自 `.properties` 文件\)，请将其添加到 `@Configuration` 类中的类定义或 `@Bean` 方法中。
 
-注意，与 `@Value` 相反，SpEL表达式不计算值，因为属性值是外部化的。
+注意，与 `@Value` 相反，SpEL 表达式不计算值，因为属性值是外部化的。
 
