@@ -65,6 +65,18 @@ public FooComponent fooComponent() {
 
 所有以`foo`为前缀的属性定义都会被映射到`FooComponent`上。
 
+
+
+### 嵌套属性
+
+我们可以在 Lists、Maps 和 Classes 中嵌套属性。
+
+让我们创建一个新的凭证类，用于一些嵌套属性:
+
+```
+
+```
+
 ### Relaxed绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
@@ -159,5 +171,5 @@ public class ConnectionProperties {
 | Meta-data支持 | Yes | No |
 | SpEL表达式 | No | Yes |
 
-如果你为自己的组件定义了一系列的配置 keys，我们建议你将它们以`@ConfigurationProperties `注解的 POJO 进行分组。由于`@Value `不支持 relaxed 绑定，所以如果你使用环境变量提供属性值的话，它就不是很好的选择。最后，尽管 `@Value `可以写 `SpEL `表达式，但这些表达式不会处理来自 [Application属性文件](http://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-application-property-files) 的属性。
+如果你为自己的组件定义了一系列的配置 keys，我们建议你将它们以`@ConfigurationProperties`注解的 POJO 进行分组。由于`@Value`不支持 relaxed 绑定，所以如果你使用环境变量提供属性值的话，它就不是很好的选择。最后，尽管 `@Value`可以写 `SpEL`表达式，但这些表达式不会处理来自 [Application属性文件](http://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-application-property-files) 的属性。
 
