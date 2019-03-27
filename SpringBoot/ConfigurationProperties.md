@@ -147,7 +147,7 @@ mail.credentials.password=password
 mail.credentials.authMethod=SHA1
 ```
 
-**注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
+**注意：**如果我们不在 POJO 中使用 `@Configuration`，那么我们需要在主 Spring应用程序类中添加@EnableConfigurationProperties\(ConfigProperties.class\)来将属性绑定到POJO中:
 
 ### Relaxed绑定
 
