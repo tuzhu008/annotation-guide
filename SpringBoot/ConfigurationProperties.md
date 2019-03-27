@@ -155,7 +155,10 @@ public class ConnectionProperties {
 
 |  |  |  |
 | :--- | :--- | :--- |
-|  |  |  |
+| 特性 | @ConfigurationProperties | @Value |
+| Relaxed绑定 | Yes | No |
+| Meta-data支持 | Yes | No |
+| SpEL表达式 | No | Yes |
 
 
 
