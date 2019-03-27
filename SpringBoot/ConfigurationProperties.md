@@ -153,9 +153,8 @@ public class ConnectionProperties {
 
 `@ConfigurationProperties `和`@Value、`支持的特性：
 
-|  |  |  |
-| :--- | :--- | :--- |
 | 特性 | @ConfigurationProperties | @Value |
+| :--- | :--- | :--- |
 | Relaxed绑定 | Yes | No |
 | Meta-data支持 | Yes | No |
 | SpEL表达式 | No | Yes |
