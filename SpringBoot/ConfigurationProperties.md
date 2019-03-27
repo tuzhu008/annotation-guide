@@ -99,20 +99,20 @@ public class ConfigProperties {
 
 以下属性文件将设置所有字段:
 
-```java
+```bash
 #Simple properties
 mail.hostname=mailer@mail.com
 mail.port=9000
 mail.from=mailer@mail.com
- 
+
 #List properties
 mail.defaultRecipients[0]=admin@mail.com
 mail.defaultRecipients[1]=owner@mail.com
- 
+
 #Map Properties
 mail.additionalHeaders.redelivery=true
 mail.additionalHeaders.secure=true
- 
+
 #Object properties
 mail.credentials.username=john
 mail.credentials.password=password
