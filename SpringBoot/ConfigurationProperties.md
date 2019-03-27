@@ -36,9 +36,9 @@ public @interface ConfigurationProperties {
     boolean ignoreInvalidFields() default false;
 
     /**
-     * Flag to indicate that when binding to this object unknown fields should be ignored.
-     * An unknown field could be a sign of a mistake in the Properties.
-     * @return the flag value (default true)
+     * 一个标记，指示绑定到此对象时应忽略未知字段。
+     * 未知字段可能是属性错误的标志。
+     * @return 标记的值 (default true)
      */
     boolean ignoreUnknownFields() default true;
 
