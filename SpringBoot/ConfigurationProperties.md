@@ -51,3 +51,19 @@ public @interface ConfigurationProperties {
 
 注意，与 `@Value` 相反，SpEL 表达式不计算值，因为属性值是外部化的。
 
+
+
+`@ConfigurationProperties `不仅可以注解在类上，也可以注解在public `@Bean`方法上，当你需要为不受控的第三方组件绑定属性时，该方法将非常有用。
+
+为了从`Environment`属性中配置一个bean，你需要使用`@ConfigurationProperties`注解该 bean：
+
+```java
+@ConfigurationProperties(prefix = "foo")
+@Bean
+public FooComponent fooComponent() {
+    ...
+}
+```
+
+
+
