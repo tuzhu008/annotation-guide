@@ -159,9 +159,16 @@ public class DemoApplication {
 }
 ```
 
-就是这样！Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀邮件和与 ConfigProperties 类中的一个字段相同的名称。
+就是这样！**Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀 mail 和与 ConfigProperties 类中的一个字段相同的名称。**
 
-Spring使用一些放松的规则来绑定属性。因此，以下变量都绑定到属性主机名:
+我们可以使用以下属性文件设置所有字段:
+
+```bash
+#Simple properties
+mail.hostname=host@mail.com
+mail.port=9000
+mail.from=mailer@mail.com
+```
 
 ### Relaxed绑定
 
@@ -170,19 +177,16 @@ Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会�
 例如，给定以下`@ConfigurationProperties`类：
 
 ```java
-@ConfigurationProperties(prefix="person")
-public class OwnerProperties {
+@Configuration
+@PropertySource("classpath:configprops.properties")
+@ConfigurationProperties(prefix = "mail")
+public class ConfigProperties {
 
-    private String firstName;
+    private String hostName;
+    private int port;
+    private String from;
 
-    public String getFirstName() {
-        return this.firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
+    // standard getters and setters
 }
 ```
 
@@ -190,10 +194,10 @@ public class OwnerProperties {
 
 | 属性 | 说明 |
 | :--- | :--- |
-| person.firstName | 标准驼峰规则 |
-| person.first-name | 虚线表示，推荐用于 .properties 和 .yml 文件中 |
-| person.first\_name | 下划线表示，用于 .properties 和 .yml 文件的可选格式 |
-| PERSON\_FIRST\_NAME | 大写形式，使用系统环境变量时推荐 |
+| person.hostName | 标准驼峰规则 |
+| person.host-name | 虚线表示，推荐用于 .properties 和 .yml 文件中 |
+| person.host\_name | 下划线表示，用于 .properties 和 .yml 文件的可选格式 |
+| PERSON\_HOST\_NAME | 大写形式，使用系统环境变量时推荐 |
 
 ### 属性转换
 
