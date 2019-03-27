@@ -12,7 +12,7 @@ public @interface ConfigurationProperties {
      * 绑定到此对象的有效属性的名称前缀。
      * {@link #prefix()} 的同义词。 
      * 一个有效的前缀是由一个或多个用 . 分隔的单词定义的(例如. {@code "acme.system.feature"})
-     * @return the name prefix of the properties to bind
+     * @return 要绑定的属性的名称前缀
      */
     @AliasFor("prefix")
     String value() default "";
