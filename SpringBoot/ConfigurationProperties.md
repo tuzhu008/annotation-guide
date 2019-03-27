@@ -65,7 +65,7 @@ public FooComponent fooComponent() {
 
 所有以`foo`为前缀的属性定义都会被映射到`FooComponent`上。
 
-### 匹配规则
+### 松散绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
 
@@ -96,6 +96,28 @@ public class OwnerProperties {
 | person.first-name | 虚线表示，推荐用于 .properties 和 .yml 文件中 |
 | person.first\_name | 下划线表示，用于 .properties 和 .yml 文件的可选格式 |
 | PERSON\_FIRST\_NAME | 大写形式，使用系统环境变量时推荐 |
+
+### 属性转换
+
+将外部应用配置绑定到`@ConfigurationProperties`beans时，Spring 会尝试将属性强制转换为正确的类型。如果需要自定义类型转换器，你可以提供一个`ConversionService`bean（bean id 为`conversionService`），或自定义属性编辑器（通过`CustomEditorConfigurer`bean），或自定义`Converters`（bean定义时需要注解`@ConfigurationPropertiesBinding`）。
+
+**注：**由于该 bean 在应用程序生命周期的早期就需要使用，所以确保限制你的`ConversionService`使用的依赖。通常，在创建时期任何你需要的依赖可能都没完全初始化。
+
+### 校验
+
+Spring Boot 将尝试校验外部配置，默认使用 JSR-303（如果在 classpath 路径中），你只需要将 JSR-303 `javax.validation `约束注解添加到`@ConfigurationProperties`类上：
+
+```java
+@ConfigurationProperties(prefix="connection")
+public class ConnectionProperties {
+
+    @NotNull
+    private InetAddress remoteAddress;
+
+    // ... getters and setters
+
+}
+```
 
 
 
