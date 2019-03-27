@@ -159,6 +159,10 @@ public class DemoApplication {
 }
 ```
 
+就是这样！Spring 将自动绑定我们在属性文件中定义的任何属性，这些属性具有前缀邮件和与ConfigProperties类中的一个字段相同的名称。
+
+Spring使用一些放松的规则来绑定属性。因此，以下变量都绑定到属性主机名:
+
 ### Relaxed绑定
 
 Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
