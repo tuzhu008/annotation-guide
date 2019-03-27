@@ -48,5 +48,5 @@ public @interface ConfigurationProperties {
 
 外部化配置的注解。如果您想绑定和验证一些外部属性\(例如来自 `.properties` 文件\)，请将其添加到 `@Configuration` 类中的类定义或 `@Bean` 方法中。
 
-注意，与@Value相反，SpEL表达式不计算值，因为属性值是外部化的。
+注意，与 `@Value` 相反，SpEL表达式不计算值，因为属性值是外部化的。
 
