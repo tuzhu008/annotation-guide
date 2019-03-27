@@ -5,6 +5,7 @@
 * [IoC](Ioc.md)
 * [AOP](AOP.md)
 * [DI](DI.md)
+* [properties](properties.md)
 
 ## Java
 
