@@ -65,3 +65,26 @@ public FooComponent fooComponent() {
 
 所有以`foo`为前缀的属性定义都会被映射到`FooComponent`上。
 
+Spring Boot将`Environment`属性绑定到`@ConfigurationProperties`beans时会使用一些宽松的规则，所以`Environment`属性名和bean属性名不需要精确匹配。常见的示例中有用的包括虚线分割（比如，`context-path`绑定到`contextPath`），将environment属性转为大写字母（比如，`PORT`绑定`port`）。
+
+例如，给定以下`@ConfigurationProperties`类：
+
+```java
+@ConfigurationProperties(prefix="person")
+public class OwnerProperties {
+
+    private String firstName;
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+}
+```
+
+
+
