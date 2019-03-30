@@ -91,6 +91,12 @@
 * [@ComponentScan](/Spring/ComponentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
+* [@PathVariable]()
+* [@CookieValue]()
+* [@RequestHeader]()
+* [@ModelAttribute]()
+* [@SessionAttributes]()
+* [@InitBinder]()
 
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
