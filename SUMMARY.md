@@ -103,7 +103,7 @@
 
 ## javax
 
-* [persistence]
+* [persistence]()
   * [@Id](Spring/MyBatis/Delete.md)
   * [@GeneratedValue](Spring/MyBatis/Delete.md)
 
