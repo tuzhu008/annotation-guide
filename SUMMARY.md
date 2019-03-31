@@ -101,6 +101,11 @@
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
 
+## javax
+
+* [persistence]
+  * [@Id](Spring/MyBatis/Delete.md)
+  * [@GeneratedValue](Spring/MyBatis/Delete.md)
 
 ## MyBatis
 
