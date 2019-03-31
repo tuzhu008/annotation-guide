@@ -104,6 +104,8 @@
 
 ## MyBatis
 
+* [@Mapper](Spring/MyBatis/Delete.md)
+* [@MapperScan](Spring/MyBatis/Delete.md)
 * [@Insert](Spring/MyBatis/Delete.md)
 * [@Delete](Spring/MyBatis/Delete.md)
 * [@Select](Spring/MyBatis/Delete.md)
