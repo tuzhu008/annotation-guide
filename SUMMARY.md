@@ -104,6 +104,10 @@
 
 ## MyBatis
 
+* [@Insert](Spring/MyBatis/Delete.md)
 * [@Delete](Spring/MyBatis/Delete.md)
+* [@Select](Spring/MyBatis/Delete.md)
+* [@Update](Spring/MyBatis/Delete.md)
+* [@Param](Spring/MyBatis/Delete.md)
 
 ## lombok
