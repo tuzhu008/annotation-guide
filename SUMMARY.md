@@ -51,6 +51,13 @@
   * [@Conditional](Spring/conditional/Conditional.md)
   * [Condition](Spring/conditional/Condition.md)
 
+* Cache
+  * [@EnableCaching]()
+  * [@Cacheable]()
+  * [@CachePut]()
+  * [@CacheEvict]()
+  * [@Cacheable]()
+
 
 ## Spring Boot
 
@@ -102,9 +109,10 @@
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
 
-* Cache
-  * [Cacheable]()
+* [@Service]()
 
+* Test
+  * [@SpringBootTest]()
 ## javax
 
 * persistence
@@ -125,3 +133,8 @@
 * [@Result](Spring/MyBatis/Delete.md)
 
 ## lombok
+
+## Junit
+
+* [@RunWith]()
+* [@Test]
