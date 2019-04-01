@@ -97,15 +97,20 @@
 * [@ModelAttribute]()
 * [@SessionAttributes]()
 * [@InitBinder]()
+* [@AutoConfigureAfter]()
 
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
+
+* Cache
+  * [Cacheable]()
 
 ## javax
 
 * persistence
   * [@Id](Spring/MyBatis/Delete.md)
   * [@GeneratedValue](Spring/MyBatis/Delete.md)
+  * [@Table](Spring/MyBatis/Delete.md)
 
 ## MyBatis
 
