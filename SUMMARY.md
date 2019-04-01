@@ -154,3 +154,9 @@
 * [@ApiError]()
 * [@ApiModelProperty]()
   
+## Message Queue
+
+  * Kafka
+  * Activemq
+  * Zeromq
+  * Rabbitmq
