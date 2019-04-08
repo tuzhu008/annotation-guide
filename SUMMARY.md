@@ -58,6 +58,10 @@
   * [@CacheEvict]()
   * [@Cacheable]()
 
+Web
+  * [@ControllerAdvice]()
+  * [@RestControllerAdvice]()
+  * [@ExceptionHandler]()
 
 ## Spring Boot
 
@@ -110,15 +114,37 @@
 * [@Conditional](/Spring/Conditional.md)
 
 * [@Service]()
+  
+* [@Endpoint]()
+* [@ReadOperation]()
+* [@WriteOperation]()
+* [@DeleteOperation]()
+* [@ConditionalOnEnabledEndpoint]()
+
+Task
+  * [@Scheduled]()
+  * [@Async]()
+  * [@EnableScheduling]()
+  * [@EnableScheduling]()
+
+* [@EnableAdminServer]()
 
 * Test
   * [@SpringBootTest]()
+  
 ## javax
 
 * persistence
   * [@Id](Spring/MyBatis/Delete.md)
   * [@GeneratedValue](Spring/MyBatis/Delete.md)
   * [@Table](Spring/MyBatis/Delete.md)
+* validation
+  * []()
+
+## hibernate
+
+* validation
+  * []()
 
 ## MyBatis
 
