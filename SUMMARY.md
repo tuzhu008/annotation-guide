@@ -149,12 +149,21 @@ Task
   * [@Id](Spring/MyBatis/Delete.md)
   * [@GeneratedValue](Spring/MyBatis/Delete.md)
   * [@Table](Spring/MyBatis/Delete.md)
+  
 * validation
   * [@NotNull]()
   * [@NotBlank]()
   * [@DecimalMin]()
   * [@Pattern]()
   * [@Constraint]()
+
+## Message Queue
+
+  * Kafka
+  * Activemq
+  * Zeromq
+  * Rabbitmq
+    * [@RabbitListener]()
   
 ## 其他
 
@@ -202,10 +211,3 @@ Task
   * [@ApiError]()
   * [@ApiModelProperty]()
   
-## Message Queue
-
-  * Kafka
-  * Activemq
-  * Zeromq
-  * Rabbitmq
-    * [@RabbitListener]()
