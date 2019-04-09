@@ -58,7 +58,7 @@
   * [@CacheEvict]()
   * [@Cacheable]()
 
-Web
+* Web
   * [@ControllerAdvice]()
   * [@RestControllerAdvice]()
   * [@ExceptionHandler]()
@@ -124,7 +124,7 @@ Web
 * [@DeleteOperation]()
 * [@ConditionalOnEnabledEndpoint]()
 
-Task
+* Task
   * [@Scheduled]()
   * [@Async]()
   * [@EnableScheduling]()
