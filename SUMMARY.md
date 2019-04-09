@@ -132,6 +132,14 @@ Task
 
 * [@EnableAdminServer]()
 
+* WebSocket
+  * [@EnableWebSocket]()
+  * [@ServerEndpoint]()
+  * [@OnOpen]()
+  * [@OnMessage]()
+  * [@OnClose]()
+  * [@OnError]()
+
 * Test
   * [@SpringBootTest]()
   
@@ -154,6 +162,15 @@ Task
   * [@Length]()
 
 
+## aspectj
+
+* [@Aspect]()
+* [@Around]()
+
+## Shiro
+
+* [@RequiresRoles]()
+
 ## MyBatis
 
 * [@Mapper](Spring/MyBatis/Delete.md)
@@ -166,7 +183,7 @@ Task
 * [@Results](Spring/MyBatis/Delete.md)
 * [@Result](Spring/MyBatis/Delete.md)
 
-## lombok
+## Lombok
 
 ## Junit
 
