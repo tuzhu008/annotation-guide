@@ -156,53 +156,51 @@ Task
   * [@Pattern]()
   * [@Constraint]()
   
-## hibernate
-
-* validator
-  * [@Length]()
-
-
-## aspectj
-
-* [@Aspect]()
-* [@Around]()
-
-## Shiro
-
-* [@RequiresRoles]()
-
-## MyBatis
-
-* [@Mapper](Spring/MyBatis/Delete.md)
-* [@MapperScan](Spring/MyBatis/Delete.md)
-* [@Insert](Spring/MyBatis/Delete.md)
-* [@Delete](Spring/MyBatis/Delete.md)
-* [@Select](Spring/MyBatis/Delete.md)
-* [@Update](Spring/MyBatis/Delete.md)
-* [@Param](Spring/MyBatis/Delete.md)
-* [@Results](Spring/MyBatis/Delete.md)
-* [@Result](Spring/MyBatis/Delete.md)
-
 ## 其他
-  * Elasticsearch
-  * Lombok
-  * Junit
-    * [@RunWith]()
-    * [@Test]()
 
-  * swagger
-    * [@Api]()
-    * [@ApiIgnore]()
-    * [@ApiOperation]()
-    * [@ApiParam]()
-    * [@ApiModel]()
-    * [@ApiProperty]()
-    * [@ApiImplicitParam]()
-    * [@ApiImplicitParams]()
-    * [@ApiResponse]()
-    * [@ApiResponses]()
-    * [@ApiError]()
-    * [@ApiModelProperty]()
+* hibernate
+  * validator
+    * [@Length]()
+
+* aspectj
+  * [@Aspect]()
+  * [@Around]()
+
+* Shiro
+  * [@RequiresRoles]()
+
+* MyBatis
+  * [@Mapper](Spring/MyBatis/Delete.md)
+  * [@MapperScan](Spring/MyBatis/Delete.md)
+  * [@Insert](Spring/MyBatis/Delete.md)
+  * [@Delete](Spring/MyBatis/Delete.md)
+  * [@Select](Spring/MyBatis/Delete.md)
+  * [@Update](Spring/MyBatis/Delete.md)
+  * [@Param](Spring/MyBatis/Delete.md)
+  * [@Results](Spring/MyBatis/Delete.md)
+  * [@Result](Spring/MyBatis/Delete.md)
+
+* Elasticsearch
+
+* Lombok
+
+* Junit
+  * [@RunWith]()
+  * [@Test]()
+
+* swagger
+  * [@Api]()
+  * [@ApiIgnore]()
+  * [@ApiOperation]()
+  * [@ApiParam]()
+  * [@ApiModel]()
+  * [@ApiProperty]()
+  * [@ApiImplicitParam]()
+  * [@ApiImplicitParams]()
+  * [@ApiResponse]()
+  * [@ApiResponses]()
+  * [@ApiError]()
+  * [@ApiModelProperty]()
   
 ## Message Queue
 
