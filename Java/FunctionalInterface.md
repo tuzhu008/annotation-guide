@@ -1,4 +1,4 @@
-# @Override
+# @FunctionalInterface
 
 ## 定义
 
@@ -10,3 +10,6 @@ public @interface FunctionalInterface {}
 ```
 
 ## 解析
+
+
+
