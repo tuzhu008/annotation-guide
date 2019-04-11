@@ -55,9 +55,8 @@ public enum RetentionPolicy {
     CLASS,
 
     /**
-     * Annotations are to be recorded in the class file by the compiler and
-     * retained by the VM at run time, so they may be read reflectively.
-     * 注解由编译器记录在类文件中，并在运行时由 VM 保存，因此可以反射性地读取注解。
+     * 注解由编译器记录在类文件中，并在运行时由 VM 保存，因此他们可以被反射性地读取。
+     * 
      * @see java.lang.reflect.AnnotatedElement
      */
     RUNTIME
