@@ -10,16 +10,17 @@
 ## Java
 
 * [@SuppressWarnings](/Java/SuppressWarnings.md)
+* [@Deprecated](/Java/Deprecated.md)
+* [@FunctionalInterface](/Java/FunctionalInterface.md)
+* [@Override](/Java/Override.md)
 
 * annotation
-  * [@Target](/Java/Target.md)
-  * [@Retention](/Java/Retention.md)
-  * [@Inherited](/Java/Inherited.md)
-  * [@Documented](/Java/Documented.md)
-  * [@Deprecated](/Java/Deprecated.md)
-  * [@Repeatable](/Java/Repeatable.md)
-  * [@Native](/Java/Native.md)
-  * [@Override](/Java/Override.md)
+  * [@Target](/Java/annotation/Target.md)
+  * [@Retention](/Java/annotation/Retention.md)
+  * [@Inherited](/Java/annotation/Inherited.md)
+  * [@Documented](/Java/annotation/Documented.md)
+  * [@Repeatable](/Java/annotation/Repeatable.md)
+  * [@Native](/Java/annotation/Native.md)
   
 ## Spring
 
