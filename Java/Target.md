@@ -77,10 +77,10 @@ public class MyClass {
 
 ```java
 public enum ElementType {
-    /** Class, interface (including annotation type), or enum declaration */
+    /** 类, 接口 (包括注解类型), 或者枚举声明 */
     TYPE,
 
-    /** Field declaration (includes enum constants) */
+    /** 字段声明 (包括枚举常量) */
     FIELD,
 
     /** Method declaration */
