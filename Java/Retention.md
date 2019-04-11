@@ -37,5 +37,32 @@ import java.lang.annotation.RetentionPolicy;
 
 * `RetentionPolicy.SOURCE`：注解将在程序的源代码中可用，既不在 `.class` 文件中，也不在运行时可用。
 
+## RetentionPolicy
+
+#### 定义
+
+```java
+public enum RetentionPolicy {
+    /**
+     * 注解将被编译器丢弃。
+     */
+    SOURCE,
+
+    /**
+     * 注解由编译器记录在类文件中，但不需要由 VM 在运行时保留。
+     * 这是默认行为。
+     */
+    CLASS,
+
+    /**
+     * Annotations are to be recorded in the class file by the compiler and
+     * retained by the VM at run time, so they may be read reflectively.
+     * 注解由编译器记录在类文件中，并在运行时由 VM 保存，因此可以反射性地读取注释。
+     * @see java.lang.reflect.AnnotatedElement
+     */
+    RUNTIME
+}
+```
+
 
 
