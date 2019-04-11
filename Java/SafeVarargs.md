@@ -1,4 +1,4 @@
-# @Override
+# @SafeVarargs
 
 ## 定义
 
@@ -10,4 +10,6 @@ public @interface SafeVarargs {}
 ```
 
 ## 解析
+
+
 
