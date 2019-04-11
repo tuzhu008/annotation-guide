@@ -83,19 +83,19 @@ public enum ElementType {
     /** 字段声明 (包括枚举常量) */
     FIELD,
 
-    /** Method declaration */
+    /** 方法声明 */
     METHOD,
 
-    /** Formal parameter declaration */
+    /** 正式的参数声明 */
     PARAMETER,
 
-    /** Constructor declaration */
+    /** 构造函数声明 */
     CONSTRUCTOR,
 
-    /** Local variable declaration */
+    /** 局部变量声明 */
     LOCAL_VARIABLE,
 
-    /** Annotation type declaration */
+    /** 注解类型声明 */
     ANNOTATION_TYPE,
 
     /** Package declaration */
