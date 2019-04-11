@@ -102,14 +102,14 @@ public enum ElementType {
     PACKAGE,
 
     /**
-     * Type parameter declaration
+     * 类型参数声明
      *
      * @since 1.8
      */
     TYPE_PARAMETER,
 
     /**
-     * Use of a type
+     * 类型的使用
      *
      * @since 1.8
      */
