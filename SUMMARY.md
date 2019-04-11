@@ -13,6 +13,7 @@
 * [@Deprecated](/Java/Deprecated.md)
 * [@FunctionalInterface](/Java/FunctionalInterface.md)
 * [@Override](/Java/Override.md)
+* [@SafeVarargs]()
 
 * annotation
   * [@Target](/Java/annotation/Target.md)
