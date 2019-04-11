@@ -98,7 +98,7 @@ public enum ElementType {
     /** 注解类型声明 */
     ANNOTATION_TYPE,
 
-    /** Package declaration */
+    /** 包声明 */
     PACKAGE,
 
     /**
