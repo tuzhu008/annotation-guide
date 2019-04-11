@@ -14,8 +14,8 @@
 * [@Inherited](/Java/Inherited.md)
 * [@Documented](/Java/Documented.md)
 * [@Deprecated](/Java/Deprecated.md)
-* [@Override](/Java/Override.md)
 * [@SuppressWarnings](/Java/SuppressWarnings.md)
+* [@Override](/Java/Override.md)
 * [@Repeatable](/Java/Repeatable.md)
 * [@Native](/Java/Native.md)
   
