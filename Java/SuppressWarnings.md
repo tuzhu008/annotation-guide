@@ -16,8 +16,8 @@ public @interface SuppressWarnings {
 
 ```java
 @SuppressWarnings("deprecation")
-    void myMethod() {
-        myObject.deprecatedMethod();
+void myMethod() {
+    myObject.deprecatedMethod();
 }
 ```
 
