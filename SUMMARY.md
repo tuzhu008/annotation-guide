@@ -178,6 +178,7 @@
 * aspectj
   * [@Aspect]()
   * [@Around]()
+  * [@Pointcut]()
 
 * Shiro
   * [@RequiresRoles]()
