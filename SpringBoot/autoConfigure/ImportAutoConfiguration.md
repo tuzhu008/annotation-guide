@@ -38,5 +38,11 @@ public @interface ImportAutoConfiguration {
 
 ## 解析
 
+导入并应用指定的自动配置类。应用与 `@EnableAutoConfiguration` 相同的排序规则，但将自动配置类限制为指定的集合，而不是咨询spring.factories。
 
+还可以用于排除\(\)特定的自动配置类，这样它们就永远不会被应用。
+
+
+
+通常，应该优先使用@EnableAutoConfiguration而不是这个注释，但是，@ImportAutoConfiguration在某些情况下非常有用，尤其是在编写测试时。
 
