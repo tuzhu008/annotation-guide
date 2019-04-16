@@ -93,6 +93,16 @@
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
 * [@ConfigurationProperties](/SpringBoot/ConfigurationProperties.md)
 * [@EnableConfigurationProperties](/SpringBoot/EnableConfigurationProperties.md)
+* [@ImportAutoConfiguration](/SpringBoot/ImportAutoConfiguration.md)
+
+* autoconfigure
+  * [@SpringBootApplication](SpringBoot/autoConfigure/SpringBootApplication.md)
+  * [@AutoConfigurationPackage](SpringBoot/autoConfigure/AutoConfigurationPackage.md)
+  * [@AutoConfigureAfter](SpringBoot/autoConfigure/AutoConfigureAfter.md)
+  * [@AutoConfigureBefore](SpringBoot/autoConfigure/AutoConfigureBefore.md)
+  * [@AutoConfigureOrder](SpringBoot/autoConfigure/AutoConfigureOrder.md)
+  * [@EnableAutoConfiguration](SpringBoot/autoConfigure/EnableAutoConfiguration.md)
+  * [@ImportAutoConfiguration](SpringBoot/autoConfigure/ImportAutoConfiguration.md)
 
 * [条件注册](SpringBoot/conditional/README.md)
   * [@ConditionalOnClass](SpringBoot/conditional/ConditionalOnClass.md)
