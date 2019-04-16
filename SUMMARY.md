@@ -88,12 +88,9 @@
 
 ## Spring Boot
 
-* [@SpringBootApplication](/SpringBoot/springBootApplication.md)
-* [@EnableAutoConfiguration](/SpringBoot/EnableAutoConfiguration.md)
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
 * [@ConfigurationProperties](/SpringBoot/ConfigurationProperties.md)
 * [@EnableConfigurationProperties](/SpringBoot/EnableConfigurationProperties.md)
-* [@ImportAutoConfiguration](/SpringBoot/ImportAutoConfiguration.md)
 
 * autoconfigure
   * [@SpringBootApplication](SpringBoot/autoConfigure/SpringBootApplication.md)
