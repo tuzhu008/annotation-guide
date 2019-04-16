@@ -42,5 +42,5 @@ public @interface ImportAutoConfiguration {
 
 还可以使用 `exclude()` 排除特定的自动配置类，这样它们就永远不会被应用。
 
-通常，应该优先使用@EnableAutoConfiguration而不是这个注释，但是，@ImportAutoConfiguration在某些情况下非常有用，尤其是在编写测试时。
+通常，应该优先使用 `@EnableAutoConfiguration` 而不是这个注释，但是，@ImportAutoConfiguration在某些情况下非常有用，尤其是在编写测试时。
 
