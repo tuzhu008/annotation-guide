@@ -19,9 +19,8 @@ public @interface ImportAutoConfiguration {
     Class<?>[] value() default {};
 
     /**
-     * The auto-configuration classes that should be imported. When empty, the classes are
-     * specified using an entry in {@code META-INF/spring.factories} where the key is the
-     * fully-qualified name of the annotated class.
+     * 应该导入的自动配置类。 
+     * 当为空时，使用 {@code META-INF/spring.factories} 中的条目指定这些类，其中键是带注注解的类的完全限定名。
      * @return the classes to import
      */
     @AliasFor("value")
