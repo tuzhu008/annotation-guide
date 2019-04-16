@@ -89,8 +89,7 @@
 ## Spring Boot
 
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
-* [@ConfigurationProperties](/SpringBoot/ConfigurationProperties.md)
-* [@EnableConfigurationProperties](/SpringBoot/EnableConfigurationProperties.md)
+
 
 * autoconfigure
   * [@SpringBootApplication](SpringBoot/autoConfigure/SpringBootApplication.md)
@@ -100,25 +99,32 @@
   * [@AutoConfigureOrder](SpringBoot/autoConfigure/AutoConfigureOrder.md)
   * [@EnableAutoConfiguration](SpringBoot/autoConfigure/EnableAutoConfiguration.md)
   * [@ImportAutoConfiguration](SpringBoot/autoConfigure/ImportAutoConfiguration.md)
-
-* [条件注册](SpringBoot/conditional/README.md)
-  * [@ConditionalOnClass](SpringBoot/conditional/ConditionalOnClass.md)
-  * [@ConditionalOnBean](SpringBoot/conditional/ConditionalOnBean.md)
-  * [@ConditionalOnCloudPlatform](SpringBoot/conditional/ConditionalOnCloudPlatform.md)
-  * [@ConditionalOnEnabledResourceChain](SpringBoot/conditional/ConditionalOnEnabledResourceChain.md)
-  * [@ConditionalOnExpression](SpringBoot/conditional/ConditionalOnExpression.md)
-  * [@ConditionalOnJava](SpringBoot/conditional/ConditionalOnJava.md)
-  * [@ConditionalOnJndi](SpringBoot/conditional/ConditionalOnJndi.md)
-  * [@ConditionalOnProperty](SpringBoot/conditional/ConditionalOnProperty.md)
-  * [@ConditionalOnResource](SpringBoot/conditional/ConditionalOnResource.md)
-  * [@ConditionalOnSingleCandidate](SpringBoot/conditional/ConditionalOnSingleCandidate.md)
-  * [@ConditionalOnWebApplication](SpringBoot/conditional/ConditionalOnWebApplication.md)
-  * [@ConditionalOnNotWebApplication](SpringBoot/conditional/ConditionalOnNotWebApplication.md)
-  * [@ConditionalOnRepositoryType](SpringBoot/conditional/ConditionalOnRepositoryType.md)
-  * [@ConditionalOnMissingClass](SpringBoot/conditional/ConditionalOnMissingClass.md)
-  * [@ConditionalOnMissingBean](SpringBoot/conditional/ConditionalOnMissingBean.md)
-  * [@ConditionalOnMissingFilterBean](SpringBoot/conditional/ConditionalOnMissingFilterBean.md)
+  * [条件注册](SpringBoot/conditional/README.md)
+    * [@ConditionalOnClass](SpringBoot/conditional/ConditionalOnClass.md)
+    * [@ConditionalOnBean](SpringBoot/conditional/ConditionalOnBean.md)
+    * [@ConditionalOnCloudPlatform](SpringBoot/conditional/ConditionalOnCloudPlatform.md)
+    * [@ConditionalOnEnabledResourceChain](SpringBoot/conditional/ConditionalOnEnabledResourceChain.md)
+    * [@ConditionalOnExpression](SpringBoot/conditional/ConditionalOnExpression.md)
+    * [@ConditionalOnJava](SpringBoot/conditional/ConditionalOnJava.md)
+    * [@ConditionalOnJndi](SpringBoot/conditional/ConditionalOnJndi.md)
+    * [@ConditionalOnProperty](SpringBoot/conditional/ConditionalOnProperty.md)
+    * [@ConditionalOnResource](SpringBoot/conditional/ConditionalOnResource.md)
+    * [@ConditionalOnSingleCandidate](SpringBoot/conditional/ConditionalOnSingleCandidate.md)
+    * [@ConditionalOnWebApplication](SpringBoot/conditional/ConditionalOnWebApplication.md)
+    * [@ConditionalOnNotWebApplication](SpringBoot/conditional/ConditionalOnNotWebApplication.md)
+    * [@ConditionalOnRepositoryType](SpringBoot/conditional/ConditionalOnRepositoryType.md)
+    * [@ConditionalOnMissingClass](SpringBoot/conditional/ConditionalOnMissingClass.md)
+    * [@ConditionalOnMissingBean](SpringBoot/conditional/ConditionalOnMissingBean.md)
+    * [@ConditionalOnMissingFilterBean](SpringBoot/conditional/ConditionalOnMissingFilterBean.md)
   
+* context
+  * properties
+    * [@ConfigurationProperties](SpringBoot/context/properties/ConfigurationProperties.md)
+    * [@EnableConfigurationProperties](SpringBoot/context/properties/EnableConfigurationProperties.md)
+    * [@DeprecatedConfigurationProperty](SpringBoot/context/properties/DeprecatedConfigurationProperty.md)
+    * [@NestedConfigurationProperty](SpringBoot/context/properties/NestedConfigurationProperty.md)
+    * [@ConfigurationPropertiesBinding](SpringBoot/context/properties/ConfigurationPropertiesBinding.md)
+    
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
   * [@PostMapping](/Spring/requestmapping/postMapping.md)
