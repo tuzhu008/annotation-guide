@@ -27,7 +27,7 @@ public @interface ImportAutoConfiguration {
     Class<?>[] classes() default {};
 
     /**
-     * Exclude specific auto-configuration classes such that they will never be applied.
+     * 排除特定的自动配置类，这样它们就永远不会被应用。
      * @return the classes to exclude
      */
     Class<?>[] exclude() default {};
