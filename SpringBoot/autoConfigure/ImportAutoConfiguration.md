@@ -21,7 +21,7 @@ public @interface ImportAutoConfiguration {
     /**
      * 应该导入的自动配置类。 
      * 当为空时，使用 {@code META-INF/spring.factories} 中的条目指定这些类，其中键是带注注解的类的完全限定名。
-     * @return the classes to import
+     * @return 要导入的类
      */
     @AliasFor("value")
     Class<?>[] classes() default {};
