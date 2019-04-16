@@ -1,4 +1,4 @@
-## _@EnableAutoConfiguration_ {#enable-autoconfiguration}
+## @ImportAutoConfiguration {#enable-autoconfiguration}
 
 ## 定义
 
@@ -10,29 +10,31 @@
 @Import(ImportAutoConfigurationImportSelector.class)
 public @interface ImportAutoConfiguration {
 
-    /**
-     * 应该导入的自动配置类。{@link #classes()} 的别名
-     * 
-     * @return 要导入的类
-     */
-    @AliasFor("classes")
-    Class<?>[] value() default {};
+	/**
+	 * The auto-configuration classes that should be imported. This is an alias for
+	 * {@link #classes()}.
+	 * @return the classes to import
+	 */
+	@AliasFor("classes")
+	Class<?>[] value() default {};
 
-    /**
-     * 应该导入的自动配置类。
-     * 当为空时，使用 {@code META-INF/spring.factories} 中的一个条目指定的类，其中键是带注解的类的完全限定名。
-     * @return 要导入的类
-     */
-    @AliasFor("value")
-    Class<?>[] classes() default {};
+	/**
+	 * The auto-configuration classes that should be imported. When empty, the classes are
+	 * specified using an entry in {@code META-INF/spring.factories} where the key is the
+	 * fully-qualified name of the annotated class.
+	 * @return the classes to import
+	 */
+	@AliasFor("value")
+	Class<?>[] classes() default {};
 
-    /**
-     * 排除特定的自动配置类，这样它们就永远不会被应用。
-     * @return 要排除的类
-     */
-    Class<?>[] exclude() default {};
+	/**
+	 * Exclude specific auto-configuration classes such that they will never be applied.
+	 * @return the classes to exclude
+	 */
+	Class<?>[] exclude() default {};
 
 }
+
 ```
 
 ## 解析
