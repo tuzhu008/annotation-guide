@@ -90,7 +90,6 @@
 
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
 
-
 * autoconfigure
   * [@SpringBootApplication](SpringBoot/autoConfigure/SpringBootApplication.md)
   * [@AutoConfigurationPackage](SpringBoot/autoConfigure/AutoConfigurationPackage.md)
