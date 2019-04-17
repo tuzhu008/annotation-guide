@@ -371,6 +371,11 @@
   * [@Delegate](Others/Lombok/Delegate.md)
 
 * dubbo
+  * [@DubboComponentScan](Spring/dubbo/DubboComponentScan.md)
+  * [@EnableDubbo](Spring/dubbo/EnableDubbo.md)
+  * [@EnableDubboConfig](Spring/dubbo/EnableDubboConfig.md)
+  * [@EnableDubboConfigBinding](Spring/dubbo/EnableDubboConfigBinding.md)
+  * [@EnableDubboConfigBindings](Spring/dubbo/EnableDubboConfigBindings.md)
   * [@Reference](Others/dubbo/Reference.md)
   * [@Service](Others/dubbo/Service.md)
   
