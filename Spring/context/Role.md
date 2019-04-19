@@ -35,11 +35,15 @@ public @interface Role {
 
 * ROLE_APPLICATION
 
-    角色提示，指示AAA是应用程序的主要部分。通常对应于用户定义的bean。
+    角色提示，指示 {@code BeanDefinition} 是应用程序的主要部分。通常对应于用户定义的 bean。
 
 * ROLE_INFRASTRUCTURE
+  
+    角色提示，指示 {@code BeanDefinition} 提供一个完全后台的角色，与最终用户无关。此提示用于注册完全属于内部工作的 bean
 
 * ROLE_SUPPORT
+
+    角色提示，指示 {@code BeanDefinition} 是一些较大配置(通常是外部配置)的支持部分
 
 
 
