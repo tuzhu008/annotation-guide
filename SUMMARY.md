@@ -69,7 +69,7 @@
 * [上下文配置相关](Spring/requestmapping/READMA.md)
   * [@Profile](/Spring/Profile.md)
   * [@Import](Spring/context/Import.md)
-  * [@ImportResource](/Spring/ImportResource.md)
+  * [@ImportResource](Spring/context/ImportResource.md)
   * [@PropertySource](/Spring/PropertySource.md)
   * [@PropertySources](/Spring/PropertySources.md)
   
