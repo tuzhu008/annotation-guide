@@ -3,6 +3,8 @@
 ## 定义
 
 ```java
+package org.springframework.context.annotation;
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
