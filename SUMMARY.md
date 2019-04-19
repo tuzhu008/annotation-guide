@@ -435,7 +435,7 @@
   * [@License](Others/swagger/License.md)
   * [@ResponseHeader](Others/swagger/ResponseHeader.md)
   * [@SwaggerDefinition](Others/swagger/SwaggerDefinition.md)
-  * [@Tag][]
+  * [@Tag]
   
 
 [@Tag]:Others/swagger/Tag.md
