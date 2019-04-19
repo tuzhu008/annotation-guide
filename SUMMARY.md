@@ -25,24 +25,46 @@
   
 ## Spring
 
+* context
+  * [@Bean](Spring/context/Bean.md)
+  * [@ComponentScan](Spring/context/ComponentScan.md)
+  * [@ComponentScans](Spring/context/ComponentScans.md)
+  * [@Conditional](Spring/context/Conditional.md)
+  * [@Configuration](Spring/context/Configuration.md)
+  * [@DependsOn](Spring/context/DependsOn.md)
+  * [@Description](Spring/context/Description.md)
+  * [@EnableAspectJAutoProxy](Spring/context/EnableAspectJAutoProxy.md)
+  * [@EnableLoadTimeWeaving](Spring/context/EnableLoadTimeWeaving.md)
+  * [@EnableMBeanExport](Spring/context/EnableMBeanExport.md)
+  * [@FilterType](Spring/context/FilterType.md)
+  * [@Import](Spring/context/Import.md)
+  * [@ImportResource](Spring/context/ImportResource.md)
+  * [@Lazy](Spring/context/Lazy.md)
+  * [@Primary](Spring/context/Primary.md)
+  * [@Profile](Spring/context/Profile.md)
+  * [@PropertySource](Spring/context/PropertySource.md)
+  * [@PropertySources](Spring/context/PropertySources.md)
+  * [@Role](Spring/context/Role.md)
+  * [@Scope](Spring/context/Scope.md)
+
 * [Bean](/Spring/Bean/README.md)
   * [@Component](/Spring/Bean/Component.md)
   * [@Repository](/Spring/Bean/Repository.md)
   * [@Service](/Spring/Bean/Service.md)
   * [@Controller](/Spring/Bean/Controller.md)
-  * [@Configuration](/Spring/Bean/Configuration.md)
+  * [@Configuration](Spring/context/Configuration.md)
   
 * [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
-  * [@Bean](/Spring/Bean.md)
+  * [@Bean](Spring/context/Bean.md)
   * [@Qualifier](/Spring/Qualifier.md)
   * [@Required](/Spring/Required.md)
   * [@Value](/Spring/Value.md)
-  * [@DependsOn](/Spring/DependsOn.md)
-  * [@Lazy](/Spring/Lazy.md)
+  * [@DependsOn](Spring/context/DependsOn.md)
+  * [@Lazy](Spring/context/Lazy.md)
   * [@Lookup](/Spring/Lookup.md)
-  * [@Primary](/Spring/Primary.md)
-  * [@Scope](/Spring/Scope.md)
+  * [@Primary](Spring/context/Primary.md)
+  * [@Scope](Spring/context/Scope.md)
   
 * [上下文配置相关](Spring/requestmapping/READMA.md)
   * [@Profile](/Spring/Profile.md)
@@ -134,7 +156,6 @@
 * [@SpringBootApplication](/Spring/SpringBootApplication.md)
 * [@RestController](/Spring/RestController.md)
 * [@ResponseBody](/Spring/ResponseBody.md)
-* [@ComponentScan](/Spring/ComponentScan.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
 * [@PathVariable]()
@@ -416,3 +437,5 @@
   * [@SwaggerDefinition](Others/swagger/SwaggerDefinition.md)
   * [@Tag](Others/swagger/Tag.md)
   
+
+[aaaa]:
