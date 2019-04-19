@@ -1,4 +1,4 @@
-# @ComponentScan
+# @ComponentScans
 
 ## 定义
 
