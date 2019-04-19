@@ -25,3 +25,19 @@ public @interface Role {
 
 
 
+### BeanDefinition
+
+* ROLE\_APPLICATION
+
+* ROLE\_INFRASTRUCTURE
+
+* ROLE\_SUPPORT
+
+
+
+
+
+
+
+
+
