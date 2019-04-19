@@ -23,7 +23,13 @@ public @interface Role {
 
 ## 解析
 
+指示给定 bean 的“角色”提示。
 
+可用于任何直接或间接使用 `@Component` 注解的类或使用 `@Bean` 注解的方法。
+
+如果 Component 或 Bean 定义上不存在此注解，则使用默认值 `BeanDefinition.ROLE_APPLICATION`
+
+如果 `@Role` 出现在 `@Configuration` 类上，则表示配置类bean定义的角色，并且不会级联到其中定义的所有@Bean方法。例如，这种行为与@Lazy注释不同。
 
 ### BeanDefinition
 
@@ -32,12 +38,6 @@ public @interface Role {
 * ROLE\_INFRASTRUCTURE
 
 * ROLE\_SUPPORT
-
-
-
-
-
-
 
 
 
