@@ -33,9 +33,9 @@ public @interface Role {
 
 ### BeanDefinition
 
-* ROLE\_APPLICATION
+* ROLE_APPLICATION
 
-
+    角色提示，指示AAA是应用程序的主要部分。通常对应于用户定义的bean。
 
 * ROLE\_INFRASTRUCTURE
 
