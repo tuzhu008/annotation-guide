@@ -70,8 +70,8 @@
   * [@Profile](Spring/context/Profile.md)
   * [@Import](Spring/context/Import.md)
   * [@ImportResource](Spring/context/ImportResource.md)
-  * [@PropertySource](/Spring/PropertySource.md)
-  * [@PropertySources](/Spring/PropertySources.md)
+  * [@PropertySource](Spring/context/PropertySource.md)
+  * [@PropertySources](Spring/context/PropertySources.md)
   
 * [条件注册](Spring/conditional/READEME.md)
   * [@Conditional](Spring/context/Conditional.md)
