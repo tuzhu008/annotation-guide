@@ -11,7 +11,7 @@ package org.springframework.context.annotation;
 public @interface Description {
 
     /**
-     * The textual description to associate with the bean definition.
+     * 与 bean 定义关联的文本描述。
      */
     String value();
 
