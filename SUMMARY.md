@@ -69,7 +69,6 @@
   * [@ImportResource](Spring/context/ImportResource.md)
   * [@PropertySource](Spring/context/PropertySource.md)
   * [@PropertySources](Spring/context/PropertySources.md)
-* [条件注册](Spring/conditional/READEME.md)
 
 * Cache
   * @EnableCaching
