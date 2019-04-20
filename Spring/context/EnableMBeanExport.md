@@ -1,4 +1,4 @@
-# @EnableAspectJAutoProxy
+# @EnableMBeanExport
 
 ## 定义
 
