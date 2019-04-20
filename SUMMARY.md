@@ -52,6 +52,14 @@
   * [@Role](Spring/context/Role.md)
   * [@Scope](Spring/context/Scope.md)
   
+* [beans.factory]
+  * [@Value](Spring/BeanFactory/Value.md)
+  * [@Required](Spring/BeanFactory/Required.md)
+  * [@Qualifier](Spring/BeanFactory/Qualifier.md)
+  * [@Lookup](Spring/BeanFactory/Lookup.md)
+  * [@Configurable](Spring/BeanFactory/Configurable.md)
+  * [@Autowired](Spring/BeanFactory/Autowired.md)
+  
 * [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
   * [@Bean](Spring/context/Bean.md)
