@@ -24,7 +24,7 @@
 
 ## Spring
 
-* [context](Spring/Bean/context.md)
+* [context](Spring/context/README.md)
   * [@Bean](Spring/context/Bean.md)
   * [@ComponentScan](Spring/context/ComponentScan.md)
   * [@ComponentScans](Spring/context/ComponentScans.md)
