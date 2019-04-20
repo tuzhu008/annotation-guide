@@ -60,13 +60,6 @@
   * [@Configurable](Spring/BeanFactory/Configurable.md)
   * [@Autowired](Spring/BeanFactory/Autowired.md)
   
-* [上下文配置相关](Spring/requestmapping/READMA.md)
-  * [@Profile](Spring/context/Profile.md)
-  * [@Import](Spring/context/Import.md)
-  * [@ImportResource](Spring/context/ImportResource.md)
-  * [@PropertySource](Spring/context/PropertySource.md)
-  * [@PropertySources](Spring/context/PropertySources.md)
-
 * Cache
   * @EnableCaching
   * @Cacheable
