@@ -52,7 +52,7 @@
   * [@Role](Spring/context/Role.md)
   * [@Scope](Spring/context/Scope.md)
   
-* [beans.factory]
+* [beans.factory](Spring/BeanFactory/README.md)
   * [@Value](Spring/BeanFactory/Value.md)
   * [@Required](Spring/BeanFactory/Required.md)
   * [@Qualifier](Spring/BeanFactory/Qualifier.md)
