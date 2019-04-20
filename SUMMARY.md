@@ -23,13 +23,13 @@
   * [@Native](/Java/annotation/Native.md)
 
 ## Spring
-
 * [stereotype](Spring/stereotype/README.md)
   * [@Component](Spring/stereotype/Component.md)
   * [@Controller](Spring/stereotype/Controller.md)
   * [@Indexed](Spring/stereotype/Indexed.md)
   * [@Repository](Spring/stereotype/Repository.md)
   * [@Service](Spring/stereotype/Service.md)
+  * [Bean](Spring/stereotype/README.md)
 
 * [context](Spring/context/README.md)
   * [@Bean](Spring/context/Bean.md)
@@ -107,6 +107,9 @@
   * [@LastModifiedBy](Spring/data/LastModifiedBy.md)
   * [@QueryAnnotation](Spring/data/QueryAnnotation.md)
 
+* 相关概念
+  * [Bean](Spring/docs/Bean.md)
+  
 ## Spring Boot
 
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
