@@ -19,7 +19,5 @@ public @interface Conditional {
 
 ## 解析
 
-
-
-
+@Conditional 注解表示只有当所有条件都匹配时，组件才有资格注册。
 
