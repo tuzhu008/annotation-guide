@@ -1,4 +1,4 @@
-# @EnableAspectJAutoProxy
+# @FilterType
 
 ## 定义
 
