@@ -24,7 +24,7 @@
 
 ## Spring
 
-* stereotype
+* [stereotype](Spring/stereotype/README.md)
   * [@Component](Spring/stereotype/Component.md)
   * [@Controller](Spring/stereotype/Controller.md)
   * [@Indexed](Spring/stereotype/Indexed.md)
