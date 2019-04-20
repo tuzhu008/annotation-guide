@@ -21,7 +21,9 @@ public @interface Scope {
 
 ## 解析
 
-我们使用 `@Scope` 来定义 `@Component` 类或 `@Bean` 定义的作用域。它可以是单例\(_singleton_\)、原型\(_prototype_\)、请求\(_request_\)、会话\(_session_\)、全局会话\(_globalSession_\)或一些自定义作用域。
+我们使用 `@Scope` 来定义 `@Component` 类或 `@Bean` 定义的作用域。
+
+它可以是单例\(_singleton_\)、原型\(_prototype_\)、请求\(_request_\)、会话\(_session_\)、全局会话\(_globalSession_\)或一些自定义作用域。
 
 例如：
 
@@ -29,7 +31,6 @@ public @interface Scope {
 @Component
 @Scope("prototype")
 class Engine {}
-
 ```
 
 
