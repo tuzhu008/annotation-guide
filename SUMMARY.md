@@ -24,6 +24,13 @@
 
 ## Spring
 
+* stereotype
+  * [@Component](Spring/stereotype/Component.md)
+  * [@Controller](Spring/stereotype/Controller.md)
+  * [@Indexed](Spring/stereotype/Indexed.md)
+  * [@Repository](Spring/stereotype/Repository.md)
+  * [@Service](Spring/stereotype/Service.md)
+
 * [context](Spring/context/README.md)
   * [@Bean](Spring/context/Bean.md)
   * [@ComponentScan](Spring/context/ComponentScan.md)
