@@ -31,5 +31,7 @@ public @interface Conditional {
 
 * 作为任何 `@Bean`方法的方法级注解
 
+如果 `@Configuration` 类被标记为 `@Conditional`，那么与该类关联的所有 `@Bean` 方法、`@Import` 注解和 `@ComponentScan`注解都将受这些条件的约束。
+
 
 
