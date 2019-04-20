@@ -54,15 +54,11 @@
   
 * [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
-  * [@Bean](Spring/context/Bean.md)
   * [@Qualifier](/Spring/Qualifier.md)
   * [@Required](/Spring/Required.md)
   * [@Value](/Spring/Value.md)
-  * [@DependsOn](Spring/context/DependsOn.md)
-  * [@Lazy](Spring/context/Lazy.md)
   * [@Lookup](/Spring/Lookup.md)
-  * [@Primary](Spring/context/Primary.md)
-  * [@Scope](Spring/context/Scope.md)
+  
 * [上下文配置相关](Spring/requestmapping/READMA.md)
   * [@Profile](Spring/context/Profile.md)
   * [@Import](Spring/context/Import.md)
@@ -71,7 +67,7 @@
   * [@PropertySources](Spring/context/PropertySources.md)
 * [条件注册](Spring/conditional/READEME.md)
   * [@Conditional](Spring/context/Conditional.md)
-  * [Condition](Spring/conditional/Condition.md)
+  * 
 * Cache
   * @EnableCaching
   * @Cacheable
@@ -102,6 +98,7 @@
 
 * 相关概念
   * [Bean](Spring/docs/Bean.md)
+  * [Condition](Spring/docs/Condition.md)
   
 ## Spring Boot
 
