@@ -24,7 +24,7 @@ public @interface Lookup {
 
 ## 详述
 
-`@Lookup` 注释了解 Spring 的方法级依赖项注入支持。
+`@Lookup` 注解提供了 Spring 的方法级依赖项注入支持。
 
 ### Why @Lookup
 
