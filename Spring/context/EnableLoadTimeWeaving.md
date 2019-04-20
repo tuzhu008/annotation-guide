@@ -1,4 +1,4 @@
-# @EnableAspectJAutoProxy
+# @EnableLoadTimeWeaving
 
 ## 定义
 
