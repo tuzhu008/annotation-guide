@@ -21,3 +21,5 @@ public @interface Conditional {
 
 @Conditional 注解表示只有当所有条件都匹配时，组件才有资格注册。
 
+条件是在注册 bean 定义之前可以通过编程确定的任何状态，参见。
+
