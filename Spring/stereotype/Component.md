@@ -1,4 +1,4 @@
-## _**@Component**_ {#component}
+# _**@Component**_
 
 ## 定义
 
