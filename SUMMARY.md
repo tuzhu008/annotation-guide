@@ -70,8 +70,7 @@
   * [@PropertySource](Spring/context/PropertySource.md)
   * [@PropertySources](Spring/context/PropertySources.md)
 * [条件注册](Spring/conditional/READEME.md)
-  * [@Conditional](Spring/context/Conditional.md)
-  * [Condition](Spring/conditional/Condition.md)
+
 * Cache
   * @EnableCaching
   * @Cacheable
@@ -102,6 +101,7 @@
 
 * 相关概念
   * [Bean](Spring/docs/Bean.md)
+  * [Condition](Spring/docs/Condition.md)
   
 ## Spring Boot
 
