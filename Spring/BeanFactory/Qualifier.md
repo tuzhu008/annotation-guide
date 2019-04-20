@@ -1,4 +1,4 @@
-### _@Qualifier_ {#qualifier}
+# _@Qualifier_
 
 ## 定义
 
