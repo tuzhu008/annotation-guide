@@ -26,7 +26,9 @@ public @interface Conditional {
 `@Conditional` 注释可以下列任何一种方式使用:
 
 * 作为任何直接或间接用 `@Component`注解的类的类型级别注解，包括 `@Configuration` 类
+
 * 作为元注解，用于组合自定义 stereotype 注释
+
 * 作为任何 `@Bean`方法的方法级注解
 
 
