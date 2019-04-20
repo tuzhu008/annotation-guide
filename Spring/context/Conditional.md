@@ -33,5 +33,5 @@ public @interface Conditional {
 
 如果 `@Configuration` 类被标记为 `@Conditional`，那么与该类关联的所有 `@Bean` 方法、`@Import` 注解和 `@ComponentScan`注解都将受这些条件的约束。
 
-
+**注意：**不支持 `@Configuration` 注释的继承；不考虑来自超类或覆盖方法的任何条件。为了加强这些语义，`@Conditional` 本身没有声明为 `@inherit`；此外，任何使用 `@Conditional` 进行元注释的自定义复合注注解都不能声明为 `@ inherit`。
 
