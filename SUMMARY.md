@@ -14,7 +14,6 @@
 * [@FunctionalInterface](/Java/FunctionalInterface.md)
 * [@Override](/Java/Override.md)
 * [@SafeVarargs](/Java/SafeVarargs.md)
-
 * annotation
   * [@Target](/Java/annotation/Target.md)
   * [@Retention](/Java/annotation/Retention.md)
@@ -22,10 +21,10 @@
   * [@Documented](/Java/annotation/Documented.md)
   * [@Repeatable](/Java/annotation/Repeatable.md)
   * [@Native](/Java/annotation/Native.md)
-  
+
 ## Spring
 
-* context
+* [context](Spring/Bean/context.md)
   * [@Bean](Spring/context/Bean.md)
   * [@ComponentScan](Spring/context/ComponentScan.md)
   * [@ComponentScans](Spring/context/ComponentScans.md)
@@ -46,14 +45,12 @@
   * [@PropertySources](Spring/context/PropertySources.md)
   * [@Role](Spring/context/Role.md)
   * [@Scope](Spring/context/Scope.md)
-
 * [Bean](/Spring/Bean/README.md)
   * [@Component](/Spring/Bean/Component.md)
   * [@Repository](/Spring/Bean/Repository.md)
   * [@Service](/Spring/Bean/Service.md)
   * [@Controller](/Spring/Bean/Controller.md)
   * [@Configuration](Spring/context/Configuration.md)
-  
 * [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
   * [@Bean](Spring/context/Bean.md)
@@ -65,33 +62,27 @@
   * [@Lookup](/Spring/Lookup.md)
   * [@Primary](Spring/context/Primary.md)
   * [@Scope](Spring/context/Scope.md)
-  
 * [上下文配置相关](Spring/requestmapping/READMA.md)
   * [@Profile](Spring/context/Profile.md)
   * [@Import](Spring/context/Import.md)
   * [@ImportResource](Spring/context/ImportResource.md)
   * [@PropertySource](Spring/context/PropertySource.md)
   * [@PropertySources](Spring/context/PropertySources.md)
-  
 * [条件注册](Spring/conditional/READEME.md)
   * [@Conditional](Spring/context/Conditional.md)
   * [Condition](Spring/conditional/Condition.md)
-
 * Cache
-  * [@EnableCaching]()
-  * [@Cacheable]()
-  * [@CachePut]()
-  * [@CacheEvict]()
-  * [@Cacheable]()
-
+  * @EnableCaching
+  * @Cacheable
+  * @CachePut
+  * @CacheEvict
+  * @Cacheable
 * Web
-  * [@ControllerAdvice]()
-  * [@RestControllerAdvice]()
-  * [@ExceptionHandler]()
-
+  * @ControllerAdvice
+  * @RestControllerAdvice
+  * @ExceptionHandler
 * validation
-  * [Validated]()
-
+  * Validated
 * data
   * [@ReadOnlyProperty](Spring/data/ReadOnlyProperty.md)
   * [@Version](Spring/data/Version.md)
@@ -111,7 +102,6 @@
 ## Spring Boot
 
 * [@SpringBootConfiguration](/SpringBoot/SpringBootConfiguration.md)
-
 * autoconfigure
   * [@SpringBootApplication](SpringBoot/autoConfigure/SpringBootApplication.md)
   * [@AutoConfigurationPackage](SpringBoot/autoConfigure/AutoConfigurationPackage.md)
@@ -137,7 +127,6 @@
     * [@ConditionalOnMissingClass](SpringBoot/conditional/ConditionalOnMissingClass.md)
     * [@ConditionalOnMissingBean](SpringBoot/conditional/ConditionalOnMissingBean.md)
     * [@ConditionalOnMissingFilterBean](SpringBoot/conditional/ConditionalOnMissingFilterBean.md)
-  
 * context
   * properties
     * [@ConfigurationProperties](SpringBoot/context/properties/ConfigurationProperties.md)
@@ -145,7 +134,6 @@
     * [@DeprecatedConfigurationProperty](SpringBoot/context/properties/DeprecatedConfigurationProperty.md)
     * [@NestedConfigurationProperty](SpringBoot/context/properties/NestedConfigurationProperty.md)
     * [@ConfigurationPropertiesBinding](SpringBoot/context/properties/ConfigurationPropertiesBinding.md)
-    
 * [@RequestMapping](/Spring/requestmapping/requestmapping.md)
   * [@GetMapping](/Spring/requestmapping/getmapping.md)
   * [@PostMapping](/Spring/requestmapping/postMapping.md)
@@ -158,44 +146,37 @@
 * [@ResponseBody](/Spring/ResponseBody.md)
 * [@Resource](/Spring/Resource.md)
 * [@RequestParam](/Spring/RequestParam.md)
-* [@PathVariable]()
-* [@CookieValue]()
-* [@RequestHeader]()
-* [@ModelAttribute]()
-* [@SessionAttributes]()
-* [@InitBinder]()
-* [@AutoConfigureAfter]()
-
+* @PathVariable
+* @CookieValue
+* @RequestHeader
+* @ModelAttribute
+* @SessionAttributes
+* @InitBinder
+* @AutoConfigureAfter
 * [@Inject](/Spring/Inject.md)
 * [@Conditional](/Spring/Conditional.md)
-
-* [@Service]()
-  
-* [@Endpoint]()
-* [@ReadOperation]()
-* [@WriteOperation]()
-* [@DeleteOperation]()
-* [@ConditionalOnEnabledEndpoint]()
-
+* @Service
+* @Endpoint
+* @ReadOperation
+* @WriteOperation
+* @DeleteOperation
+* @ConditionalOnEnabledEndpoint
 * Task
-  * [@Scheduled]()
-  * [@Async]()
-  * [@EnableScheduling]()
-  * [@EnableScheduling]()
-
-* [@EnableAdminServer]()
-
+  * @Scheduled
+  * @Async
+  * @EnableScheduling
+  * @EnableScheduling
+* @EnableAdminServer
 * WebSocket
-  * [@EnableWebSocket]()
-  * [@ServerEndpoint]()
-  * [@OnOpen]()
-  * [@OnMessage]()
-  * [@OnClose]()
-  * [@OnError]()
-
+  * @EnableWebSocket
+  * @ServerEndpoint
+  * @OnOpen
+  * @OnMessage
+  * @OnClose
+  * @OnError
 * Test
-  * [@SpringBootTest]()
-  
+  * @SpringBootTest
+
 ## javax
 
 * [@Generated](Javax/Generated.md)
@@ -203,12 +184,10 @@
 * [@PreDestroy](Javax/PreDestroy.md)
 * [@Resource](Javax/Resource.md)
 * [@Resources](Javax/Resources.md)
-
 * persistence
   * [@Id](Spring/MyBatis/Delete.md)
   * [@GeneratedValue](Spring/MyBatis/Delete.md)
   * [@Table](Spring/MyBatis/Delete.md)
-  
 * validation
   * [@Constraint](Javax/validation/Constraint.md)
   * [@GroupSequence](Javax/validation/GroupSequence.md)
@@ -241,18 +220,17 @@
 
 ## Message Queue
 
-  * Kafka
-  * Activemq
-  * Zeromq
-  * Rabbitmq
-    * [@RabbitListener]()
-  
+* Kafka
+* Activemq
+* Zeromq
+* Rabbitmq
+  * @RabbitListener
+
 ## 其他
 
 * hibernate
   * validator
-    * [@Length]()
-
+    * @Length
 * jackson
   * [@JsonIgnoreProperties](Others/Jackson/JsonIgnoreProperties.md)
   * [@JsonAnyGetter](Others/Jackson/JsonAnyGetter.md)
@@ -289,7 +267,6 @@
   * [@JsonIdentityInfo](Others/Jackson/JsonIdentityInfo.md)
   * [@JsonPropertyOrder](Others/Jackson/JsonPropertyOrder.md)
   * [@JacksonAnnotationsInside](Others/Jackson/JacksonAnnotationsInside.md)
-
 * aspectj
   * [@AdviceName](Others/aspectj/AdviceName.md)
   * [@After](Others/aspectj/After.md)
@@ -307,14 +284,12 @@
   * [@Pointcut](Others/aspectj/Pointcut.md)
   * [@RequiredTypes](Others/aspectj/RequiredTypes.md)
   * [@SuppressAjWarnings](Others/aspectj/SuppressAjWarnings.md)
-
 * Shiro
   * [@RequiresAuthentication](Others/shiro/RequiresAuthentication.md)
   * [@RequiresGuest](Others/shiro/RequiresGuest.md)
   * [@RequiresPermissions](Others/shiro/RequiresPermissions.md)
   * [@RequiresRoles](Others/shiro/RequiresRoles.md)
   * [@RequiresUser](Others/shiro/RequiresUser.md)
-
 * MyBatis
   * [@Arg](Others/Mybatis/Arg.md)
   * [@AutomapConstructor](Others/Mybatis/AutomapConstructor.md)
@@ -345,7 +320,6 @@
   * [@TypeDiscriminator](Others/Mybatis/TypeDiscriminator.md)
   * [@Update](Others/Mybatis/Update.md)
   * [@UpdateProvider](Others/Mybatis/UpdateProvider.md)
-  
 * Elasticsearch
   * [@CompletionField](Others/ElasticSeach/CompletionField.md)
   * [@Field](Others/ElasticSeach/Field.md)
@@ -361,7 +335,6 @@
   * [@ScriptedField](Others/ElasticSeach/ScriptedField.md)
   * [@Query](Others/ElasticSeach/Query.md)
   * [@InnerField](Others/ElasticSeach/InnerField.md)
-
 * guava
   * [@Beta](Others/guava/Beta.md)
   * [@GwtCompatible](Others/guava/GwtCompatible.md)
@@ -370,7 +343,6 @@
   * eventbus
     * [@Subscribe](Others/guava/eventbus/Subscribe.md)
     * [@AllowConcurrentEvents](Others/guava/eventbus/AllowConcurrentEvents.md)
-  
 * Lombok
   * [@Setter](Others/Lombok/Setter.md)
   * [@SneakyThrows](Others/Lombok/SneakyThrows.md)
@@ -390,7 +362,6 @@
   * [@Singular](Others/Lombok/Singular.md)
   * [@Synchronized](Others/Lombok/Synchronized.md)
   * [@Delegate](Others/Lombok/Delegate.md)
-
 * dubbo
   * [@DubboComponentScan](Spring/dubbo/DubboComponentScan.md)
   * [@EnableDubbo](Spring/dubbo/EnableDubbo.md)
@@ -399,7 +370,6 @@
   * [@EnableDubboConfigBindings](Spring/dubbo/EnableDubboConfigBindings.md)
   * [@Reference](Others/dubbo/Reference.md)
   * [@Service](Others/dubbo/Service.md)
-  
 * Junit
   * [@Rule](Others/Junit/Rule.md)
   * [@After](Others/Junit/After.md)
@@ -414,7 +384,6 @@
     * [@RunWith](Others/Junit/runner/RunWith.md)
   * validator
     * [@ValidateWith](Others/Junit/validator/ValidateWith.md)
-
 * swagger
   * [@Api](Others/swagger/Api.md)
   * [@ApiImplicitParam](Others/swagger/ApiImplicitParam.md)
@@ -436,4 +405,4 @@
   * [@ResponseHeader](Others/swagger/ResponseHeader.md)
   * [@SwaggerDefinition](Others/swagger/SwaggerDefinition.md)
   * [@Tag](Others/swagger/Tag.md)
-  
+
