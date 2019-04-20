@@ -29,7 +29,6 @@
   * [@Indexed](Spring/stereotype/Indexed.md)
   * [@Repository](Spring/stereotype/Repository.md)
   * [@Service](Spring/stereotype/Service.md)
-  * [Bean](Spring/stereotype/README.md)
 
 * [context](Spring/context/README.md)
   * [@Bean](Spring/context/Bean.md)
@@ -53,12 +52,6 @@
   * [@Role](Spring/context/Role.md)
   * [@Scope](Spring/context/Scope.md)
   
-* [Bean](/Spring/Bean/README.md)
-  * [@Component](/Spring/Bean/Component.md)
-  * [@Repository](/Spring/Bean/Repository.md)
-  * [@Service](/Spring/Bean/Service.md)
-  * [@Controller](/Spring/Bean/Controller.md)
-  * [@Configuration](Spring/context/Configuration.md)
 * [依赖注入相关](Spring/requestmapping/di.md)
   * [@Autowired](/Spring/autowired.md)
   * [@Bean](Spring/context/Bean.md)
