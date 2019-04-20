@@ -36,5 +36,5 @@ public @interface Configurable {
 
 将一个类标记为有资格进行 Spring驱动配置。
 
-通常与 AspectJ 注解 AnnotationBeanConfigurerAspect 一起使用。
+通常与 AspectJ  AnnotationBeanConfigurerAspect 一起使用。
 
