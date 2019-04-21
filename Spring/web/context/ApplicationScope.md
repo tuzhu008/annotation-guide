@@ -25,5 +25,5 @@ public @interface ApplicationScope {
 
 具体来说，`@ApplicationScope` 是一个复合注解，它充当 `@Scope("application")`的快捷方式，默认的 `proxyMode()` 设置为 `TARGET_CLASS`。
 
-`@ApplicationScope` 可以用作元注解来创建自定义组合注释。
+`@ApplicationScope` 可以用作元注解来创建自定义复合注释。
 
