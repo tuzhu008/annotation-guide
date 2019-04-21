@@ -10,7 +10,7 @@
 public @interface ApplicationScope {
 
     /**
-     * Alias for {@link Scope#proxyMode}.
+     * {@link Scope#proxyMode} 的别名.
      * <p>默认为 {@link ScopedProxyMode#TARGET_CLASS}.
      */
     @AliasFor(annotation = Scope.class)
