@@ -26,5 +26,5 @@ public @interface RestController {
 
 `@RestController` 是一个专门版本的控制器。它包括 [`@Controller`](/Spring/stereotype/Controller.md) 和 [`@ResponseBody`](/Spring/web/bind/ResponseBody.md) 注解，因此简化了控制器实现。
 
-携带此注解的类型被视为控制器，其中 `@RequestMapping` 方法默认假定 `@ResponseBody` 语义。
+携带此注解的类型被视为控制器，其中的 `@RequestMapping` 方法默认假定 `@ResponseBody` 语义。
 
