@@ -33,10 +33,10 @@ public class ResponseTransfer {
 @Controller
 @RequestMapping("/post")
 public class ExamplePostController {
- 
+
     @Autowired
     ExampleService exampleService;
- 
+
     @PostMapping("/response")
     @ResponseBody
     public ResponseTransfer postResponseController(
@@ -44,6 +44,12 @@ public class ExamplePostController {
         return new ResponseTransfer("Thanks For Posting!!!");
      }
 }
+```
+
+在浏览器的开发人员控制台或使用像 Postman 这样的工具，我们可以看到以下响应:
+
+```
+{"text":"Thanks For Posting!!!"}
 ```
 
 
