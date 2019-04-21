@@ -47,7 +47,7 @@ public @interface ExceptionHandler {
 
 * 一个 Map 对象，用于公开模型，视图名称通过 `RequestToViewNameTranslator` 隐式确定。
 
-* 一个视图对象。
+* 一个 View 对象。
 
 * 一个字符串值，它被解释为视图名。
 
