@@ -56,9 +56,7 @@ public @interface PatchMapping {
 
 ## 解析
 
-用于将 HTTP DELETE 请求映射到特定处理器方法的注解。
+用于将 HTTP PATCH 请求映射到特定处理器方法的注解。
 
-具体来说，`@DeleteMapping` 是一个复合注释，它充当 `@RequestMapping(method = RequestMethod.DELETE)` 的快捷方式。
-
-
+具体来说，`@PatchMapping` 是一个复合注释，它充当 `@RequestMapping(method = RequestMethod.PATCH)` 的快捷方式。
 
