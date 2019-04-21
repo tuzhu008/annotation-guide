@@ -28,5 +28,5 @@ public @interface InitBinder {
 
 这种 init-binder 方法支持 RequestMapping 支持的所有参数，但 command/form 对象和相应的验证结果对象除外。Init-binder 方法必须没有返回值；它们通常被声明为 void。
 
-典型的参数是WebDataBinder与WebRequest或Locale结合使用，允许注册特定于上下文的编辑器。
+典型的参数是 WebDataBinder 与 WebRequest 或 Locale 结合使用，允许注册特定于上下文的编辑器。
 
