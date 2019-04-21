@@ -26,7 +26,7 @@ public @interface InitBinder {
 
 `@InitBinder` 用于标识初始化 [WebDataBinder](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/WebDataBinder.html) 的方法，WebDataBinder 将用于填充带注解的处理器方法的命令和表单对象参数。
 
-这种 init-binder 方法支持 RequestMapping 支持的所有参数，但 command/form 对象和相应的验证结果对象除外。Init-binder方法必须没有返回值;它们通常被声明为无效。
+这种 init-binder 方法支持 RequestMapping 支持的所有参数，但 command/form 对象和相应的验证结果对象除外。Init-binder 方法必须没有返回值;它们通常被声明为无效。
 
 典型的参数是WebDataBinder与WebRequest或Locale结合使用，允许注册特定于上下文的编辑器。
 
