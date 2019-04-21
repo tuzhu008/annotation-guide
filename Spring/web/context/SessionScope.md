@@ -9,18 +9,23 @@
 @Scope(WebApplicationContext.SCOPE_SESSION)
 public @interface SessionScope {
 
-	/**
-	 * Alias for {@link Scope#proxyMode}.
-	 * <p>Defaults to {@link ScopedProxyMode#TARGET_CLASS}.
-	 */
-	@AliasFor(annotation = Scope.class)
-	ScopedProxyMode proxyMode() default ScopedProxyMode.TARGET_CLASS;
+    /**
+     * Alias for {@link Scope#proxyMode}.
+     * <p>Defaults to {@link ScopedProxyMode#TARGET_CLASS}.
+     */
+    @AliasFor(annotation = Scope.class)
+    ScopedProxyMode proxyMode() default ScopedProxyMode.TARGET_CLASS;
 
 }
-
 ```
 
 ## 解析
 
+@RequestScope是组件的@Scope专门化，其生命周期绑定到当前web请求。
 
+具体来说，@RequestScope是一个复合注释，它充当@Scope\(“request”\)的快捷方式，默认的proxyMode\(\)设置为TARGET\_CLASS。
+
+
+
+@RequestScope可以用作元注释来创建自定义组合注释。
 
