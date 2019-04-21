@@ -10,9 +10,10 @@
 public @interface RequestScope {
 
     /**
-     * Alias for {@link Scope#proxyMode}.
-     * <p>Defaults to {@link ScopedProxyMode#TARGET_CLASS}.
+     * {@link Scope#proxyMode} 的别名.
+     * <p>默认为 {@link ScopedProxyMode#TARGET_CLASS}.
      */
+
     @AliasFor(annotation = Scope.class)
     ScopedProxyMode proxyMode() default ScopedProxyMode.TARGET_CLASS;
 
