@@ -22,7 +22,7 @@ public @interface RequestBody {
 
 ## 解析
 
-`@RequestBody` 表示方法参数应该绑定到 web 请求的主体。请求的主体通过HttpMessageConverter传递，以根据请求的内容类型解析方法参数。另外，可以使用@Valid注释参数来应用自动验证。
+`@RequestBody` 表示方法参数应该绑定到 web 请求的主体。请求的主体通过 HttpMessageConverter 传递，以根据请求的内容类型解析方法参数。另外，可以使用@Valid注释参数来应用自动验证。
 
 支持带注释的处理程序方法。
 
