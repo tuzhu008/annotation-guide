@@ -29,7 +29,7 @@ public @interface ExceptionHandler {
 
 * Session 对象：通常是 HttpSession。这种类型的参数将强制出现相应的会话。因此，这样的参数永远不会为空。注意，会话访问可能不是线程安全的，特别是在 Servlet 环境中：如果允许多个请求同时访问会话，请考虑将 `synchronizeOnSession` 标志切换为 `true`。
 
-* WebRequest或NativeWebRequest。允许通用请求参数访问以及请求/会话属性访问，而不需要与本机Servlet API绑定。
+* WebRequest 或 NativeWebRequest。允许通用请求参数访问以及请求/会话属性访问，而不需要与本机 Servlet API 绑定。
 
 * 当前请求区域设置的区域设置\(由可用的最特定的区域设置解析器决定，即Servlet环境中配置的LocaleResolver\)。
 
