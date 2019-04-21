@@ -41,7 +41,7 @@ public @interface ExceptionHandler {
 
 处理器方法支持以下返回类型:
 
-* 一个ModelAndView对象\(来自Servlet MVC\)。
+* 一个 ModelAndView 对象\(来自 Servlet MVC\)。
 
 * 一个模型对象，视图名通过RequestToViewNameTranslator隐式地确定。
 
