@@ -28,5 +28,5 @@ public @interface RestController {
 
 携带此注解的类型被视为控制器，其中的 `@RequestMapping` 方法默认假定 `@ResponseBody` 语义。
 
-**注意**：如果配置了适当的 HandlerMapping-HandlerAdapter 对\(如 MVC Java 配置和 MVC 名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter对\)，@RestController将被处理。
+**注意**：如果配置了适当的 HandlerMapping-HandlerAdapter 对\(如 MVC Java 配置和 MVC 名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter 对\)，`@RestController` 将被处理。
 
