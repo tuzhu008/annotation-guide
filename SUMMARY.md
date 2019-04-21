@@ -66,10 +66,40 @@
   * @CachePut
   * @CacheEvict
   * @Cacheable
+  
 * Web
-  * @ControllerAdvice
-  * @RestControllerAdvice
-  * @ExceptionHandler
+  * context
+    * [@ApplicationScope](Spring/web/context/ApplicationScope.md)
+    * [@SessionScope](Spring/web/context/SessionScope.md)
+    * [@RequestScope](Spring/web/context/RequestScope.md)
+  * bind
+    * [@RestControllerAdvice](Spring/web/bind/RestControllerAdvice.md)
+    * [@CookieValue](Spring/web/bind/CookieValue.md)
+    * [@ModelAttribute](Spring/web/bind/ModelAttribute.md)
+    * [@RequestParam](Spring/web/bind/RequestParam.md)
+    * [@RequestPart](Spring/web/bind/RequestPart.md)
+    * [@Mapping](Spring/web/bind/Mapping.md)
+    * [@PathVariable](Spring/web/bind/PathVariable.md)
+    * [@RequestHeader](Spring/web/bind/RequestHeader.md)
+    * [@RequestAttribute](Spring/web/bind/RequestAttribute.md)
+    * [@RestController](Spring/web/bind/RestController.md)
+    * [@RequestBody](Spring/web/bind/RequestBody.md)
+    * [@SessionAttributes](Spring/web/bind/SessionAttributes.md)
+    * [@CrossOrigin](Spring/web/bind/CrossOrigin.md)
+    * [@ResponseStatus](Spring/web/bind/ResponseStatus.md)
+    * [@RequestMapping](Spring/web/bind/RequestMapping.md)
+    * [@MatrixVariable](Spring/web/bind/MatrixVariable.md)
+    * [@ControllerAdvice](Spring/web/bind/ControllerAdvice.md)
+    * [@ExceptionHandler](Spring/web/bind/ExceptionHandler.md)
+    * [@PutMapping](Spring/web/bind/PutMapping.md)
+    * [@DeleteMapping](Spring/web/bind/DeleteMapping.md)
+    * [@ResponseBody](Spring/web/bind/ResponseBody.md)
+    * [@SessionAttribute](Spring/web/bind/SessionAttribute.md)
+    * [@GetMapping](Spring/web/bind/GetMapping.md)
+    * [@PostMapping](Spring/web/bind/PostMapping.md)
+    * [@InitBinder](Spring/web/bind/InitBinder.md)
+    * [@PatchMapping](Spring/web/bind/PatchMapping.md)
+  
 * validation
   * Validated
 * data
