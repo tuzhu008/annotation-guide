@@ -22,8 +22,27 @@ public @interface ResponseBody {
 ```java
 public class ResponseTransfer {
     private String text; 
-     
+
     // standard getters/setters
+}
+```
+
+接下来，可以实现相关的控制器:
+
+```java
+@Controller
+@RequestMapping("/post")
+public class ExamplePostController {
+ 
+    @Autowired
+    ExampleService exampleService;
+ 
+    @PostMapping("/response")
+    @ResponseBody
+    public ResponseTransfer postResponseController(
+      @RequestBody LoginForm loginForm) {
+        return new ResponseTransfer("Thanks For Posting!!!");
+     }
 }
 ```
 
