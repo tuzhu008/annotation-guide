@@ -25,5 +25,5 @@ public @interface SessionScope {
 
 具体来说，`@RequestScope` 是一个复合注释，它充当 `@Scope("request")` 的快捷方式，默认的 `proxyMode()` 设置为`TARGET_CLASS`。
 
-@RequestScope可以用作元注释来创建自定义组合注释。
+`@RequestScope` 可以用作元注释来创建自定义组合注释。
 
