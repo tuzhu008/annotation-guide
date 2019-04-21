@@ -24,7 +24,7 @@ public @interface InitBinder {
 
 ## 解析
 
-`@InitBinder` 用于标识初始化 WebDataBinder 的方法，WebDataBinder 将用于填充带注释的处理程序方法的命令和表单对象参数。
+`@InitBinder` 用于标识初始化 [WebDataBinder](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/WebDataBinder.html) 的方法，WebDataBinder 将用于填充带注释的处理程序方法的命令和表单对象参数。
 
 这种init-binder方法支持RequestMapping支持的所有参数，但命令/表单对象和相应的验证结果对象除外。Init-binder方法必须没有返回值;它们通常被声明为无效。
 
