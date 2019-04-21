@@ -30,3 +30,21 @@ public @interface RestController {
 
 **注意**：如果配置了适当的 HandlerMapping-HandlerAdapter 对\(如 MVC Java 配置和 MVC 名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter 对\)，`@RestController` 将被处理。
 
+```java
+@RestController
+@RequestMapping("books-rest")
+public class SimpleBookRestController {
+     
+    @GetMapping("/{id}", produces = "application/json")
+    public Book getBook(@PathVariable int id) {
+        return findBookById(id);
+    }
+ 
+    private Book findBookById(int id) {
+        // ...
+    }
+}
+```
+
+
+
