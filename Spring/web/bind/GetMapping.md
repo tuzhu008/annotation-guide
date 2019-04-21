@@ -59,7 +59,5 @@ public @interface GetMapping {
 
 用于将 HTTP GET 请求映射到特定处理器方法的注解。
 
-具体来说，@GetMapping是一个复合注释，它充当@RequestMapping\(method = RequestMethod.GET\)的快捷方式。
-
-
+具体来说，`@GetMapping` 是一个复合注释，它充当 `@RequestMapping(method = RequestMethod.GET)` 的快捷方式。
 
