@@ -21,9 +21,7 @@ public @interface ExceptionHandler {
 
 `@ExceptionHandler` 用于处理特定处理器类和/或处理器方法中的异常。
 
-使用此注释注释的处理程序方法允许具有非常灵活的签名。它们可以有以下类型的参数，按任意顺序排列:
-
-
+使用此注解的处理程序方法允许具有非常灵活的签名。它们可以有以下类型的参数，按任意顺序排列:
 
 异常参数:声明为一般异常或更具体的异常。如果注释本身没有通过value\(\)缩小异常类型的范围，那么这也可以作为映射提示。
 
@@ -43,8 +41,6 @@ WebRequest或NativeWebRequest。允许通用请求参数访问以及请求/会�
 
 处理程序方法支持以下返回类型:
 
-
-
 一个ModelAndView对象\(来自Servlet MVC\)。
 
 一个模型对象，视图名通过RequestToViewNameTranslator隐式地确定。
@@ -62,6 +58,4 @@ WebRequest或NativeWebRequest。允许通用请求参数访问以及请求/会�
 如果方法本身处理响应\(通过直接编写响应内容，声明ServletResponse / HttpServletResponse类型的参数\)，或者视图名应该通过RequestToViewNameTranslator隐式确定\(而不是在处理程序方法签名中声明响应参数\)，则为void。
 
 对于特定的HTTP错误状态，可以将ExceptionHandler注释与@ResponseStatus结合使用。
-
-
 
