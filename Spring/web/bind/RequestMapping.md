@@ -61,7 +61,7 @@ Spring MVC 和 Spring WebFlux 都在各自的模块和包结构中通过 `Reques
 
 **注意**：这个注解可以在类级和方法级使用。在大多数情况下，在方法级别，应用程序更喜欢使用 HTTP 方法特定的变体`@GetMapping`、`@PostMapping`、`@PutMapping`、`@DeleteMapping` 或 `@PatchMapping` 之一。
 
-**注意**：当使用控制器接口\(例如用于 AOP 代理\)时，确保一致地将所有映射注释\(例如@RequestMapping和@SessionAttributes\)放在控制器接口上，而不是实现类上。
+**注意**：当使用控制器接口\(例如用于 AOP 代理\)时，确保一致地将所有映射注释\(例如 `@RequestMapping` 和 `@SessionAttributes`\)放在控制器接口上，而不是实现类上。
 
 ### 参数
 
