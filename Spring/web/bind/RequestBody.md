@@ -56,13 +56,12 @@ public class LoginForm {
 
 让我们用CURL测试一下：
 
-```java
+```bash
 curl -i \
 -H "Accept: application/json" \
 -H "Content-Type:application/json" \
 -X POST --data 
   '{"username": "johnny", "password": "password"}' "https://localhost:8080/.../request"
-
 ```
 
 
