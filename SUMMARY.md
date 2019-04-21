@@ -114,7 +114,8 @@
   
 * [validation](Spring/validation/README.md)
   * [@Validated](Spring/validation/Validated.md)
-* data
+  
+* [data](Spring/data/README.md)
   * [@ReadOnlyProperty](Spring/data/ReadOnlyProperty.md)
   * [@Version](Spring/data/Version.md)
   * [@PersistenceConstructor](Spring/data/PersistenceConstructor.md)
@@ -171,21 +172,7 @@
     * [@ConfigurationPropertiesBinding](SpringBoot/context/properties/ConfigurationPropertiesBinding.md)
 
 * [@Spring](/Spring/spring.md)
-* [@SpringBootApplication](/Spring/SpringBootApplication.md)
-* [@RestController](/Spring/RestController.md)
-* [@ResponseBody](/Spring/ResponseBody.md)
-* [@Resource](/Spring/Resource.md)
-* [@RequestParam](/Spring/RequestParam.md)
-* @PathVariable
-* @CookieValue
-* @RequestHeader
-* @ModelAttribute
-* @SessionAttributes
-* @InitBinder
-* @AutoConfigureAfter
 * [@Inject](/Spring/Inject.md)
-* [@Conditional](/Spring/Conditional.md)
-* @Service
 * @Endpoint
 * @ReadOperation
 * @WriteOperation
