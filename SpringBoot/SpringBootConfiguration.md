@@ -3,6 +3,8 @@
 ## 定义
 
 ```java
+package org.springframework.boot;
+
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
