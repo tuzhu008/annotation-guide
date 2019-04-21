@@ -71,7 +71,7 @@ public @interface ControllerAdvice {
 
 带有 `@ControllerAdvice` 的类可以显式声明为 Spring bean，也可以通过类路径扫描自动检测。所有这些 bean 都是通过[AnnotationAwareOrderComparator](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/annotation/AnnotationAwareOrderComparator.html) 进行排序的，即基于 `@Order` 和 [Ordered](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/Ordered.html)，并在运行时按该顺序应用。对于处理异常，`@ExceptionHandler` 将在第一个具有匹配异常处理器方法的 advice 中选择。对于模型属性和 InitBinder 初始化，`@ModelAttribute` 和 `@InitBinder` 方法也将遵循 `@ControllerAdvice` 顺序。
 
-**注意**：对于 `@ExceptionHandler` 方法，在特定 advice bean 的处理程序方法中，根异常匹配将优先于仅匹配当前异常原因。然而，高优先级 advice 上的原因匹配仍然比低优先级 advice bean上的任何匹配\(无论是根级别还是原因级别\)更受欢迎。因此，请使用相应的顺序在优先化的 advice bean上声明主根异常映射!
+**注意**：对于 `@ExceptionHandler` 方法，在特定 advice bean 的处理程序方法中，根异常匹配将优先于仅匹配当前异常原因。然而，高优先级 advice 上的原因匹配仍然比低优先级 advice bean上的任何匹配\(无论是根级别还是原因级别\)更受欢迎。因此，请使用相应的顺序在区分优先的 advice bean上声明主根异常映射!
 
 默认情况下，@ControllerAdvice中的方法全局应用于所有控制器。使用选择器annotation\(\)、basepackageclass\(\)和basePackages\(\)\(或其别名值\(\)\)来定义更窄的目标控制器子集。如果声明了多个选择器，或者应用了逻辑，这意味着所选控制器应该至少匹配一个选择器。注意，选择器检查是在运行时执行的，因此添加许多选择器可能会对性能产生负面影响，并增加复杂性。
 
