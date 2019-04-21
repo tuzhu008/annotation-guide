@@ -21,7 +21,7 @@ public @interface ApplicationScope {
 
 ## 解析
 
-`@ApplicationScope` 是为主键组件定制的 `@Scope`，其生命周期绑定到当前 web 应用程序。
+`@ApplicationScope` 是为组件定制的 `@Scope`，其生命周期绑定到当前 web 应用程序。
 
 具体来说，`@ApplicationScope` 是一个复合注解，它充当 `@Scope("application")`的快捷方式，默认的 `proxyMode()` 设置为 `TARGET_CLASS`。
 
