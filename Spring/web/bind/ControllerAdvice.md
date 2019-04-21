@@ -67,15 +67,11 @@ public @interface ControllerAdvice {
 
 ## 解析
 
-定制化的 `@Component` ，用于声明要在多个 `@Controller` 类之间共享的@ExceptionHandler、@InitBinder或@ModelAttribute方法的类。
+定制化的 `@Component` ，用于声明要在多个 `@Controller` 类之间共享的 `@ExceptionHandler`、@InitBinder或@ModelAttribute方法的类。
 
 带有@ControllerAdvice的类可以显式声明为Spring bean，也可以通过类路径扫描自动检测。所有这些bean都是通过AnnotationAwareOrderComparator进行排序的，即基于@Order和Ordered，并在运行时按该顺序应用。对于处理异常，@ExceptionHandler将在第一个具有匹配异常处理方法的通知中选择。对于模型属性和InitBinder初始化，@ModelAttribute和@InitBinder方法也将遵循@ControllerAdvice顺序。
 
-
-
 注意:对于@ExceptionHandler方法，在特定通知bean的处理程序方法中，根异常匹配将优先于仅匹配当前异常的原因。然而，高优先级通知上的原因匹配仍然比低优先级通知bean上的任何匹配\(无论是根级别还是原因级别\)更受欢迎。因此，请使用相应的顺序在优先化的advice bean上声明主根异常映射!
-
-
 
 默认情况下，@ControllerAdvice中的方法全局应用于所有控制器。使用选择器annotation\(\)、basepackageclass\(\)和basePackages\(\)\(或其别名值\(\)\)来定义更窄的目标控制器子集。如果声明了多个选择器，或者应用了逻辑，这意味着所选控制器应该至少匹配一个选择器。注意，选择器检查是在运行时执行的，因此添加许多选择器可能会对性能产生负面影响，并增加复杂性。
 
