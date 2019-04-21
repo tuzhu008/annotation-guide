@@ -157,12 +157,7 @@
     * [@DeprecatedConfigurationProperty](SpringBoot/context/properties/DeprecatedConfigurationProperty.md)
     * [@NestedConfigurationProperty](SpringBoot/context/properties/NestedConfigurationProperty.md)
     * [@ConfigurationPropertiesBinding](SpringBoot/context/properties/ConfigurationPropertiesBinding.md)
-* [@RequestMapping](/Spring/requestmapping/requestmapping.md)
-  * [@GetMapping](/Spring/requestmapping/getmapping.md)
-  * [@PostMapping](/Spring/requestmapping/postMapping.md)
-  * [@PutMapping](/Spring/requestmapping/putMapping.md)
-  * [@DeleteMapping](/Spring/requestmapping/deleteMapping.md)
-  * [@PatchMapping](/Spring/requestmapping/patchMapping.md)
+
 * [@Spring](/Spring/spring.md)
 * [@SpringBootApplication](/Spring/SpringBootApplication.md)
 * [@RestController](/Spring/RestController.md)
