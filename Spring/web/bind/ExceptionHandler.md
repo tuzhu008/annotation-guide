@@ -49,7 +49,7 @@ public @interface ExceptionHandler {
 
 * 一个 View 对象。
 
-* 一个字符串值，它被解释为视图名。
+* 一个 String 值，它被解释为视图名。
 
 * @ResponseBody带注释的方法\(只有servlet\)来设置响应内容。返回值将使用消息转换器转换为响应流。
 
