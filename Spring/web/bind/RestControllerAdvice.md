@@ -65,7 +65,7 @@ public @interface RestControllerAdvice {
 
 一个方便的注解，它本身由 `@ControllerAdvice` 和 `@ResponseBody` 注释组成。
 
-携带此注释的类型被视为控制器通知，其中@ExceptionHandler方法默认假定@ResponseBody语义。
+携带此注解的类型被视为控制器通知，其中@ExceptionHandler方法默认假定@ResponseBody语义。
 
 注意:如果配置了适当的HandlerMapping-HandlerAdapter对\(如MVC Java配置和MVC名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter对\)，@RestControllerAdvice将被处理。
 
