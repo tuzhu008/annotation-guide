@@ -21,7 +21,7 @@ public @interface RequestScope {
 
 ## 解析
 
-`@SessionScope` 是为组件定制的 `@Scope`，其生命周期绑定到当前 web 会话。
+`@SessionScope` 是定制化的 `@Scope`，用于生命周期绑定到当前 web 会话的组件。
 
 具体来说，`@RequestScope` 是一个复合注释，它充当 `@Scope("request")` 的快捷方式，默认的 `proxyMode()` 设置为`TARGET_CLASS`。
 
