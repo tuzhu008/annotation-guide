@@ -55,5 +55,5 @@ public @interface RequestParam {
 
 如果方法参数类型为 Map，并且指定了一个请求参数名，那么假设有合适的转换策略，请求参数值将转换为 Map。
 
-如果方法参数是Map&lt;String、String&gt;或MultiValueMap&lt;String、String&gt;和参数名未指定，则使用所有请求参数名和值填充Map参数。
+如果方法参数是 `Map<String、String>` 或MultiValueMap&lt;String、String&gt;和参数名未指定，则使用所有请求参数名和值填充Map参数。
 
