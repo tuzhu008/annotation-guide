@@ -64,5 +64,5 @@ curl -i \
   '{"username": "johnny", "password": "password"}' "https://localhost:8080/.../request"
 ```
 
-
+这就是 Spring REST API 和使用 `@RequestBody` 注解的客户机所需要的全部内容!
 
