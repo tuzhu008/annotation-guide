@@ -30,3 +30,17 @@ public @interface RequestBody {
 
 简单地说，`@RequestBody` 注解将 HttpRequest 主体映射到传输\(transfer\)或域\(domain\)对象，从而支持将入站 HttpRequest 主体自动反序列化到 Java 对象。
 
+下面有一个处理器方法：
+
+```java
+@PostMapping("/request")
+public ResponseEntity postController(
+  @RequestBody LoginForm loginForm) {
+  
+    exampleService.fakeAuthenticate(loginForm);
+    return ResponseEntity.ok(HttpStatus.OK);
+}
+```
+
+
+
