@@ -47,7 +47,7 @@ public @interface RequestParam {
 
 `@RequestParam` 注解用以说明方法参数应该绑定到 web 请求参数。
 
-支持Spring MVC和Spring WebFlux中的带注释的处理程序方法:
+支持 Spring MVC 和 Spring WebFlux 中的带注注解的处理器方法:
 
 在Spring MVC中，“请求参数”映射到多部分请求中的查询参数、表单数据和部件。这是因为Servlet API将查询参数和表单数据组合成一个名为“parameters”的映射，其中包括对请求体的自动解析。
 
