@@ -52,5 +52,18 @@ public class LoginForm {
 }
 ```
 
+这里，我们用来表示 HttpRequest 主体映射到 LoginForm 对象的对象。
+
+让我们用CURL测试一下：
+
+```java
+curl -i \
+-H "Accept: application/json" \
+-H "Content-Type:application/json" \
+-X POST --data 
+  '{"username": "johnny", "password": "password"}' "https://localhost:8080/.../request"
+
+```
+
 
 
