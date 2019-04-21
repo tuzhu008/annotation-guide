@@ -43,7 +43,7 @@ public @interface ExceptionHandler {
 
 * 一个 ModelAndView 对象\(来自 Servlet MVC\)。
 
-* 一个 Model 对象，视图名通过RequestToViewNameTranslator隐式地确定。
+* 一个 Model 对象，视图名通过 `RequestToViewNameTranslator` 隐式地确定。
 
 * 用于公开模型的映射对象，视图名称通过RequestToViewNameTranslator隐式确定。
 
