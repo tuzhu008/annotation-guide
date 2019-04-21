@@ -1,4 +1,4 @@
-# @
+# @InitBinder
 
 ## 定义
 
