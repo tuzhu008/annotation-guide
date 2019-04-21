@@ -104,7 +104,6 @@
     * [@RequestAttribute](Spring/web/bind/RequestAttribute.md)
     * [@RequestBody](Spring/web/bind/RequestBody.md)
     * [@RequestHeader](Spring/web/bind/RequestHeader.md)
-    * [@RequestMethod](Spring/web/bind/RequestMethod.md)
     * [@RequestParam](Spring/web/bind/RequestParam.md)
     * [@RequestPart](Spring/web/bind/RequestPart.md)
     * [@ResponseBody](Spring/web/bind/ResponseBody.md)
