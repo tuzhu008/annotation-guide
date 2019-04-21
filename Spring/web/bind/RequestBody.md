@@ -28,5 +28,5 @@ public @interface RequestBody {
 
 由于被 `@RequestBody` 注解的方法参数会从 web 请求的主体被解析出来，因此该参数在其他地方是无法被解析的，如 URL 参数。
 
-简单地说，@RequestBody注释将HttpRequest主体映射到传输或域对象，从而支持将入站HttpRequest主体自动反序列化到Java对象。
+简单地说，`@RequestBody` 注解将 HttpRequest 主体映射到传输\(transfer\)或域\(domain\)对象，从而支持将入站 HttpRequest 主体自动反序列化到 Java 对象。
 
