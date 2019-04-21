@@ -57,5 +57,5 @@ public @interface ExceptionHandler {
 
 * void，如果方法本身处理响应\(通过直接编写响应内容，声明 ServletResponse / HttpServletResponse 类型的参数\)，或者视图名应该通过 RequestToViewNameTranslator 隐式确定\(而不是在处理程序方法签名中声明响应参数\)，则为 void。
 
-对于特定的 HTTP 错误状态，可以将 ExceptionHandler 注解与@ResponseStatus结合使用。
+对于特定的 HTTP 错误状态，可以将 `@ExceptionHandler` 注解与 ·@ResponseStatus结合使用。
 
