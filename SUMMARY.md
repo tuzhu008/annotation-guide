@@ -85,6 +85,7 @@
     * [@SessionScope](Spring/web/context/SessionScope.md)
     * [@RequestScope](Spring/web/context/RequestScope.md)
   * [bind](Spring/web/bind/README.md)
+    * [@RestController](Spring/web/bind/RestController.md)
     * [@ControllerAdvice](Spring/web/bind/ControllerAdvice.md)
     * [@RestControllerAdvice](Spring/web/bind/RestControllerAdvice.md)
     * [@CookieValue](Spring/web/bind/CookieValue.md)
@@ -108,7 +109,6 @@
     * [@RequestPart](Spring/web/bind/RequestPart.md)
     * [@ResponseBody](Spring/web/bind/ResponseBody.md)
     * [@ResponseStatus](Spring/web/bind/ResponseStatus.md)
-    * [@RestController](Spring/web/bind/RestController.md)
     * [@SessionAttribute](Spring/web/bind/SessionAttribute.md)
     * [@SessionAttributes](Spring/web/bind/SessionAttributes.md)
       
