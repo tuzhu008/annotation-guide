@@ -49,7 +49,7 @@ public @interface RequestParam {
 
 支持 Spring MVC 和 Spring WebFlux 中的带注注解的处理器方法:
 
-* 在 Spring MVC 中，“请求参数”映射到多部分请求中的查询参数、表单数据和 multipart 请求。这是因为Servlet API将查询参数和表单数据组合成一个名为“parameters”的映射，其中包括对请求体的自动解析。
+* 在 Spring MVC 中，“请求参数”映射到多部分请求中的查询参数（URL）、表单数据和 multipart 请求。这是因为Servlet API将查询参数和表单数据组合成一个名为“parameters”的映射，其中包括对请求体的自动解析。
 
 * 在Spring WebFlux中，“请求参数”只映射到查询参数。要处理查询、表单数据和多部分数据，您可以使用数据绑定到使用ModelAttribute注释的命令对象。
 
