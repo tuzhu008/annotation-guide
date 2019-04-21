@@ -17,5 +17,15 @@ public @interface ResponseBody {
 
 从 4.0 版本开始，这个注释也可以添加到类型级别，在这种情况下，它是继承的，不需要添加到方法级别。
 
+假设我们有一个自定义响应对象:
+
+```java
+public class ResponseTransfer {
+    private String text; 
+     
+    // standard getters/setters
+}
+```
+
 
 
