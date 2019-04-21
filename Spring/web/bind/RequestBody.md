@@ -26,3 +26,5 @@ public @interface RequestBody {
 
 支持带注解的处理器方法。
 
+由于被 `@RequestBody` 注解的方法参数会从 web 请求的主体被解析出来，因此
+
