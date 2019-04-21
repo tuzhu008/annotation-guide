@@ -56,9 +56,7 @@ public @interface PutMapping {
 
 ## 解析
 
-用于将 HTTP POST 请求映射到特定处理器方法的注解。
+用于将 HTTP PUT 请求映射到特定处理器方法的注解。
 
-具体来说，`@PostMapping` 是一个复合注释，它充当 `@RequestMapping(method = RequestMethod.POST)` 的快捷方式。
-
-
+具体来说，`@PutMapping` 是一个复合注释，它充当 `@RequestMapping(method = RequestMethod.PUT)` 的快捷方式。
 
