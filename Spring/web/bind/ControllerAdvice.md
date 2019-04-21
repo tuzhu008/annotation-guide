@@ -67,7 +67,7 @@ public @interface ControllerAdvice {
 
 ## 解析
 
-定制化的 `@Component` ，用于声明要在多个 `@Controller` 类之间共享的 `@ExceptionHandler`、`@InitBinder` 或@ModelAttribute方法的类。
+定制化的 `@Component` ，用于声明要在多个 `@Controller` 类之间共享的 `@ExceptionHandler`、`@InitBinder` 或`@ModelAttribute` 方法的类。
 
 带有@ControllerAdvice的类可以显式声明为Spring bean，也可以通过类路径扫描自动检测。所有这些bean都是通过AnnotationAwareOrderComparator进行排序的，即基于@Order和Ordered，并在运行时按该顺序应用。对于处理异常，@ExceptionHandler将在第一个具有匹配异常处理方法的通知中选择。对于模型属性和InitBinder初始化，@ModelAttribute和@InitBinder方法也将遵循@ControllerAdvice顺序。
 
