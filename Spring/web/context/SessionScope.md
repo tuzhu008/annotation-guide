@@ -23,7 +23,7 @@ public @interface SessionScope {
 
 @RequestScope是组件的@Scope专门化，其生命周期绑定到当前 web 请求。
 
-`@RequestScope` 是为组件定制的 `@Scope`，其生命周期绑定到当前 web 应用程序。
+`@RequestScope` 是为组件定制的 `@Scope`，其生命周期绑定到当前 web 请求。
 
 具体来说，@RequestScope是一个复合注释，它充当@Scope\(“request”\)的快捷方式，默认的proxyMode\(\)设置为TARGET\_CLASS。
 
