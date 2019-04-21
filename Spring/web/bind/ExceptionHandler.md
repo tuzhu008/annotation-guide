@@ -37,7 +37,7 @@ public @interface ExceptionHandler {
 
 * 用于生成响应内容的 OutputStream / Writer。这将是 Servlet API 公开的原始 OutputStream/Writer。
 
-* 作为从处理程序方法返回模型映射的替代方法。注意，所提供的模型没有预先填充常规模型属性，因此总是空的，以便为特定于异常的视图准备模型。
+* Model，作为从处理程序方法返回模型映射的替代方法。注意，所提供的模型没有预先填充常规模型属性，因此总是空的，以便为特定于异常的视图准备模型。
 
 处理程序方法支持以下返回类型:
 
