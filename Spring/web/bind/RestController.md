@@ -24,5 +24,5 @@ public @interface RestController {
 
 ## 解析
 
-`@RestController` 是一个专门版本的控制器。它包括 `@Controller` 和 `@ResponseBody` 注解，因此简化了控制器实现:
+`@RestController` 是一个专门版本的控制器。它包括 [`@Controller`](/Spring/stereotype/Controller.md) 和 [`@ResponseBody`](/Spring/web/bind/ResponseBody.md) 注解，因此简化了控制器实现:
 
