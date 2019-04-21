@@ -44,3 +44,13 @@ public ResponseEntity postController(
 
 如果指定了适当的 JSON 类型，Spring 会自动将 JSON 反序列化为 Java 类型。默认情况下，我们使用 `@RequestBody` 注解的类型必须与客户端控制器发送的 JSON 相对应:
 
+```java
+public class LoginForm {
+    private String username;
+    private String password;
+    // ...
+}
+```
+
+
+
