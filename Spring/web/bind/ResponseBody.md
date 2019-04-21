@@ -71,5 +71,9 @@ public class ExamplePostController {
 
 记住，我们不需要用 `@ResponseBody` 注解 `@RestController` 注解的控制器，因为 `@ResponseBody`是 `@RestController` 的元注解，它在这里是默认完成的。
 
+```java
+
+```
+
 
 
