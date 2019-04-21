@@ -27,7 +27,7 @@ public @interface ExceptionHandler {
 
 * Request 和/或 Response 对象\(通常来自Servlet API\)。您可以选择任何特定的请求/响应类型，例如 `ServletRequest` / `HttpServletRequest`。
 
-* Session 对象：通常是 HttpSession。这种类型的参数将强制出现相应的会话。因此，这样的参数永远不会为空。注意，会话访问可能不是线程安全的，特别是在Servlet环境中:如果允许多个请求同时访问会话，请考虑将“synchronizeOnSession”标志切换为“true”。
+* Session 对象：通常是 HttpSession。这种类型的参数将强制出现相应的会话。因此，这样的参数永远不会为空。注意，会话访问可能不是线程安全的，特别是在 Servlet 环境中:如果允许多个请求同时访问会话，请考虑将“synchronizeOnSession”标志切换为“true”。
 
 * WebRequest或NativeWebRequest。允许通用请求参数访问以及请求/会话属性访问，而不需要与本机Servlet API绑定。
 
