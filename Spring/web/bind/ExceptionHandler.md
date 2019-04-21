@@ -31,11 +31,11 @@ public @interface ExceptionHandler {
 
 * WebRequest 或 NativeWebRequest。允许通用请求参数访问以及请求/会话属性访问，而不需要与本机 Servlet API 绑定。
 
-* 当前请求区域的[区域](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true)\(由可用的最特定的区域设置解析器决定，即 Servlet 环境中配置的 LocaleResolver\)。
+* [Local](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true)，当前请求区域的 Local\(由可用的最特定的区域设置解析器决定，即 Servlet 环境中配置的 LocaleResolver\)。
 
-* 用于访问请求内容的 InputStream / Reader。这将是 Servlet API 公开的原始 InputStream/Reader。
+* InputStream / Reader，用于访问请求内容。这将是 Servlet API 公开的原始 InputStream/Reader。
 
-* 用于生成响应内容的 OutputStream / Writer。这将是 Servlet API 公开的原始 OutputStream/Writer。
+* OutputStream / Writer， 用于生成响应内容 。这将是 Servlet API 公开的原始 OutputStream/Writer。
 
 * Model，作为从处理程序方法返回模型映射的替代方法。注意，所提供的模型没有预先填充常规模型属性，因此总是空的，以便为特定于异常的视图准备模型。
 
