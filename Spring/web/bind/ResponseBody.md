@@ -48,7 +48,7 @@ public class ExamplePostController {
 
 在浏览器的开发人员控制台或使用像 Postman 这样的工具，我们可以看到以下响应:
 
-```
+```js
 {"text":"Thanks For Posting!!!"}
 ```
 
