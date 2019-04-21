@@ -100,7 +100,6 @@
     * [@PatchMapping](Spring/web/bind/PatchMapping.md)
     * [@MatrixVariable](Spring/web/bind/MatrixVariable.md)
     * [@ModelAttribute](Spring/web/bind/ModelAttribute.md)
-    * [@package-info](Spring/web/bind/package-info.md)
     * [@PathVariable](Spring/web/bind/PathVariable.md)
     * [@RequestAttribute](Spring/web/bind/RequestAttribute.md)
     * [@RequestBody](Spring/web/bind/RequestBody.md)
