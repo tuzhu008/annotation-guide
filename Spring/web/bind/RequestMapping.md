@@ -99,7 +99,7 @@ Spring MVC 和 Spring WebFlux 都在各自的模块和包结构中通过 `Reques
     @RequestMapping(value = "/hello", method = { RequestMethod.POST, RequestMethod.GET)
   ```
 
-  RequestMethod 枚举值：
+  `RequestMethod` 枚举值：
 
   * GET
   * HEAD
