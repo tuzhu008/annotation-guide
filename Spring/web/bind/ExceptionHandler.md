@@ -51,7 +51,7 @@ public @interface ExceptionHandler {
 
 * 一个 String 值，它被解释为视图名。
 
-* `@ResponseBody` 注解的方法\(只有 servlet\)来设置响应内容。返回值将使用消息转换器转换为响应流。
+* `@ResponseBody` 注解的方法\(只有 servlet\)，用来设置响应内容。返回值将使用[消息转换器](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/converter/HttpMessageConverter.html)转换为响应流。
 
 * 一个HttpEntity &lt; ?&gt;或ResponseEntity &lt; ?对象\(仅限servlet\)来设置响应头和内容。ResponseEntity主体将使用消息转换器转换并写入响应流。
 
