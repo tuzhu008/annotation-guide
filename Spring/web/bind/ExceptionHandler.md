@@ -55,7 +55,7 @@ public @interface ExceptionHandler {
 
 * 一个 `HttpEntity <?>`或 `ResponseEntity<?>` 对象\(仅限 Servlet\)，用来设置响应头和内容。`ResponseEntity` 主体将使用消息转换器转换并写入响应流。
 
-* void，如果方法本身处理响应\(通过直接编写响应内容，声明 ServletResponse / HttpServletResponse 类型的参数\)，或者视图名应该通过 RequestToViewNameTranslator 隐式确定\(而不是在处理程序方法签名中声明响应参数\)，则为void。
+* void，如果方法本身处理响应\(通过直接编写响应内容，声明 ServletResponse / HttpServletResponse 类型的参数\)，或者视图名应该通过 RequestToViewNameTranslator 隐式确定\(而不是在处理程序方法签名中声明响应参数\)，则为 void。
 
 对于特定的 HTTP 错误状态，可以将ExceptionHandler注释与@ResponseStatus结合使用。
 
