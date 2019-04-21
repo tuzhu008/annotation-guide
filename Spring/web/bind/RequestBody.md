@@ -8,19 +8,21 @@
 @Documented
 public @interface RequestBody {
 
-	/**
-	 * Whether body content is required.
-	 * <p>Default is {@code true}, leading to an exception thrown in case
-	 * there is no body content. Switch this to {@code false} if you prefer
-	 * {@code null} to be passed when the body content is {@code null}.
-	 * @since 3.2
-	 */
-	boolean required() default true;
+    /**
+     * Whether body content is required.
+     * <p>Default is {@code true}, leading to an exception thrown in case
+     * there is no body content. Switch this to {@code false} if you prefer
+     * {@code null} to be passed when the body content is {@code null}.
+     * @since 3.2
+     */
+    boolean required() default true;
 
 }
 ```
 
 ## 解析
 
+`@RequestBody` 表示方法参数应该绑定到 web 请求的主体。请求的主体通过HttpMessageConverter传递，以根据请求的内容类型解析方法参数。另外，可以使用@Valid注释参数来应用自动验证。
 
+支持带注释的处理程序方法。
 
