@@ -33,7 +33,7 @@ public @interface ExceptionHandler {
 
 * 当前请求区域的[区域](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true)\(由可用的最特定的区域设置解析器决定，即 Servlet 环境中配置的 LocaleResolver\)。
 
-* 用于访问请求内容的InputStream / Reader。这将是Servlet API公开的原始InputStream/Reader。
+* 用于访问请求内容的 InputStream / Reader。这将是 Servlet API 公开的原始 InputStream/Reader。
 
 * 用于生成响应内容的OutputStream / Writer。这将是Servlet API公开的原始OutputStream/Writer。
 
