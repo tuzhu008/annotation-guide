@@ -101,7 +101,14 @@ Spring MVC 和 Spring WebFlux 都在各自的模块和包结构中通过 `Reques
 
   RequestMethod 枚举值：
 
-  * 
+  * GET
+  * HEAD
+  * POST
+  * PUT
+  * PATCH
+  * DELETE
+  * OPTIONS
+  * TRACE
 
 * params
 
