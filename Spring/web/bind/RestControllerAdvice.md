@@ -67,5 +67,5 @@ public @interface RestControllerAdvice {
 
 携带此注解的类型被视为控制器通知，其中 `@ExceptionHandler` 方法默认假定 `@ResponseBody` 语义。
 
-注意:如果配置了适当的HandlerMapping-HandlerAdapter对\(如MVC Java配置和MVC名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter对\)，@RestControllerAdvice将被处理。
+**注意**：如果配置了适当的 HandlerMapping-HandlerAdapter 对\(如 MVC Java 配置和 MVC 名称空间中的缺省值RequestMappingHandlerMapping-RequestMappingHandlerAdapter 对\)，`@RestControllerAdvice` 将被处理。
 
