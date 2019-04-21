@@ -31,7 +31,7 @@ public @interface ExceptionHandler {
 
 * WebRequest 或 NativeWebRequest。允许通用请求参数访问以及请求/会话属性访问，而不需要与本机 Servlet API 绑定。
 
-* 当前请求区域设置的区域设置\(由可用的最特定的区域设置解析器决定，即Servlet环境中配置的LocaleResolver\)。
+* 当前请求区域的[区域](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true)\(由可用的最特定的区域设置解析器决定，即 Servlet 环境中配置的 LocaleResolver\)。
 
 * 用于访问请求内容的InputStream / Reader。这将是Servlet API公开的原始InputStream/Reader。
 
