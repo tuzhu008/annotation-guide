@@ -51,19 +51,15 @@ public @interface RequestMapping {
 
 ## 解析
 
-用于将web请求映射到具有灵活方法签名的请求处理类中的方法的注释。
+`@RequestMapping` 用于将web请求映射到具有灵活方法签名的请求处理类中的方法的注释。
 
 Spring MVC和Spring WebFlux都在各自的模块和包结构中通过RequestMappingHandlerMapping和RequestMappingHandlerAdapter支持这个注释。要获得每个方法中支持的处理程序方法参数和返回类型的确切列表，请使用下面的参考文档链接:
-
-
 
 Spring MVC方法参数和返回值
 
 Spring WebFlux方法参数和返回值
 
 注意:这个注释可以在类级和方法级使用。在大多数情况下，在方法级别，应用程序更喜欢使用HTTP方法特定的变体@GetMapping、@PostMapping、@PutMapping、@DeleteMapping或@PatchMapping之一。
-
-
 
 注意:当使用控制器接口\(例如用于AOP代理\)时，确保一致地将所有映射注释\(例如@RequestMapping和@SessionAttributes\)放在控制器接口上，而不是实现类上。
 
