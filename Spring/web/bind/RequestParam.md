@@ -45,7 +45,7 @@ public @interface RequestParam {
 
 ## 解析
 
- `@RequestParam` 注解用以说明方法参数应该绑定到 web 请求参数。
+`@RequestParam` 注解用以说明方法参数应该绑定到 web 请求参数。
 
 支持Spring MVC和Spring WebFlux中的带注释的处理程序方法:
 
