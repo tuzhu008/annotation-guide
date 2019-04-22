@@ -94,5 +94,11 @@ URL `example/gallery/link` 的计算结果为 `firstValue = "gallery"`和 `secon
 
 通过 URL `example/gallery.df/link.com.ar`，我们的变量将是：`firstValue = "gallery.df"` 和 `secondValue = "link.com"`
 
-我们可以看到，第一个变量没有受到影响，但是第二个变量总是被截断
+我们可以看到，第一个变量没有受到影响，但是第二个变量总是被截断。
+
+#### 解决方案
+
+解决这种不便的一种方法是通过添加 regex 映射来修改 `@PathVariable` 定义。因此，任何点，包括最后一个点，都将被视为我们参数的一部分:
+
+
 
