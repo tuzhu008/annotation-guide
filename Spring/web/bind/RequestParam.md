@@ -73,8 +73,10 @@ public String getFoos(@RequestParam String id) {
 
 一个简单的 GET 请求将调用 `getFoos`：
 
-```java
-
+```bash
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
 ```
 
 
