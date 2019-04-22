@@ -220,5 +220,9 @@ http://localhost:8080/api/foos?id=1&id=2
 IDs are [1,2]
 ```
 
+## _**@RequestParam **_**vs **_**@PathVariable**_
+
+
+
 
 
