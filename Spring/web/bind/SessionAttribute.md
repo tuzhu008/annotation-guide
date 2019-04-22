@@ -41,5 +41,5 @@ public @interface SessionAttribute {
 
 对于需要添加或删除会话属性的用例，可以考虑注入 `org.springframework.web.context.request.WebRequest` 或`javax.servlet.http.HttpSession` 到控制器方法中。
 
-对于将模型属性作为控制器工作流的一部分临时存储在会话中，可以考虑使用SessionAttributes。
+对于将模型属性作为控制器工作流的一部分临时存储在会话中，可以考虑使用 `SessionAttributes`。
 
