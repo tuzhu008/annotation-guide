@@ -55,7 +55,6 @@ public class ModelController {
         user.setName("default");
         return user;
     }
-
 }
 ```
 
