@@ -170,5 +170,5 @@ http://localhost:8080/api/foos?id=abc
 ID: abc
 ```
 
-
+注意，当我们设置 `defaultValue` 属性时，`required` 实际上被设置为 `false`。
 
