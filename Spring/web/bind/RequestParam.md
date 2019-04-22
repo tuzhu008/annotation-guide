@@ -286,5 +286,15 @@ ID: ab c
 
 `@RequestParam` 和 `@PathVariable` 都是可选的。
 
+我们可以使用从 Spring 4.3.3 开始的 `required` 属性使 `@PathVariable` 可选：
+
+```java
+@GetMapping({"/myfoos/optional", "/myfoos/optional/{id}"})
+@ResponseBody
+public String getFooByOptionalId(@PathVariable(required = false) String id){
+    return "ID: " + id;
+}
+```
+
 
 
