@@ -67,3 +67,12 @@ public @interface ModelAttribute {
 
 让我们来看一个快速的例子，开始了解它是如何工作的:
 
+```java
+@ModelAttribute
+public void addAttributes(Model model) {
+    model.addAttribute("msg", "Welcome to the Netherlands!");
+}
+```
+
+
+
