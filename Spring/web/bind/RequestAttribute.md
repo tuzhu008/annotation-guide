@@ -35,7 +35,7 @@ public @interface RequestAttribute {
 
 ## 解析
 
-`@RequestAttribute` 注解将方法参数绑定到请求属性。
+`@RequestAttribute` 注解将方法参数绑定到请求对象的属性中。
 
 主要动机是通过可选/必需的检查和对目标方法参数类型的转换，提供对控制器方法的请求属性的方便访问。
 
