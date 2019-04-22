@@ -41,12 +41,12 @@ public @interface SessionAttribute {
 
 ```java
 @RequestMapping("/session")
-    public String session(
-            @SessionAttribute("user") User user
-    ){
-        // do something
-        return "index";
-    }
+public String session(
+        @SessionAttribute("user") User user
+){
+    // do something
+    return "index";
+}
 ```
 
 对于需要添加或删除会话属性的用例，可以考虑注入 `org.springframework.web.context.request.WebRequest` 或`javax.servlet.http.HttpSession` 到控制器方法中。
