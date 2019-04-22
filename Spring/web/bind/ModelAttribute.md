@@ -86,5 +86,5 @@ public void addAttributes(Model model) {
 
 当用作方法参数时，它指示应该从模型中检索参数。当不存在时，应该首先实例化它，然后将其添加到模型中，一旦出现在模型中，就应该从所有具有匹配名称的请求参数填充 arguments 字段。
 
-在 employee model 属性后面的代码片段中，填充了提交给addEmployee端点的表单中的数据。在调用submit方法之前，Spring MVC会在后台执行以下操作:
+在 employee model 属性后面的代码片段中，填充了提交给 addEmployee 端点的表单中的数据。在调用 submit 方法之前，Spring MVC 会在后台执行以下操作:
 
