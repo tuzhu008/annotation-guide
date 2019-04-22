@@ -40,7 +40,7 @@ public @interface ResponseStatus {
 
 当调用处理器方法并覆盖其他方法\(如 ResponseEntity 或 “redirect:” \)设置的状态信息时，状态代码应用于 HTTP 响应。
 
-**警告：**当在异常类上使用此注解时，或者在设置此注解的 `reason` 属性时，使用 `HttpServletResponse`。将使用sendError方法。
+**警告：**当在异常类上使用此注解时，或者在设置此注解的 `reason` 属性时，使用 `HttpServletResponse.sendError`方法。
 
 HttpServletResponse。响应被认为是完整的，不应该再写下去。此外，Servlet容器通常会编写一个HTML错误页面，因此使用了不适合REST api的理由。对于这种情况，最好使用ResponseEntity作为返回类型，并完全避免使用@ResponseStatus。
 
