@@ -79,5 +79,5 @@ http://localhost:8080/api/foos?id=abc
 ID: abc
 ```
 
-
+接下来，让我们看看注解的属性: `name`、`value`、`required` 和 `defaultValue`。
 
