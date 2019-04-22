@@ -53,7 +53,7 @@ public @interface ModelAttribute {
 
 `@ModelAttribute`是 Spring-MVC 最重要的注解之一。
 
-`@ModelAttribute` 注解将方法参数或方法返回值绑定到一个命名的模型属性，然后将其公开给 web 视图。
+`@ModelAttribute` 注解将方法参数或方法返回值绑定到一个命名的模型属性，然后将其暴露给 web 视图。
 
 在下面的示例中，我们将通过一个共同的概念来演示注解的可用性和功能:公司员工提交的表单。
 
