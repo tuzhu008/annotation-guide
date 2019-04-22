@@ -90,7 +90,7 @@ public class CustomController {
 
 URL `example/gallery/link` 的计算结果为 `firstValue = "gallery"`和 `secondValue = "link"`
 
-当使用示例/gallery.df/link时。ar URL，我们有firstValue = " gallery。df "和secondValue = " link "
+当使用 URL `example/gallery.df/link.ar`，我们有 `firstValue = "gallery.df"` 和 `secondValue = "link"`
 
 通过示例/gallery.df/link.com.ar URL，我们的变量将是:firstValue = " gallery "。df "和secondValue = " link.com "
 
