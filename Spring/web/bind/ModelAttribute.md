@@ -111,18 +111,17 @@ public String submit(@ModelAttribute("employee") Employee employee) {
 
 让我们首先创建一个简单的表单，其中包含 `id` 和 `name` 字段：
 
-```
+```html
 <form:form method="POST" action="/spring-mvc-java/addEmployee"
   modelAttribute="employee">
     <form:label path="name">Name</form:label>
     <form:input path="name" />
-     
+
     <form:label path="id">Id</form:label>
     <form:input path="id" />
-     
+
     <input type="submit" value="Submit" />
 </form:form>
-
 ```
 
 
