@@ -296,5 +296,14 @@ public String getFooByOptionalId(@PathVariable(required = false) String id){
 }
 ```
 
+那么，我们可以这样做:
+
+```
+http://localhost:8080/myfoos/optional/abc
+----
+ID: abc
+
+```
+
 
 
