@@ -42,5 +42,20 @@ public @interface SessionAttributes {
 
 `@SessionAttributes` 用于在会话中存储 Model 的属性，一般作用在类的级别。像下面的代码，model 的属性 user 会被存储到session 中，因为 `@ModelAttribute` 与 `@SessionAttributes` 有相同的注解。
 
+```java
+@Controller
+@SessionAttributes("user")
+public class ModelController {
+
+    @ModelAttribute("user")
+    public User initUser(){
+        User user = new User();
+        user.setName("default");
+        return user;
+    }
+
+}
+```
+
 
 
