@@ -57,3 +57,13 @@ public @interface RequestParam {
 
 如果方法参数是 `Map<String、String>` 或 `MultiValueMap<String、String>` 并且参数名未指定，则使用所有请求参数名和值填充 Map 参数。
 
+## 详解
+
+假设我们有一个端点 `/api/foos`，它接受一个名为 `id` 的查询参数：
+
+```java
+
+```
+
+
+
