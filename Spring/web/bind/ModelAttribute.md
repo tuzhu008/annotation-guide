@@ -161,5 +161,5 @@ public class EmployeeController {
 
 最后，我们返回employeeView，这意味着将调用相应的JSP文件作为视图代表。
 
-此外，还有一个 `addAttributes()` 方法。它的目的是在模型中添加将被全局标识的值。也就是说，对于每个控制器方法的每个请求，都会返回一个默认值作为响应。我们还必须将特定的类标注为 `@ControllerAdvice`。
+此外，还有一个 `addAttributes()` 方法。它的目的是在模型中添加将被全局标识的值。也就是说，对于每个控制器方法的每个请求，都会返回一个默认值作为响应。我们还**必须**将特定的类标注为 `@ControllerAdvice`。
 
