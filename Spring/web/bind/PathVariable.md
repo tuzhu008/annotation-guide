@@ -86,5 +86,15 @@ public class CustomController {
 }
 ```
 
+通过上面的例子，让我们考虑下一个请求并计算我们的变量:
 
+
+
+URL示例/gallery/link计算firstValue = " gallery "和secondValue = " link "的结果
+
+当使用示例/gallery.df/link时。ar URL，我们有firstValue = " gallery。df "和secondValue = " link "
+
+通过示例/gallery.df/link.com.ar URL，我们的变量将是:firstValue = " gallery "。df "和secondValue = " link.com "
+
+我们可以看到，第一个变量没有受到影响，但是第二个变量总是被截断。
 
