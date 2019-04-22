@@ -92,7 +92,7 @@ URL `example/gallery/link` 的计算结果为 `firstValue = "gallery"`和 `secon
 
 当使用 URL `example/gallery.df/link.ar`，我们有 `firstValue = "gallery.df"` 和 `secondValue = "link"`
 
-通过示例/gallery.df/link.com.ar URL，我们的变量将是:firstValue = " gallery "。df "和secondValue = " link.com "
+通过 URL `example/gallery.df/link.com.ar`，我们的变量将是：`firstValue = "gallery.df"` 和 `secondValue = "link.com"`
 
 我们可以看到，第一个变量没有受到影响，但是第二个变量总是被截断
 
