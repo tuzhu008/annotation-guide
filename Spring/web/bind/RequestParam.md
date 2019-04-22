@@ -142,3 +142,9 @@ ID: null
 
 当未指定参数时，方法参数被绑定为 null。
 
+### 请求参数的默认值
+
+
+
+我们还可以使用defaultValue属性为@RequestParam设置一个默认值:
+
