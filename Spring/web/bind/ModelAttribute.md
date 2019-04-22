@@ -88,3 +88,14 @@ public void addAttributes(Model model) {
 
 在 employee model 属性后面的代码片段中，填充了提交给 addEmployee 端点的表单中的数据。在调用 submit 方法之前，Spring MVC 会在后台执行以下操作:
 
+```java
+@RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
+public String submit(@ModelAttribute("employee") Employee employee) {
+    // Code that uses the employee object
+ 
+    return "employeeView";
+}
+```
+
+
+
