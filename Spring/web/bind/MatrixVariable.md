@@ -57,6 +57,8 @@ public @interface MatrixVariable {
 
 如果方法参数是 `Map<String、String>` 或 `MultiValueMap<String、String>` 且变量名未指定，则映射将填充所有矩阵变量名和值。
 
+### 用法
+
 要在 SpringBoot 中使用  需要加入如下配置：
 
 ```java
