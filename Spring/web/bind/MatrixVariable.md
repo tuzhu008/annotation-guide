@@ -59,7 +59,7 @@ public @interface MatrixVariable {
 
 ### 用法
 
-要在 SpringBoot 中使用  需要加入如下配置：
+要启用 Spring MVC 矩阵变量，让我们从配置开始：
 
 ```java
 @Configuration
