@@ -51,11 +51,9 @@ public @interface MatrixVariable {
 
 ## 解析
 
-注释，指示方法参数应绑定到路径段中的名称-值对。支持RequestMapping带注释的处理程序方法。
+`@MatrixVariable` 注解用于指示方法参数应绑定到路径段中的名称-值对。支持 RequestMapping 带该注解的处理器方法。
 
 如果方法参数类型为Map，并且指定了一个矩阵变量名，那么假设有合适的转换策略，则将矩阵变量值转换为Map。
-
-
 
 如果方法参数是Map&lt;String、String&gt;或MultiValueMap&lt;String、String&gt;和变量名未指定，则映射将填充所有矩阵变量名和值。
 
