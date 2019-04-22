@@ -56,8 +56,7 @@ Vehicle getVehicle(@PathVariable("id") long id) {
 Vehicle getVehicle(@PathVariable long id) {
     // ...
 }
-
 ```
 
-
+此外，我们可以将 path 变量设置为 false 来标记一个可选的 path 变量：
 
