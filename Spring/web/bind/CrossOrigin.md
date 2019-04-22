@@ -112,7 +112,7 @@ public @interface CrossOrigin {
 
 `@CrossOrigin` 注解用于允许特定处理器类和/或处理器方法上的跨源请求。如果配置了适当的 HandlerMapping，则会被处理。
 
-Spring Web MVC 和 Spring WebFlux 都在各自的模块中通过 RequestMappingHandlerMapping 支持这个注解。每个类型和方法级别注释对的值都被添加到一个CorsConfiguration中，然后通过CorsConfiguration. applypermitdefaultvalues\(\)应用默认值。
+Spring Web MVC 和 Spring WebFlux 都在各自的模块中通过 RequestMappingHandlerMapping 支持这个注解。每个类型和方法级别注解对的值都被添加到一个 [CorsConfiguration](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html) 中，然后通过 [`CorsConfiguration.applyPermitDefaultValues()`](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html#applyPermitDefaultValues--) 应用默认值。
 
 组合全局和本地配置的规则通常是附加的——例如，所有全局和所有本地源。对于那些只能接受单个值的属性，如allowCredentials和maxAge，本地覆盖全局值。有关详细信息，请参见CorsConfiguration.combine\(CorsConfiguration\)。
 
