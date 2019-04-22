@@ -302,7 +302,14 @@ public String getFooByOptionalId(@PathVariable(required = false) String id){
 http://localhost:8080/myfoos/optional/abc
 ----
 ID: abc
+```
 
+或者：
+
+```
+http://localhost:8080/myfoos/optional
+----
+ID: null
 ```
 
 
