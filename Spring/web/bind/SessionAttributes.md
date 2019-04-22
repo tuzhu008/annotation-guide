@@ -40,6 +40,8 @@ public @interface SessionAttributes {
 
 ## 解析
 
+`@SessionAttributes` 注解用于表示特定处理器使用的会话属性。
+
 `@SessionAttributes` 用于在会话中存储 Model 的属性，一般作用在类的级别。像下面的代码，model 的属性 user 会被存储到session 中，因为 `@ModelAttribute` 与 `@SessionAttributes` 有相同的注解。
 
 ```java
