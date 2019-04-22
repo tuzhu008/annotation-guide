@@ -144,7 +144,5 @@ ID: null
 
 ### 请求参数的默认值
 
-
-
-我们还可以使用defaultValue属性为@RequestParam设置一个默认值:
+我们还可以使用 `defaultValue` 属性为 `@RequestParam` 设置一个默认值:
 
