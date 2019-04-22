@@ -57,7 +57,9 @@ public @interface MatrixVariable {
 
 如果方法参数是 `Map<String、String>` 或 `MultiValueMap<String、String>` 且变量名未指定，则映射将填充所有矩阵变量名和值。
 
-### 用法
+## 用法
+
+### 配置
 
 要启用 Spring MVC 矩阵变量，让我们从配置开始：
 
@@ -73,6 +75,10 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 ```
+
+否则，它们在默认情况下是禁用的。
+
+### 如何使用 Matrix Variables
 
 这些变量可以出现在路径的任何部分，使用字符 等于\(`=`\)给出值，使用分号\(`;`\)分隔每个矩阵变量。在同一路径上，我们还可以重复相同的变量名，或者使用字符逗号\(`,`\)分隔不同的值。
 
@@ -104,6 +110,28 @@ public class Company {
     private String name;
  
     // standard setters and getters
+}
+```
+
+这两个类将用来绑定请求参数。
+
+### 定义矩阵变量属性
+
+我们可以为变量指定必需的或默认的属性。在下面的例子中，`contactNumber` 是必需的，所以它必须包含在我们的路径中，如下所示:
+
+http://localhost:8080/spring-mvc-java/employeesContacts/contactNumber=223334411
+
+处理请求的方法如下:
+
+```java
+@RequestMapping(value = "/employeesContacts/{contactNumber}", 
+  method = RequestMethod.GET)
+@ResponseBody
+public ResponseEntity<List<Employee>> getEmployeeBycontactNumber(
+  @MatrixVariable(required = true) String contactNumber) {
+    List<Employee> employeesList = new ArrayList<Employee>();
+    ...
+    return new ResponseEntity<List<Employee>>(employeesList, HttpStatus.OK);
 }
 ```
 
