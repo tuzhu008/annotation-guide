@@ -97,13 +97,9 @@ public String submit(@ModelAttribute("employee") Employee employee) {
 }
 ```
 
-在本文的后面，我们将看到一个完整的示例，演示如何使用employee对象填充employeeView模板。
+在本文的后面，我们将看到一个完整的示例，演示如何使用 employee 对象填充 employeeView 模板。
 
-
-
-因此，它将表单数据与bean绑定。使用@RequestMapping注释的控制器可以使用@ModelAttribute注释自定义类参数。
-
-
+因此，它将表单数据与 bean 绑定。使用 `@RequestMapping` 注解的控制器可以使用 `@ModelAttribute` 注解自定义类参数。
 
 这就是Spring-MVC中通常所说的数据绑定，这是一种通用的机制，可以让您不必逐个解析每个表单字段。
 
