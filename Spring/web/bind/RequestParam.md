@@ -314,7 +314,5 @@ ID: null
 
 对于 `@RequestParam`，我们还可以使用我们在前一节中看到的 `required` 属性。
 
-
-
-注意，在将@PathVariable设置为可选时，我们应该小心，以避免路径中的冲突。
+注意，在将 `@PathVariable` 设置为可选时，我们应该小心，以避免路径中的冲突。
 
