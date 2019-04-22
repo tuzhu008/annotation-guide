@@ -115,5 +115,9 @@ public void example(
 @GetMapping("/example/{firstValue}/{secondValue}/")
 ```
 
+上面的两个解决方案适用于我们正在修改的单个请求映射。
 
+
+
+如果我们想在全局MVC级别更改行为，我们可以通过在应用程序上下文中声明我们自己的DefaultAnnotationHandlerMapping bean并将其useDefaultSuffixPattern属性设置为false来定制Spring MVC配置:
 
