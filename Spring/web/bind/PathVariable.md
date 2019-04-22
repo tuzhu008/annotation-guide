@@ -67,5 +67,15 @@ Vehicle getVehicle(@PathVariable(required = false) long id) {
 }
 ```
 
+### 带点参数
+
+Spring 认为最后一个点后面的任何内容都是文件扩展名，如 `.json` 或 `.xml`。
+
+因此，它截断值以检索参数。
+
+
+
+让我们看一个使用路径变量的例子，然后用不同的可能值分析结果:
+
 
 
