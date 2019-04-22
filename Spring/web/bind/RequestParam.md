@@ -87,5 +87,15 @@ ID: abc
 
 不过，有时我们希望它们有所不同。或者，如果我们不使用 Spring Boot，我们可能需要进行特殊的编译时配置，否则参数名实际上不会出现在字节码中。
 
-但好在我们可以使用 `name` 属性配置 `@RequestParam` 名称:
+但好在我们可以使用 `name` 属性配置 `@RequestParam` 名称：
+
+```java
+@PostMapping("/api/foos")
+@ResponseBody
+public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam String name) { 
+    return "ID: " + fooId + " Name: " + name;
+}
+```
+
+
 
