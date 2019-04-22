@@ -42,7 +42,5 @@ public @interface ResponseStatus {
 
 **警告：**当在异常类上使用此注解时，或者在设置此注解的 `reason` 属性时，使用 `HttpServletResponse.sendError`方法。
 
-HttpServletResponse。响应被认为是完整的，不应该再写下去。此外，Servlet容器通常会编写一个HTML错误页面，因此使用了不适合REST api的理由。对于这种情况，最好使用ResponseEntity作为返回类型，并完全避免使用@ResponseStatus。
-
-注意，控制器类也可以用@ResponseStatus进行注释，然后由所有@RequestMapping方法继承。
+对于 `HttpServletResponse.sendError`，响应被认为是完整的，不应该进一步写入。此外，Servlet 容器通常会编写一个 HTML 错误页面，因此使用了不适合 REST api 的理由。对于这种情况，最好使用 ResponseEntity 作为返回类型，并完全避免使用`@ResponseStatus`。
 
