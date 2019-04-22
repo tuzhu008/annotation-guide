@@ -69,5 +69,13 @@ public String getFoos(@RequestParam String id) {
 }
 ```
 
+在本例中，我们使用 `@RequestParam` 提取 id 查询参数。
+
+一个简单的 GET 请求将调用 `getFoos`：
+
+```java
+
+```
+
 
 
