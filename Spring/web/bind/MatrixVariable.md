@@ -86,7 +86,7 @@ public class MyController {
 
         return String.format("Hello %s %s", first, last);
     }
-    
+
      @GetMapping(value = "/data/{user:.*}",
             produces = MediaType.TEXT_PLAIN_VALUE)
     public String handler2(@MatrixVariable Map<String, String> data) {
@@ -109,9 +109,13 @@ public class MyController {
 
 结果：
 
+* http://localhost:8080/user/first=John/last=Doe
+
 ```
 Hello John Doe
 ```
+
+
 
 
 
