@@ -268,3 +268,19 @@ ID: abc
 
 使用前面的例子，ab+c将按原样返回:
 
+```
+http://localhost:8080/foos/ab+c
+----
+ID: ab+c
+```
+
+但是对于 `@RequestParam` 请求，参数是 URL 解码：
+
+```
+http://localhost:8080/foos?id=ab+c
+----
+ID: ab c
+```
+
+
+
