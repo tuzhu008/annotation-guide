@@ -38,5 +38,5 @@ public @interface PathVariable {
 
 `@PathVariable` 注解指示方法参数应该绑定到 URI 模板变量。支持 `@RequestMapping`注解的处理器方法。
 
-如果方法参数是Map&lt;String, String&gt;，那么映射将填充所有路径变量名和值。
+如果方法参数是 `Map<String, String>`，那么映射将填充所有路径变量名和值。
 
