@@ -138,5 +138,7 @@ http://localhost:8080/api/foos
 ID: null
 ```
 
+将正确调用该方法。
 
+当未指定参数时，方法参数被绑定为 null。
 
