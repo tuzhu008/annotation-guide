@@ -40,3 +40,14 @@ public @interface PathVariable {
 
 如果方法参数是 `Map<String, String>`，那么映射将填充所有路径变量名和值。
 
+我们可以通过 `name` 或别名 `value` 参数来实现：
+
+```java
+@RequestMapping("/{id}")
+Vehicle getVehicle(@PathVariable("id") long id) {
+    // ...
+}
+```
+
+
+
