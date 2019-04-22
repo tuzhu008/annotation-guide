@@ -124,6 +124,26 @@ public String submit(@ModelAttribute("employee") Employee employee) {
 </form:form>
 ```
 
+### **Model**
+
+如前所述，模型对象非常简单，包含“前端”属性所需的所有内容。现在，让我们来看一个例子:
+
+```java
+@XmlRootElement
+public class Employee {
+
+    private long id;
+    private String name;
+
+    public Employee(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    // standard getters and setters removed
+}
+```
+
 ### **Controller**
 
 这是控制器类，实现了上述视图的逻辑：
@@ -206,25 +226,7 @@ public class EmployeeController {
 </html>
 ```
 
-### **Model**
-
-如前所述，模型对象非常简单，包含“前端”属性所需的所有内容。现在，让我们来看一个例子:
-
-```java
-@XmlRootElement
-public class Employee {
- 
-    private long id;
-    private String name;
- 
-    public Employee(long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
- 
-    // standard getters and setters removed
-}
-```
+### 
 
 
 
