@@ -97,5 +97,5 @@ public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam Stri
 }
 ```
 
-
+我们还可以使用 `@RequestParam(value = "id")` 或 `@RequestParam("id")`。
 
