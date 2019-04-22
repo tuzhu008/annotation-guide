@@ -73,9 +73,18 @@ Spring 认为最后一个点后面的任何内容都是文件扩展名，如 `.j
 
 因此，它截断值以检索参数。
 
+让我们看一个使用路径变量的例子，然后用不同的可能值分析结果：
 
-
-让我们看一个使用路径变量的例子，然后用不同的可能值分析结果:
+```java
+@RestController
+public class CustomController {
+    @GetMapping("/example/{firstValue}/{secondValue}")
+    public void example(@PathVariable("firstValue") String firstValue,
+      @PathVariable("secondValue") String secondValue) {
+        // ...  
+    }
+}
+```
 
 
 
