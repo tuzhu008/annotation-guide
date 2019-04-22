@@ -111,11 +111,12 @@ public class MyController {
 
 * [http://localhost:8080/user/first=John/last=Doe](http://localhost:8080/user/first=John/last=Doe)
 
-    ```
+  ```
     Hello John Doe
-    ```
+  ```
 
-* 
+* [http://localhost:8080/data/id=1;first=John;last=Doe;email=johndoe@gmail.com](http://localhost:8080/data/id=1;first=John;last=Doe;email=johndoe@gmail.com)
+
 * 
 
 
