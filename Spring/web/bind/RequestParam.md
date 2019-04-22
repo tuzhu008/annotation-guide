@@ -105,5 +105,22 @@ public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam Stri
 
 这意味着如果请求中没有参数，我们将得到一个错误：
 
+```
+GET /api/foos HTTP/1.1
+-----
+400 Bad Request
+Required String parameter 'id' is not present
+```
+
+不过，我们可以使用 `required` 属性将 `@RequestParam` 配置为可选的：
+
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam(required = false) String id) { 
+    return "ID: " + id;
+}
+```
+
 
 
