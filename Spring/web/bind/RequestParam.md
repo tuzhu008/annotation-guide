@@ -122,5 +122,21 @@ public String getFoos(@RequestParam(required = false) String id) {
 }
 ```
 
+在这种情况下，两者:
+
+```
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
+```
+
+和
+
+```
+http://localhost:8080/api/foos
+----
+ID: null
+```
+
 
 
