@@ -206,5 +206,25 @@ public class EmployeeController {
 </html>
 ```
 
+### **Model**
+
+如前所述，模型对象非常简单，包含“前端”属性所需的所有内容。现在，让我们来看一个例子:
+
+```java
+@XmlRootElement
+public class Employee {
+ 
+    private long id;
+    private String name;
+ 
+    public Employee(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+ 
+    // standard getters and setters removed
+}
+```
+
 
 
