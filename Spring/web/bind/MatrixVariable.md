@@ -112,19 +112,23 @@ public class MyController {
 * [http://localhost:8080/user/first=John/last=Doe](http://localhost:8080/user/first=John/last=Doe)
 
   ```
-    Hello John Doe
+  Hello John Doe
   ```
 
 * [http://localhost:8080/data/id=1;first=John;last=Doe;email=johndoe@gmail.com](http://localhost:8080/data/id=1;first=John;last=Doe;email=johndoe@gmail.com)
 
   ```
+  Id: 1
+  First name: John
+  Last Name: Doe
+  Email: johndoe@gmail.com
+  ```
+
+* [http://localhost:8080/geo/Europe;country=Slovakia;capital=Bratislava](http://localhost:8080/geo/Europe;country=Slovakia;capital=Bratislava)
+
+  ```
     Hello John Doe
   ```
 
-* a
-  
-  ```
-    Hello John Doe
-  ```
 
 
