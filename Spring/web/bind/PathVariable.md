@@ -122,11 +122,11 @@ public void example(
 ```java
 @Configuration
 public class CustomWebConfiguration extends WebMvcConfigurationSupport {
-     
+
     @Bean
     public RequestMappingHandlerMapping 
       requestMappingHandlerMapping() {
-  
+
         RequestMappingHandlerMapping handlerMapping
           = super.requestMappingHandlerMapping();
         handlerMapping.setUseSuffixPatternMatch(false);
@@ -135,5 +135,9 @@ public class CustomWebConfiguration extends WebMvcConfigurationSupport {
 }
 ```
 
+我们必须记住，这种方法影响所有url。
 
+
+
+使用这3个选项，我们将获得相同的结果:当调用example/gallery.df/link.com.ar URL时，第二个值变量将被计算为“link.com.ar”，这正是我们想要的。
 
