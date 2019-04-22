@@ -214,6 +214,8 @@ public ResponseEntity<Map<String, String>> getEmployeeDataFromCompany(
 @MatrixVariable(value="name", pathVar="company") String name
 ```
 
+## 实例
+
 ```java
 @RestController
 public class MyController {
