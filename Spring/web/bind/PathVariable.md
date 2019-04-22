@@ -120,7 +120,19 @@ public void example(
 如果我们想在全局 MVC 级别更改行为，我们可以通过在应用程序上下文中声明我们自己的 DefaultAnnotationHandlerMapping bean并将其 `useDefaultSuffixPattern` 属性设置为 false 来定制 Spring MVC 配置：
 
 ```java
-
+@Configuration
+public class CustomWebConfiguration extends WebMvcConfigurationSupport {
+     
+    @Bean
+    public RequestMappingHandlerMapping 
+      requestMappingHandlerMapping() {
+  
+        RequestMappingHandlerMapping handlerMapping
+          = super.requestMappingHandlerMapping();
+        handlerMapping.setUseSuffixPatternMatch(false);
+        return handlerMapping;
+    }
+}
 ```
 
 
