@@ -152,7 +152,14 @@ ID: null
 public String getFoos(@RequestParam(defaultValue = "test") String id) {
     return "ID: " + id;
 }
+```
 
+这类似于 `required=false`，因为用户不再需要提供参数：
+
+```
+http://localhost:8080/api/foos
+----
+ID: test
 ```
 
 
