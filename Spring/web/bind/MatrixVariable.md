@@ -127,7 +127,9 @@ public class MyController {
 * [http://localhost:8080/geo/Europe;country=Slovakia;capital=Bratislava](http://localhost:8080/geo/Europe;country=Slovakia;capital=Bratislava)
 
   ```
-    Hello John Doe
+  Continent: Europe
+  Country: Slovakia
+  Capital: Bratislava
   ```
 
 
