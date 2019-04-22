@@ -57,5 +57,9 @@ public @interface ModelAttribute {
 
 在下面的示例中，我们将通过一个共同的概念来演示注解的可用性和功能:公司员工提交的表单。
 
+#### 深入 _**@ModelAttribute**_
+
+正如介绍性段落所揭示的，`@ModelAttribute` 既可以用作方法参数，也可以用于方法级别。
+
 
 
