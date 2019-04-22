@@ -212,5 +212,13 @@ http://localhost:8080/api/foos?id=1,2,3
 IDs are [1,2,3]
 ```
 
+或单独的 id 参数列表：
+
+```
+http://localhost:8080/api/foos?id=1&id=2
+----
+IDs are [1,2]
+```
+
 
 
