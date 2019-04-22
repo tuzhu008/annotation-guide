@@ -62,7 +62,11 @@ public @interface RequestParam {
 假设我们有一个端点 `/api/foos`，它接受一个名为 `id` 的查询参数：
 
 ```java
-
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam String id) {
+    return "ID: " + id;
+}
 ```
 
 
