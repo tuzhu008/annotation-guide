@@ -157,7 +157,29 @@ public class EmployeeController {
 }
 ```
 
-在 `submit()` 方法中，我们有一个 Employee 对象绑定到我们的视图。你能看出这个注释的威力吗？您可以简单地将表单字段映射到对象模型。在该方法中，我们从表单中获取值并将其设置为 `ModelMap`。
+在 `submit()` 方法中，我们有一个 Employee 对象绑定到我们的视图。
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    姓名：<p th:text="${employee.name}"></p>
+    id：<p th:text="${employee.id}"></p>
+    msg：<p th:text="${msg}"></p>
+
+    姓名：<p th:text="${name}"></p>
+    id：<p th:text="${id}"></p>
+</body>
+</html>
+```
+
+您可以简单地将表单字段映射到对象模型。在该方法中，我们从表单中获取值并将其设置为 `ModelMap`。也就是说，我们可以在视图中使用：
+
+
 
 最后，我们返回 employeeView，这意味着将调用相应的 JSP 文件作为视图代表。
 
