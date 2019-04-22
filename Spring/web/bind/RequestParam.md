@@ -282,5 +282,9 @@ http://localhost:8080/foos?id=ab+c
 ID: ab c
 ```
 
+### 可选值
+
+`@RequestParam` 和 `@PathVariable` 都是可选的。
+
 
 
