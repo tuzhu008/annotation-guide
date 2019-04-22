@@ -192,5 +192,18 @@ curl -X POST -F 'name=abc' -F 'id=123' http://localhost:8080/api/foos
 Parameters are {[name=abc], [id=123]}
 ```
 
+## 映射** Multi-Value 参数**
+
+一个 `@RequestParam` 可以有多个值：
+
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam List<String> id) {
+    return "IDs are " + id;
+}
+
+```
+
 
 
