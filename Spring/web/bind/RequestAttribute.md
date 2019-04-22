@@ -57,5 +57,5 @@ public @interface RequestAttribute {
     }
 ```
 
-
+`@RequestAttribute("employee")` 将 Employee 的实例绑定到 `request` 的属性 `employee` 中。
 
