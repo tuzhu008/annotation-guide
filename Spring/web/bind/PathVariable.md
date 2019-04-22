@@ -109,5 +109,11 @@ public void example(
 }
 ```
 
+另一种避免这个问题的方法是在 `@PathVariable` 后面添加一个斜杠。这将包括我们的第二个变量，保护它免受 Spring 的默认行为:
+
+```java
+@GetMapping("/example/{firstValue}/{secondValue}/")
+```
+
 
 
