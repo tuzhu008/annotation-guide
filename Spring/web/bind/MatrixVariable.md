@@ -75,7 +75,16 @@ public class WebConfig implements WebMvcConfigurer {
 controller：
 
 ```java
+@RestController
+public class MyController {
+    @GetMapping(value = "/user/{first}/{last}",
+               produces = MediaType.TEXT_PLAIN_VALUE)
+    public String handler1(@MatrixVariable("first") String first,
+                           @MatrixVariable("last") String last) {
 
+        return String.format("Hello %s %s", first, last);
+    }
+}
 ```
 
 
