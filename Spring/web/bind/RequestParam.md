@@ -99,3 +99,13 @@ public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam Stri
 
 我们还可以使用 `@RequestParam(value = "id")` 或 `@RequestParam("id")`。
 
+### 设置可选的请求参数
+
+默认情况下需要使用@RequestParam注释的方法参数。
+
+
+
+这意味着如果请求中没有参数，我们将得到一个错误:
+
+
+
