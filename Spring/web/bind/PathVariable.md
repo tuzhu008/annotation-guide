@@ -49,5 +49,5 @@ Vehicle getVehicle(@PathVariable("id") long id) {
 }
 ```
 
-
+如果模板中部件的名称与方法参数的名称匹配，则无需在注释中指定：
 
