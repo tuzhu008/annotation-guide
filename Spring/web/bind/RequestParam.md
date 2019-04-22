@@ -264,9 +264,7 @@ ID: abc
 
 ### 编码值 vs 精确值
 
-因为@PathVariable从URI路径中提取值，所以没有进行编码。另一方面，@RequestParam是。
-
-
+因为 `@PathVariable` 从 URI 路径中提取值，所以没有进行编码。另一方面，`@RequestParam`会进行编码。
 
 使用前面的例子，ab+c将按原样返回:
 
