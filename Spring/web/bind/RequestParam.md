@@ -222,7 +222,7 @@ IDs are [1,2]
 
 ## _**@RequestParam **_**vs **_**@PathVariable**_
 
-_`@RequestParam`_ 和 `@PathVariable` 都可以用于从请求 URI 中提取值，但是它们有一点不同。
+`@RequestParam` 和 `@PathVariable` 都可以用于从请求 URI 中提取值，但是它们有一点不同。
 
 ### 查询参数 vs URI 路径
 
@@ -234,6 +234,32 @@ _`@RequestParam`_ 和 `@PathVariable` 都可以用于从请求 URI 中提取值�
 public String getFooById(@PathVariable String id) {
     return "ID: " + id;
 }
+```
+
+然后，我们可以根据路径映射：
+
+```
+http://localhost:8080/foos/abc
+----
+ID: abc
+```
+
+对于 `@RequestParam`，它将是:
+
+```java
+@GetMapping("/foos")
+@ResponseBody
+public String getFooByIdUsingQueryParam(@RequestParam String id) {
+    return "ID: " + id;
+}
+```
+
+这将给我们相同的响应，只是不同的 URI:
+
+```
+http://localhost:8080/foos?id=abc
+----
+ID: abc
 ```
 
 
