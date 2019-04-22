@@ -39,3 +39,23 @@ public @interface RequestAttribute {
 
 主要动机是通过可选/必需的检查和对目标方法参数类型的转换，提供对控制器方法的请求属性的方便访问。
 
+```java
+@RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
+    public String submit(
+            @RequestAttribute("employee")
+            @ModelAttribute("employee") Employee employee,
+            BindingResult result, ModelMap model, HttpServletRequest requst) {
+        if (result.hasErrors()) {
+            return "error";
+        }
+        model.addAttribute("name", employee.getName());
+        model.addAttribute("id", employee.getId());
+
+        employeeMap.put(employee.getId(), employee);
+
+        return "employeeView";
+    }
+```
+
+
+
