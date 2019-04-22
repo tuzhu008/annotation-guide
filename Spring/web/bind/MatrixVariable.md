@@ -55,5 +55,5 @@ public @interface MatrixVariable {
 
 如果方法参数类型为 Map，并且指定了一个矩阵变量名，那么假设有合适的转换策略，则将矩阵变量值转换为 Map。
 
-如果方法参数是Map&lt;String、String&gt;或MultiValueMap&lt;String、String&gt;和变量名未指定，则映射将填充所有矩阵变量名和值。
+如果方法参数是 `Map<String、String>` 或 `MultiValueMap<String、String>` 和变量名未指定，则映射将填充所有矩阵变量名和值。
 
