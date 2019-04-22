@@ -86,6 +86,24 @@ public class MyController {
 
         return String.format("Hello %s %s", first, last);
     }
+    
+     @GetMapping(value = "/data/{user:.*}",
+            produces = MediaType.TEXT_PLAIN_VALUE)
+    public String handler2(@MatrixVariable Map<String, String> data) {
+
+        return String.format("Id: %s\nFirst name: %s\nLast Name: %s\nEmail: %s\n",
+                data.get("id"), data.get("first"), data.get("last"), data.get("email"));
+    }
+
+    @GetMapping(value = "/geo/{continent}",
+            produces = MediaType.TEXT_PLAIN_VALUE)
+    public String handler3(@PathVariable("continent") String continent,
+                           @MatrixVariable("country") String country,
+                           @MatrixVariable("capital") String capital) {
+
+        return String.format("Continent: %s\nCountry: %s\nCapital: %s\n",
+                continent, country, capital);
+    }
 }
 ```
 
