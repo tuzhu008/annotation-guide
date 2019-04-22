@@ -92,11 +92,11 @@ public class WebConfig implements WebMvcConfigurer {
 
 ```java
 public class Employee {
- 
+
     private long id;
     private String name;
     private String contactNumber;
- 
+
     // standard setters and getters 
 }
 ```
@@ -105,10 +105,10 @@ public class Employee {
 
 ```java
 public class Company {
- 
+
     private long id;
     private String name;
- 
+
     // standard setters and getters
 }
 ```
@@ -119,7 +119,7 @@ public class Company {
 
 我们可以为变量指定必需的或默认的属性。在下面的例子中，`contactNumber` 是必需的，所以它必须包含在我们的路径中，如下所示:
 
-http://localhost:8080/spring-mvc-java/employeesContacts/contactNumber=223334411
+[http://localhost:8080/spring-mvc-java/employeesContacts/contactNumber=223334411](http://localhost:8080/spring-mvc-java/employeesContacts/contactNumber=223334411)
 
 处理请求的方法如下:
 
@@ -145,7 +145,7 @@ public ResponseEntity<List<Employee>> getEmployeeBycontactNumber(
 
 这个搜索的请求应该是这样的:
 
-http://localhost:8080/spring-mvc-java/employees/John;beginContactNumber=22001
+[http://localhost:8080/spring-mvc-java/employees/John;beginContactNumber=22001](http://localhost:8080/spring-mvc-java/employees/John;beginContactNumber=22001)
 
 处理请求的方法如下:
 
@@ -162,11 +162,13 @@ public ResponseEntity<List<Employee>> getEmployeeByNameAndBeginContactNumber(
 
 因此，我们将得到所有的员工谁有联系电话 22001 或谁的名字是 John。
 
+`@MatrixVariable` 无法匹配到未使用 `=` 的参数，因此，需要用 `@PathVariable`
+
 ### 绑定所有矩阵变量
 
 如果出于某种原因，我们想要获得路径上所有可用的变量，我们可以将它们绑定到一个Map:
 
-http://localhost:8080/spring-mvc-java/employeeData/id=1;name=John;contactNumber=2200112334
+[http://localhost:8080/spring-mvc-java/employeeData/id=1;name=John;contactNumber=2200112334](http://localhost:8080/spring-mvc-java/employeeData/id=1;name=John;contactNumber=2200112334)
 
 此请求将会以以下方法处理:
 
@@ -181,8 +183,8 @@ public ResponseEntity<Map<String, String>> getEmployeeData(
 
 当然，我们可以将绑定限制在路径特定部分的矩阵变量上。例如，如果我们有这样一个请求:
 
-http://localhost:8080/spring-mvc-java/
-  companyEmployee/id=2;name=Xpto/employeeData/id=1;name=John;
+[http://localhost:8080/spring-mvc-java/](http://localhost:8080/spring-mvc-java/)  
+  companyEmployee/id=2;name=Xpto/employeeData/id=1;name=John;  
   contactNumber=2200112334
 
 我们只想得到属于 employeeData 的所有变量;那么我们应该使用这个作为输入参数:
@@ -202,8 +204,8 @@ public ResponseEntity<Map<String, String>> getEmployeeDataFromCompany(
 
 除了简单之外，灵活性是另一个优点，矩阵变量可以以多种不同的方式使用。例如，我们可以从每个路径段获取每个变量。考虑以下要求:
 
-http://localhost:8080/spring-mvc-java/
-  companyData/id=2;name=Xpto/employeeData/id=1;name=John;
+[http://localhost:8080/spring-mvc-java/](http://localhost:8080/spring-mvc-java/)  
+  companyData/id=2;name=Xpto/employeeData/id=1;name=John;  
   contactNumber=2200112334
 
 如果我们只想知道 companyData 段的矩阵变量名，那么我们应该使用以下参数作为输入参数:
@@ -211,7 +213,6 @@ http://localhost:8080/spring-mvc-java/
 ```java
 @MatrixVariable(value="name", pathVar="company") String name
 ```
-
 
 ```java
 @RestController
