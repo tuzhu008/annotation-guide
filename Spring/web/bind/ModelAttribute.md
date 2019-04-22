@@ -45,7 +45,7 @@ public @interface ModelAttribute {
 
 可以使用特定的属性名，通过注解 `@RequestMapping` 方法的相应参数，将命令对象公开给 web 视图。
 
-还可以通过在带有 `@RequestMapping` 方法的控制器类中注解访问器方法，将引用数据公开给web视图。允许这样的访问器方法具有@RequestMapping方法支持的任何参数，返回要公开的模型属性值。
+还可以通过在带有 `@RequestMapping` 方法的控制器类中注解访问器方法，将引用数据公开给 web 视图。允许这样的访问器方法具有@RequestMapping方法支持的任何参数，返回要公开的模型属性值。
 
 但是请注意，当请求处理导致异常时，web视图不能使用引用数据和所有其他模型内容，因为异常可以在任何时候引发，从而使模型的内容变得不可靠。因此@ExceptionHandler方法不提供对模型参数的访问。
 
