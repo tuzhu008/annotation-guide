@@ -92,10 +92,18 @@ public void addAttributes(Model model) {
 @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
 public String submit(@ModelAttribute("employee") Employee employee) {
     // Code that uses the employee object
- 
+
     return "employeeView";
 }
 ```
 
+在本文的后面，我们将看到一个完整的示例，演示如何使用employee对象填充employeeView模板。
 
+
+
+因此，它将表单数据与bean绑定。使用@RequestMapping注释的控制器可以使用@ModelAttribute注释自定义类参数。
+
+
+
+这就是Spring-MVC中通常所说的数据绑定，这是一种通用的机制，可以让您不必逐个解析每个表单字段。
 
