@@ -78,7 +78,11 @@ public class WebConfig implements WebMvcConfigurer {
 
 我们的示例中有一个控制器，它提供关于员工的信息。每个员工都有一个工作区，我们可以根据该属性进行搜索。下列查询可用于搜寻:
 
-controller：
+http://localhost:8080/spring-mvc-java/employeeArea/workingArea=rh,informatics,admin
+
+当我们想在 Spring MVC 中引用这些变量时，我们应该使用 `@MatrixVariable` 注解。
+
+在我们的例子中，我们将使用 Employee 类:
 
 ```java
 @RestController
