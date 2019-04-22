@@ -222,7 +222,19 @@ IDs are [1,2]
 
 ## _**@RequestParam **_**vs **_**@PathVariable**_
 
+_`@RequestParam`_ 和 `@PathVariable` 都可以用于从请求 URI 中提取值，但是它们有一点不同。
 
+### 查询参数 vs URI 路径
+
+`@RequestParams` 从查询字符串中提取值，`@PathVariables` 从 URI 路径中提取值：
+
+```java
+@GetMapping("/foos/{id}")
+@ResponseBody
+public String getFooById(@PathVariable String id) {
+    return "ID: " + id;
+}
+```
 
 
 
