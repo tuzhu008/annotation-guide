@@ -162,5 +162,13 @@ http://localhost:8080/api/foos
 ID: test
 ```
 
+不过，我们仍然可以提供：
+
+```
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
+```
+
 
 
