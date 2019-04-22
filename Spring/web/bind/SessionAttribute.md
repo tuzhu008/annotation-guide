@@ -39,6 +39,16 @@ public @interface SessionAttribute {
 
 主要动机是通过可选/必需的检查和对目标方法参数类型的转换，提供对现有的永久会话属性\(例如用户身份验证对象\)的方便访问。
 
+```java
+@RequestMapping("/session")
+    public String session(
+            @SessionAttribute("user") User user
+    ){
+        // do something
+        return "index";
+    }
+```
+
 对于需要添加或删除会话属性的用例，可以考虑注入 `org.springframework.web.context.request.WebRequest` 或`javax.servlet.http.HttpSession` 到控制器方法中。
 
 对于将模型属性作为控制器工作流的一部分临时存储在会话中，可以考虑使用 [`@SessionAttributes`](/Spring/web/bind/SessionAttributes.md)。
