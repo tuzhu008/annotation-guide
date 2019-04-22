@@ -172,3 +172,25 @@ ID: abc
 
 注意，当我们设置 `defaultValue` 属性时，`required` 实际上被设置为 `false`。
 
+### 所有参数映射
+
+我们也可以有多个参数，而不需要定义它们的名称或计数，只需使用 Map：
+
+```java
+@PostMapping("/api/foos")
+@ResponseBody
+public String updateFoos(@RequestParam Map<String,String> allParams) {
+    return "Parameters are " + allParams.entrySet();
+}
+```
+
+然后，它将反射回发送的任何参数：
+
+```
+curl -X POST -F 'name=abc' -F 'id=123' http://localhost:8080/api/foos
+-----
+Parameters are {[name=abc], [id=123]}
+```
+
+
+
