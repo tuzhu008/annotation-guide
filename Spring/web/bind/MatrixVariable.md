@@ -95,6 +95,18 @@ public class Employee {
 }
 ```
 
+公司类别:
+
+```java
+public class Company {
+ 
+    private long id;
+    private String name;
+ 
+    // standard setters and getters
+}
+```
+
 ```java
 @RestController
 public class MyController {
