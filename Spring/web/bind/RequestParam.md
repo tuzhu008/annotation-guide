@@ -202,7 +202,14 @@ Parameters are {[name=abc], [id=123]}
 public String getFoos(@RequestParam List<String> id) {
     return "IDs are " + id;
 }
+```
 
+Spring MVC 将映射一个逗号分隔的 id 参数：
+
+```
+http://localhost:8080/api/foos?id=1,2,3
+----
+IDs are [1,2,3]
 ```
 
 
