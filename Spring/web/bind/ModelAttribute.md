@@ -169,6 +169,7 @@ public class EmployeeController {
 <body>
     姓名：<p th:text="${employee.name}"></p>
     id：<p th:text="${employee.id}"></p>
+    
     msg：<p th:text="${msg}"></p>
 
     姓名：<p th:text="${name}"></p>
@@ -179,9 +180,51 @@ public class EmployeeController {
 
 您可以简单地将表单字段映射到对象模型。在该方法中，我们从表单中获取值并将其设置为 `ModelMap`。也就是说，我们可以在视图中使用：
 
+```html
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    姓名：<p th:text="${employee.name}"></p>
+    id：<p th:text="${employee.id}"></p>
+    
+    msg：<p th:text="${msg}"></p>
+
+    姓名：<p th:text="${name}"></p>
+    id：<p th:text="${id}"></p>
+</body>
+</html>
+```
+
 
 
 最后，我们返回 employeeView，这意味着将调用相应的 JSP 文件作为视图代表。
 
 此外，还有一个 `addAttributes()` 方法。它的目的是在模型中添加将被全局标识的值。也就是说，对于每个控制器方法的每个请求，都会返回一个默认值作为响应。我们还**必须**将特定的类标注为 `@ControllerAdvice`。
+
+```java
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    姓名：<p th:text="${employee.name}"></p>
+    id：<p th:text="${employee.id}"></p>
+    
+    msg：<p th:text="${msg}"></p>
+
+    姓名：<p th:text="${name}"></p>
+    id：<p th:text="${id}"></p>
+</body>
+</html>
+```
+
+
 
