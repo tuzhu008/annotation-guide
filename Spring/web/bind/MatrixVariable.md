@@ -137,6 +137,32 @@ public ResponseEntity<List<Employee>> getEmployeeBycontactNumber(
 
 因此，我们将得到所有有联系电话 223334411 的员工。
 
+### 补充参数
+
+矩阵变量可以补充路径变量。
+
+例如，我们正在搜索一个员工的姓名，但是我们也可以包含他/她的联系电话的起始号码。
+
+这个搜索的请求应该是这样的:
+
+http://localhost:8080/spring-mvc-java/employees/John;beginContactNumber=22001
+
+处理请求的方法如下:
+
+```java
+@RequestMapping(value = "/employees/{name}", method = RequestMethod.GET)
+@ResponseBody
+public ResponseEntity<List<Employee>> getEmployeeByNameAndBeginContactNumber(
+  @PathVariable String name, @MatrixVariable String beginContactNumber) {
+    List<Employee> employeesList = new ArrayList<Employee>();
+    ...
+    return new ResponseEntity<>(employeesList, HttpStatus.OK);
+}
+```
+
+因此，我们将得到所有的员工谁有联系电话 22001 或谁的名字是 John。
+
+
 ```java
 @RestController
 public class MyController {
