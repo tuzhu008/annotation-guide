@@ -1,7 +1,7 @@
 # 包
 
 ```java
-package org.springframework.web.bind.annotation;
+package org.springframework.validation.annotation;
 ```
 
 
