@@ -32,3 +32,20 @@ public @interface Validated {
 
 只要类路径上有 JSR-303 实现\(如 Hibernate 验证器\)，Bean validation 1.1 支持的方法验证特性就会自动启用。这使得 bean 方法可以在其参数和/或返回值上使用 `javax.validation` 约束进行注解。带有此类注解的方法的目标类需要在类型级别上使用 `@Validated` 注解，以便搜索它们的方法来搜索内联约束注解。
 
+例如，下面的 service 触发第一个参数的验证，确保它的大小在 8 到 10 之间:
+
+```java
+@Service
+@Validated
+public class MyBean {
+
+	public Archive findByCodeAndAuthor(@Size(min = 8, max = 10) String code,
+			Author author) {
+		...
+	}
+
+}
+```
+
+
+
