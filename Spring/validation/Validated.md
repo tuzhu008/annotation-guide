@@ -8,22 +8,27 @@
 @Documented
 public @interface Validated {
 
-	/**
-	 * Specify one or more validation groups to apply to the validation step
-	 * kicked off by this annotation.
-	 * <p>JSR-303 defines validation groups as custom annotations which an application declares
-	 * for the sole purpose of using them as type-safe group arguments, as implemented in
-	 * {@link org.springframework.validation.beanvalidation.SpringValidatorAdapter}.
-	 * <p>Other {@link org.springframework.validation.SmartValidator} implementations may
-	 * support class arguments in other ways as well.
-	 */
-	Class<?>[] value() default {};
+    /**
+     * Specify one or more validation groups to apply to the validation step
+     * kicked off by this annotation.
+     * <p>JSR-303 defines validation groups as custom annotations which an application declares
+     * for the sole purpose of using them as type-safe group arguments, as implemented in
+     * {@link org.springframework.validation.beanvalidation.SpringValidatorAdapter}.
+     * <p>Other {@link org.springframework.validation.SmartValidator} implementations may
+     * support class arguments in other ways as well.
+     */
+    Class<?>[] value() default {};
 
 }
-
 ```
 
 ## 解析
+
+ `@Validated`  注解是 JSR-303 [`Valid`](https://docs.oracle.com/javaee/7/api/javax/validation/Valid.html?is-external=true) 的变体，支持验证组的规范。设计用于方便地使用 Spring 的 JSR-303 支持，但不是特定于JSR-303。
+
+例如，可以与 Spring MVC 处理器方法参数一起使用。支持 [`SmartValidator`](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/validation/SmartValidator.html) 的验证提示概念，验证组类充当提示对象。
+
+还可以与方法级验证一起使用，这表明应该在方法级验证特定的类\(作为对应的验证拦截器的切入点\)，但也可以选择在带注释的类中指定方法级验证的验证组。在方法级别应用此注释允许覆盖特定方法的验证组，但不作为切入点;不过，要触发特定bean的方法验证，首先需要一个类级别的注释。还可以用作自定义原型注释或自定义特定于组的验证注释上的元注释。
 
 
 
