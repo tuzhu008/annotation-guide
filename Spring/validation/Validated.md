@@ -39,10 +39,10 @@ public @interface Validated {
 @Validated
 public class MyBean {
 
-	public Archive findByCodeAndAuthor(@Size(min = 8, max = 10) String code,
-			Author author) {
-		...
-	}
+    public Archive findByCodeAndAuthor(@Size(min = 8, max = 10) String code,
+            Author author) {
+        ...
+    }
 
 }
 ```
