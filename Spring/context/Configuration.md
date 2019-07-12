@@ -29,6 +29,8 @@ public @interface Configuration {
 
 ## 解析
 
+`@Configuration` 声明当前类是一个配置类。
+
 `@Configuration` 是一个类级别的注解，指明此对象是 bean 定义的源。`@Configuration` 类通过 public `@Bean` 注解的方法来声明 bean。在 `@Configuration` 类上对 `@Bean` 方法的调用也可以用于定义 bean 之间的依赖。
 
 `@Configuration` 注解的类说明这个类的主要是作为一个 bean 定义的资源文件。
