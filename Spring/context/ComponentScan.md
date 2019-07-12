@@ -56,6 +56,8 @@ public @interface ComponentScan {
 
 ## 解析
 
+`@ComponentScan` 便与 可以自动扫描指定包名下所有使用 `@Service` 、`@Component` 、`@Repository` 和 `@Controller` 的类，并将其注册为 Bean。
+
 配置组件扫描指令，以便与 `@Configuration` 类一起使用。提供与 Spring XML 的 `<context:component-scan>` 元素并行的支持。
 
 可以指定 `basepackageclass()` 或 `basePackages()` \(或其别名 `value()`\)来定义要扫描的特定包。如果没有定义特定的包，则将对声明此注释的类的包进行扫描。
