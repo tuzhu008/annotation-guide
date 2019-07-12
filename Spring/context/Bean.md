@@ -28,6 +28,8 @@ public @interface Bean {
 
 ## 解析
 
+`@Bean` 是一个方法级注解，声明当前方法的返回值为一个 Bean。
+
 `@Bean` 注解用来说明通过 Spring IoC 容器来管理一个新对象的实例化，配置和初始化的方法。
 
 可以在任何使用 `@Component` 的地方使用 `@Bean`，但是更常用的是在配置 `@Configuration` 的类中使用。
